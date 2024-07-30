@@ -18,3 +18,24 @@ Class Method: Add a class method to the Member class to count the total number o
 Database Interaction:
 Use MySQL Connector to create a database and tables for books and members.
 Implement methods in your classes to add, update, and retrieve data from the database.
+
+
+Challenge 2: Employee Management System
+Objective: Develop an employee management system with classes for managing employees and departments, incorporating MySQL for data storage.
+
+Requirements:
+
+Classes: Create classes for Employee and Department.
+Employee:
+Attributes: name, employee_id, department_id, salary
+Methods: display_info()
+Use @property for name, employee_id, department_id, and salary to make them read-only.
+Use a setter for salary to ensure it cannot be set to a negative value.
+Department:
+Attributes: name, department_id
+Methods: display_info()
+Use @property for name and department_id to make them read-only.
+Static Method: Add a static method to the Employee class to validate if a given employee ID is in the correct format (e.g., starts with "EMP" followed by digits).
+Database Interaction:
+Use MySQL Connector to create a database and tables for employees and departments.
+Implement methods in your classes to add, update, and retrieve data from the database.
