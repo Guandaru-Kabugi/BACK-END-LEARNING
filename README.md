@@ -63,3 +63,40 @@ Setup MySQL Connection: Ensure you have MySQL Connector installed and set up a c
 Database Schema: Design your database schema and create tables accordingly.
 CRUD Operations: Implement Create, Read, Update, and Delete operations for your database tables.
 Testing: Test your classes and methods to ensure they work correctly and interact with the database as expected.
+
+Challenge 4: Online Learning Platform
+Objective: Create an online learning platform system where you manage courses, instructors, and students using inheritance, composition, and MySQL for data storage.
+
+Requirements:
+
+Classes:
+Person (Base class):
+Attributes: name, email
+Methods: display_info()
+Use @property for name and email to make them read-only.
+Instructor (Inherits from Person):
+Attributes: instructor_id, courses (a list of Course instances)
+Methods: add_course(), remove_course(), display_courses()
+Use @property for instructor_id to make it read-only.
+**Use a setter for email to ensure it follows a valid email format.**
+Student (Inherits from Person):
+Attributes: student_id, courses (a list of Course instances)
+Methods: enroll_course(), drop_course(), display_courses()
+Use @property for student_id to make it read-only.
+Course:
+Attributes: course_id, course_name, instructor (an instance of Instructor)
+Methods: display_info()
+Use @property for course_id and course_name to make them read-only.
+Composition:
+The Instructor class should have a list of Course instances, representing the courses they teach.
+The Student class should have a list of Course instances, representing the courses they are enrolled in.
+**Class Method: Add a class method to the Course class to count the total number of courses available.**
+Database Interaction:
+Use MySQL Connector to create a database and tables for persons, instructors, students, and courses.
+Implement methods in your classes to add, update, and retrieve data from the database.
+Tips for Implementation:
+Setup MySQL Connection: Ensure you have MySQL Connector installed and set up a connection to your database.
+Database Schema: Design your database schema and create tables accordingly.
+CRUD Operations: Implement Create, Read, Update, and Delete operations for your database tables.
+Testing: Test your classes and methods to ensure they work correctly and interact with the database as expected.
+This challenge will help you practice inheritance, composition, and database interactions, reinforcing your understanding of object-oriented programming concepts along with MySQL in Python.
