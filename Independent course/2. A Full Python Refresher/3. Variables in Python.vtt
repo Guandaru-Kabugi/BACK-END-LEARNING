@@ -1,0 +1,567 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.685
+- [Narrator] Hi and welcome
+back to the programme.
+
+2
+00:00:02.685 --> 00:00:04.931
+It's really great to have
+you, I'm really excited
+
+3
+00:00:04.931 --> 00:00:08.585
+to go through this quick
+Python refresher with you.
+
+4
+00:00:08.585 --> 00:00:10.000
+In this video and in the next,
+
+5
+00:00:10.000 --> 00:00:12.902
+we're going to look at
+variables and methods.
+
+6
+00:00:12.902 --> 00:00:15.256
+So let's start with the most basic
+
+7
+00:00:15.256 --> 00:00:18.492
+Python building block, the variable.
+
+8
+00:00:18.492 --> 00:00:20.409
+In order to begin the
+first thing I'm going to do
+
+9
+00:00:20.409 --> 00:00:23.159
+is create a new file here in Atom
+
+10
+00:00:24.617 --> 00:00:29.083
+and then I'm going to
+save it inside the folder
+
+11
+00:00:29.083 --> 00:00:33.573
+and I'm going to save it
+as variables_methods.py.
+
+12
+00:00:33.573 --> 00:00:37.114
+Now the .py is important
+because it's going to mean
+
+13
+00:00:37.114 --> 00:00:40.525
+that Atom will know this is a Python file
+
+14
+00:00:40.525 --> 00:00:43.192
+and then it can also make suggestions
+
+15
+00:00:43.192 --> 00:00:47.359
+and give us some syntax,
+colours, and things like that.
+
+16
+00:00:49.406 --> 00:00:51.874
+Now that we've got our file, let's begin.
+
+17
+00:00:51.874 --> 00:00:56.052
+The most basic building block
+of Python is the variable
+
+18
+00:00:56.052 --> 00:00:59.692
+and a variable is just a box essentially,
+
+19
+00:00:59.692 --> 00:01:02.277
+a box that we can stick
+a name on and then we can
+
+20
+00:01:02.277 --> 00:01:06.524
+refer back to it from
+anywhere else in the file.
+
+21
+00:01:06.524 --> 00:01:10.054
+For example, we can
+create a box and call it a
+
+22
+00:01:10.054 --> 00:01:13.154
+and then make it equal to, say, five.
+
+23
+00:01:13.154 --> 00:01:15.860
+What we're doing here
+is just creating a box
+
+24
+00:01:15.860 --> 00:01:19.836
+with the name a and putting
+the value five into it.
+
+25
+00:01:19.836 --> 00:01:23.704
+We can do other boxes
+like b and we can even
+
+26
+00:01:23.704 --> 00:01:27.371
+give it longer names
+like my_variable is 56.
+
+27
+00:01:29.424 --> 00:01:33.281
+Notice that the variable
+names can contain letters
+
+28
+00:01:33.281 --> 00:01:36.800
+such as a, b, c, they
+can contain underscores
+
+29
+00:01:36.800 --> 00:01:38.646
+and they can also contain numbers,
+
+30
+00:01:38.646 --> 00:01:42.729
+like decimal numbers, for
+example my_10_variable.
+
+31
+00:01:46.418 --> 00:01:49.598
+Now I don't really like using numbers
+
+32
+00:01:49.598 --> 00:01:52.656
+in variable names because
+they're not very descriptive,
+
+33
+00:01:52.656 --> 00:01:55.356
+it's just an amount essentially
+
+34
+00:01:55.356 --> 00:01:57.225
+so I don't tend to use
+numbers in variable names,
+
+35
+00:01:57.225 --> 00:02:00.383
+but nevertheless you can do that.
+
+36
+00:02:00.383 --> 00:02:04.983
+You cannot, however, put
+the number at the start.
+
+37
+00:02:04.983 --> 00:02:07.637
+You cannot have a number at the
+start of your variable name.
+
+38
+00:02:07.637 --> 00:02:09.204
+That's not allowed in
+Python but you can have
+
+39
+00:02:09.204 --> 00:02:12.691
+it at the end, you can have
+it in the middle and so on.
+
+40
+00:02:12.691 --> 00:02:16.495
+And also you cannot do
+things like using ampersands
+
+41
+00:02:16.495 --> 00:02:21.024
+in variable names, or
+indeed any other symbol.
+
+42
+00:02:21.024 --> 00:02:23.283
+Those things are not allowed in Python.
+
+43
+00:02:23.283 --> 00:02:26.004
+But apart from that you
+can have any variable name
+
+44
+00:02:26.004 --> 00:02:28.021
+you want, it can be as long as you want
+
+45
+00:02:28.021 --> 00:02:29.912
+or as short as you want obviously,
+
+46
+00:02:29.912 --> 00:02:34.295
+and it has to be at
+least one character long.
+
+47
+00:02:34.295 --> 00:02:38.123
+Now these four variables here are numbers
+
+48
+00:02:38.123 --> 00:02:41.308
+but we can also use things like strings.
+
+49
+00:02:41.308 --> 00:02:42.857
+So I'm going to create another variable
+
+50
+00:02:42.857 --> 00:02:44.887
+called string_variable and I'm going
+
+51
+00:02:44.887 --> 00:02:47.976
+to make it equal to hello in this case.
+
+52
+00:02:47.976 --> 00:02:50.143
+Notice that the word hello
+
+53
+00:02:51.309 --> 00:02:53.536
+is just a set of
+characters, it's just a set
+
+54
+00:02:53.536 --> 00:02:57.119
+of letters, in this
+case h, e, l, l, and o.
+
+55
+00:02:58.658 --> 00:03:01.023
+Python does not know that this is a word.
+
+56
+00:03:01.023 --> 00:03:03.730
+It only knows that this is five characters
+
+57
+00:03:03.730 --> 00:03:07.360
+and it knows that the first
+character is an h and so on.
+
+58
+00:03:07.360 --> 00:03:08.801
+So it's important to remember that Python
+
+59
+00:03:08.801 --> 00:03:10.471
+is not intelligent, it does not know
+
+60
+00:03:10.471 --> 00:03:14.221
+whether things are words,
+phrases, and so on.
+
+61
+00:03:15.500 --> 00:03:18.414
+As well as strings with double quotes
+
+62
+00:03:18.414 --> 00:03:21.331
+we can also do single quote strings
+
+63
+00:03:23.164 --> 00:03:24.187
+like so.
+
+64
+00:03:24.187 --> 00:03:26.368
+So these two are obviously different
+
+65
+00:03:26.368 --> 00:03:28.456
+because one is hello and the other one
+
+66
+00:03:28.456 --> 00:03:30.830
+is strings can have single quotes
+
+67
+00:03:30.830 --> 00:03:32.708
+but there is no difference between
+
+68
+00:03:32.708 --> 00:03:36.577
+using double quotes and
+using single quotes.
+
+69
+00:03:36.577 --> 00:03:38.882
+So you can use them indistinctively
+
+70
+00:03:38.882 --> 00:03:40.732
+although I'd suggest that you stick
+
+71
+00:03:40.732 --> 00:03:43.074
+to one in particular that you like more.
+
+72
+00:03:43.074 --> 00:03:44.456
+If you prefer single quotes then use
+
+73
+00:03:44.456 --> 00:03:46.726
+single quotes throughout
+your entire programme.
+
+74
+00:03:46.726 --> 00:03:48.126
+If you prefer double quotes use
+
+75
+00:03:48.126 --> 00:03:51.655
+double quotes throughout
+your entire programme.
+
+76
+00:03:51.655 --> 00:03:54.394
+Finally as an introduction
+to the next video
+
+77
+00:03:54.394 --> 00:03:57.509
+we can also do things like
+print these things out.
+
+78
+00:03:57.509 --> 00:04:01.408
+So, we can print(my_variable)
+
+79
+00:04:01.408 --> 00:04:04.407
+and what this'll do is it will just output
+
+80
+00:04:04.407 --> 00:04:07.830
+the value of my_variable to the console.
+
+81
+00:04:07.830 --> 00:04:10.634
+So if we go to a console and navigate
+
+82
+00:04:10.634 --> 00:04:13.988
+to the folder where you've got your code,
+
+83
+00:04:13.988 --> 00:04:16.537
+your file, and then run it using
+
+84
+00:04:16.537 --> 00:04:19.269
+the command we already
+know, python, and then
+
+85
+00:04:19.269 --> 00:04:23.455
+variables_methods.py,
+that's the name of my file,
+
+86
+00:04:23.455 --> 00:04:25.923
+then we'll see that 56 comes out
+
+87
+00:04:25.923 --> 00:04:29.153
+because that's the value of my_variable.
+
+88
+00:04:29.153 --> 00:04:31.635
+Notice that declaring variables
+
+89
+00:04:31.635 --> 00:04:34.105
+and giving them a value does not cause
+
+90
+00:04:34.105 --> 00:04:36.455
+anything to be printed out to the console.
+
+91
+00:04:36.455 --> 00:04:40.749
+Only when we actually
+print do things come out.
+
+92
+00:04:40.749 --> 00:04:44.749
+Of course we can also
+print our string variables
+
+93
+00:04:46.389 --> 00:04:48.554
+and then they get printed out without
+
+94
+00:04:48.554 --> 00:04:52.721
+the quotation marks, just
+the content gets printed out.
+
+95
+00:04:54.870 --> 00:04:58.901
+Now the print method
+is, as I said, a method
+
+96
+00:04:58.901 --> 00:05:02.119
+and a method is just an
+action, it does something.
+
+97
+00:05:02.119 --> 00:05:05.617
+Whereas defining a variable
+creates a piece of data,
+
+98
+00:05:05.617 --> 00:05:09.505
+it creates this box and
+it gives it this value,
+
+99
+00:05:09.505 --> 00:05:13.906
+the print command is a
+method and it does something.
+
+100
+00:05:13.906 --> 00:05:17.011
+So what it does in this case is it accepts
+
+101
+00:05:17.011 --> 00:05:19.693
+a variable, it accepts a
+value, and then it prints
+
+102
+00:05:19.693 --> 00:05:21.039
+it out to the console, it puts it out
+
+103
+00:05:21.039 --> 00:05:23.180
+in the console for the user to see.
+
+104
+00:05:23.180 --> 00:05:24.799
+But methods are not limited to putting
+
+105
+00:05:24.799 --> 00:05:26.557
+things out in a console, they can do many
+
+106
+00:05:26.557 --> 00:05:29.132
+other things like adding
+things to a database,
+
+107
+00:05:29.132 --> 00:05:33.299
+displaying a website, and
+many many many more things.
+
+108
+00:05:34.430 --> 00:05:36.409
+As an aside you can also print
+
+109
+00:05:36.409 --> 00:05:39.242
+values directly, like hello world,
+
+110
+00:05:40.293 --> 00:05:43.460
+or indeed print(123).
+
+111
+00:05:44.744 --> 00:05:46.831
+So what the print method really
+
+112
+00:05:46.831 --> 00:05:49.061
+is looking at is not at whether
+
+113
+00:05:49.061 --> 00:05:51.830
+this is a variable or not but at
+
+114
+00:05:51.830 --> 00:05:54.735
+the value that that variable has.
+
+115
+00:05:54.735 --> 00:05:56.586
+So in this case when we print(my_variable)
+
+116
+00:05:56.586 --> 00:05:59.109
+really what we're doing is print(hello).
+
+117
+00:05:59.109 --> 00:06:00.770
+And when we print(string_variable),
+
+118
+00:06:00.770 --> 00:06:01.603
+sorry when we print(my_variable)
+
+119
+00:06:01.603 --> 00:06:03.859
+really what we're doing is print(56)
+
+120
+00:06:03.859 --> 00:06:05.581
+and when we print(string_variable)
+
+121
+00:06:05.581 --> 00:06:07.676
+what we're doing is we're printing hello.
+
+122
+00:06:07.676 --> 00:06:10.051
+So then we can also
+print a string directly,
+
+123
+00:06:10.051 --> 00:06:11.914
+it doesn't have to be in a variable,
+
+124
+00:06:11.914 --> 00:06:14.001
+and we can also print a number directly,
+
+125
+00:06:14.001 --> 00:06:17.567
+it doesn't have to be in a variable.
+
+126
+00:06:17.567 --> 00:06:19.610
+Okay, so that's it for variables.
+
+127
+00:06:19.610 --> 00:06:21.831
+In the next video, let's look at methods.
+
+128
+00:06:21.831 --> 00:06:23.288
+I'll see you there.
+

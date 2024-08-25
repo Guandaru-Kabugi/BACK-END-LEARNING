@@ -1,0 +1,514 @@
+﻿WEBVTT
+
+1
+00:00:00.570 --> 00:00:01.403
+- [Instructor] We have here
+
+2
+00:00:01.403 --> 00:00:03.834
+the flow control coding exercise.
+
+3
+00:00:03.834 --> 00:00:06.090
+So hopefully you were
+successful in completing this
+
+4
+00:00:06.090 --> 00:00:08.142
+and it has two steps.
+
+5
+00:00:08.142 --> 00:00:11.067
+First one, we must modify
+the method even_numbers()
+
+6
+00:00:11.067 --> 00:00:12.490
+which is defined here
+
+7
+00:00:12.490 --> 00:00:15.842
+so that it only returns
+a list of even numbers.
+
+8
+00:00:15.842 --> 00:00:17.883
+Two, four, six, et cetera.
+
+9
+00:00:17.883 --> 00:00:19.466
+So not odd numbers.
+
+10
+00:00:20.611 --> 00:00:24.421
+The second step is to
+modify the method user_menu
+
+11
+00:00:24.421 --> 00:00:25.718
+that has an argument choice
+
+12
+00:00:25.718 --> 00:00:29.518
+so that if the choice = "q" as a string
+
+13
+00:00:29.518 --> 00:00:31.385
+it returns Quit.
+
+14
+00:00:31.385 --> 00:00:33.387
+And make sure that if the choice is A,
+
+15
+00:00:33.387 --> 00:00:35.967
+it still returns Add.
+
+16
+00:00:35.967 --> 00:00:39.116
+Okay so let's start with
+the first instruction.
+
+17
+00:00:39.116 --> 00:00:40.753
+Modify the method even_numbers()
+
+18
+00:00:40.753 --> 00:00:43.884
+so that it only returns
+a list of even numbers.
+
+19
+00:00:43.884 --> 00:00:47.521
+We have a list of numbers
+here called numbers
+
+20
+00:00:47.521 --> 00:00:51.513
+and what this method here
+does, or this function,
+
+21
+00:00:51.513 --> 00:00:54.897
+is it creates a new list called evens
+
+22
+00:00:54.897 --> 00:00:57.469
+and that is an empty list to begin with
+
+23
+00:00:57.469 --> 00:00:59.176
+and then it iterates over,
+
+24
+00:00:59.176 --> 00:01:03.530
+it goes over each of
+the numbers in this list
+
+25
+00:01:03.530 --> 00:01:06.531
+and what it does is it appends the number
+
+26
+00:01:06.531 --> 00:01:08.176
+to the evens list.
+
+27
+00:01:08.176 --> 00:01:11.374
+So the first time it goes
+through it appends one to evens
+
+28
+00:01:11.374 --> 00:01:13.646
+then it appends two,
+then it appends three,
+
+29
+00:01:13.646 --> 00:01:15.424
+then four, then five, and so on
+
+30
+00:01:15.424 --> 00:01:17.527
+until naturally the evens list
+
+31
+00:01:17.527 --> 00:01:20.810
+is exactly equal to the numbers list.
+
+32
+00:01:20.810 --> 00:01:23.310
+And then it returns that list.
+
+33
+00:01:25.085 --> 00:01:26.275
+So this is not what we want
+
+34
+00:01:26.275 --> 00:01:27.421
+because then the evens list
+
+35
+00:01:27.421 --> 00:01:30.469
+is going to have both
+odd and even numbers.
+
+36
+00:01:30.469 --> 00:01:34.429
+We want to avoid the odd numbers, okay?
+
+37
+00:01:34.429 --> 00:01:35.579
+So how do we do that?
+
+38
+00:01:35.579 --> 00:01:37.206
+Well there's many ways we can do it.
+
+39
+00:01:37.206 --> 00:01:41.960
+We can say if the number
+is one of the odd numbers,
+
+40
+00:01:41.960 --> 00:01:43.086
+don't add it.
+
+41
+00:01:43.086 --> 00:01:46.357
+If the number is one of
+the even numbers, add it.
+
+42
+00:01:46.357 --> 00:01:50.440
+If number == 2 or number == 4
+
+43
+00:01:54.760 --> 00:01:58.927
+or number == 6 or number == 8,
+
+44
+00:02:01.650 --> 00:02:02.907
+add it.
+
+45
+00:02:02.907 --> 00:02:05.914
+And naturally when the
+number is one or three
+
+46
+00:02:05.914 --> 00:02:07.621
+or five or seven or nine,
+
+47
+00:02:07.621 --> 00:02:09.538
+this is not going to run.
+
+48
+00:02:09.538 --> 00:02:12.069
+So we're just not going
+to append it to the list
+
+49
+00:02:12.069 --> 00:02:14.976
+and then we're just gonna
+move on to the next number.
+
+50
+00:02:14.976 --> 00:02:17.507
+So this is a way that we could do this
+
+51
+00:02:17.507 --> 00:02:18.541
+and it's not a very good way
+
+52
+00:02:18.541 --> 00:02:22.372
+because as soon as our numbers list grows
+
+53
+00:02:22.372 --> 00:02:25.378
+we're just gonna have to
+continue to add numbers
+
+54
+00:02:25.378 --> 00:02:26.681
+to this if statement.
+
+55
+00:02:26.681 --> 00:02:29.609
+So that's not the best way
+to go about it I think.
+
+56
+00:02:29.609 --> 00:02:32.359
+But nevertheless this would work.
+
+57
+00:02:33.514 --> 00:02:34.566
+The way I would go about it
+
+58
+00:02:34.566 --> 00:02:37.664
+is by using the modulus operator.
+
+59
+00:02:37.664 --> 00:02:41.170
+Modulus operator returns the result,
+
+60
+00:02:41.170 --> 00:02:43.018
+sorry the remainder of a division
+
+61
+00:02:43.018 --> 00:02:45.081
+between two numbers.
+
+62
+00:02:45.081 --> 00:02:49.248
+So number % 2 == 0 then
+we want to append it.
+
+63
+00:02:50.710 --> 00:02:54.127
+Let me go over this in a bit more detail.
+
+64
+00:02:55.668 --> 00:02:59.501
+If the number is one and
+you divide one by two
+
+65
+00:03:00.918 --> 00:03:05.847
+what do you get back, if
+you do one divided by two?
+
+66
+00:03:05.847 --> 00:03:09.180
+What you get back is zero remainder one.
+
+67
+00:03:10.126 --> 00:03:11.334
+One divided by two is zero
+
+68
+00:03:11.334 --> 00:03:13.428
+because you cannot fit two into one
+
+69
+00:03:13.428 --> 00:03:16.951
+but you do have one left
+over which is that one there.
+
+70
+00:03:16.951 --> 00:03:19.044
+Similarly if you do three divided by two
+
+71
+00:03:19.044 --> 00:03:20.864
+you get one remainder one
+
+72
+00:03:20.864 --> 00:03:22.476
+because two fits into three once
+
+73
+00:03:22.476 --> 00:03:24.827
+and you have one left over.
+
+74
+00:03:24.827 --> 00:03:29.595
+Similarly with five you get
+two remainder one and so on.
+
+75
+00:03:29.595 --> 00:03:31.383
+However if you do four divided by two,
+
+76
+00:03:31.383 --> 00:03:33.938
+you get two remainder zero
+
+77
+00:03:33.938 --> 00:03:36.503
+because two fits into four twice.
+
+78
+00:03:36.503 --> 00:03:37.641
+If you do two divided by two
+
+79
+00:03:37.641 --> 00:03:39.754
+you get one remainder zero.
+
+80
+00:03:39.754 --> 00:03:42.312
+Six divided by two you get
+three remainder zero and so on.
+
+81
+00:03:42.312 --> 00:03:45.260
+So the common thing here is
+the remainder is always zero
+
+82
+00:03:45.260 --> 00:03:47.881
+when you divide an even number by two.
+
+83
+00:03:47.881 --> 00:03:49.974
+This is what the modulus
+operator gives us.
+
+84
+00:03:49.974 --> 00:03:51.579
+It gives us the remainder,
+
+85
+00:03:51.579 --> 00:03:53.764
+not the result of the division,
+
+86
+00:03:53.764 --> 00:03:56.583
+but how many are left over.
+
+87
+00:03:56.583 --> 00:03:58.308
+For any even number
+
+88
+00:03:58.308 --> 00:04:00.556
+if you do a modulus of two
+
+89
+00:04:00.556 --> 00:04:03.755
+you will always get back zero
+
+90
+00:04:03.755 --> 00:04:06.426
+because you don't have any remainder.
+
+91
+00:04:06.426 --> 00:04:07.757
+If these were an odd number
+
+92
+00:04:07.757 --> 00:04:10.439
+you'd always get back one.
+
+93
+00:04:10.439 --> 00:04:12.979
+And so this gives us exactly what we want.
+
+94
+00:04:12.979 --> 00:04:17.359
+If it is an even number
+append it to the list.
+
+95
+00:04:17.359 --> 00:04:20.853
+Next let's go on to the user menu.
+
+96
+00:04:20.853 --> 00:04:23.300
+We've got a choice argument
+
+97
+00:04:23.300 --> 00:04:26.662
+and we have if choice == "a": return "Add"
+
+98
+00:04:26.662 --> 00:04:29.030
+and what we have to is make
+sure that if the choice is Q
+
+99
+00:04:29.030 --> 00:04:31.100
+we return Quit.
+
+100
+00:04:31.100 --> 00:04:34.517
+So we just have to copy and paste really.
+
+101
+00:04:39.554 --> 00:04:43.249
+If choice == "q": return "Quit."
+
+102
+00:04:43.249 --> 00:04:46.238
+Now we have an if statement here
+
+103
+00:04:46.238 --> 00:04:49.521
+which is going to check if the choice is A
+
+104
+00:04:49.521 --> 00:04:51.088
+and then we have another if statement here
+
+105
+00:04:51.088 --> 00:04:53.050
+which is gonna check if the choice is Q.
+
+106
+00:04:53.050 --> 00:04:54.237
+So good practise
+
+107
+00:04:54.237 --> 00:04:57.073
+is for us to link these
+if statements together
+
+108
+00:04:57.073 --> 00:04:59.845
+into an if, elif because only one of these
+
+109
+00:04:59.845 --> 00:05:02.301
+is gonna happen at any
+given point in time.
+
+110
+00:05:02.301 --> 00:05:03.502
+It doesn't make sense
+
+111
+00:05:03.502 --> 00:05:06.582
+to have two separate if statements there.
+
+112
+00:05:06.582 --> 00:05:08.665
+Let's check the solution.
+
+113
+00:05:10.847 --> 00:05:12.006
+And there you have it.
+
+114
+00:05:12.006 --> 00:05:13.762
+That solution is now correct.
+
+115
+00:05:13.762 --> 00:05:16.070
+So hopefully you've learned a bit more
+
+116
+00:05:16.070 --> 00:05:17.623
+about the modulus operator
+
+117
+00:05:17.623 --> 00:05:18.996
+and how you'd go about this
+
+118
+00:05:18.996 --> 00:05:22.775
+and also about the if
+statement down there.
+
+119
+00:05:22.775 --> 00:05:23.851
+So that's it for this video.
+
+120
+00:05:23.851 --> 00:05:25.690
+I'll see you on the next one.
+

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %} Add Library {% endblock  %}
+
+{% block content %}
+<h1>Add Library</h1>
+<form action="{% url 'users:library' %}" method="post">
+    {% csrf_token %}
+   {{form.as_p}}
+   <button type="submit">Add Books</button>
+</form>
+<a href="{% url 'users:logout' %}">Logout</a>
+{% endblock  %}

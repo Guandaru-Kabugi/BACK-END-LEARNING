@@ -1,0 +1,462 @@
+﻿WEBVTT
+
+1
+00:00:00.307 --> 00:00:01.689
+- Hi and welcome back.
+
+2
+00:00:01.689 --> 00:00:05.336
+Here we've got the Classes
+and Objects Coding Exercise
+
+3
+00:00:05.336 --> 00:00:06.475
+and this is getting more and more
+
+4
+00:00:06.475 --> 00:00:08.588
+complicated as time goes by,
+
+5
+00:00:08.588 --> 00:00:10.991
+but hopefully we'll be able to do it.
+
+6
+00:00:10.991 --> 00:00:12.541
+Now, if you have not looked into the
+
+7
+00:00:12.541 --> 00:00:14.135
+exercise prior to this video,
+
+8
+00:00:14.135 --> 00:00:16.018
+I would recommend you
+go and check that out
+
+9
+00:00:16.018 --> 00:00:19.016
+and try do it and then we'll come back
+
+10
+00:00:19.016 --> 00:00:21.183
+and explain what happened.
+
+11
+00:00:22.711 --> 00:00:25.735
+This coding exercise has three steps.
+
+12
+00:00:25.735 --> 00:00:28.111
+First, it requires us to complete
+
+13
+00:00:28.111 --> 00:00:30.077
+an implementation of
+three methods of a class.
+
+14
+00:00:30.077 --> 00:00:32.329
+The first one is the "_init_" method.
+
+15
+00:00:32.329 --> 00:00:35.482
+We should take one argument name
+
+16
+00:00:35.482 --> 00:00:39.432
+and it should initialise
+self.name to be the argument
+
+17
+00:00:39.432 --> 00:00:42.339
+and self.items to be an empty list.
+
+18
+00:00:42.339 --> 00:00:43.172
+Let's start with that.
+
+19
+00:00:43.172 --> 00:00:44.292
+Let's not hold too much information
+
+20
+00:00:44.292 --> 00:00:46.220
+in our heads to begin with.
+
+21
+00:00:46.220 --> 00:00:50.533
+So, we're going to need
+name as the argument.
+
+22
+00:00:50.533 --> 00:00:52.475
+We've got the _inti_
+method which always has
+
+23
+00:00:52.475 --> 00:00:56.677
+self and then the name
+as the other argument.
+
+24
+00:00:56.677 --> 00:00:58.340
+Then we're going to initialise self.name
+
+25
+00:00:58.340 --> 00:00:59.970
+to be the argument,
+
+26
+00:00:59.970 --> 00:01:02.603
+and self.items To be an empty list.
+
+27
+00:01:02.603 --> 00:01:06.154
+Self.name is going to be the argument name
+
+28
+00:01:06.154 --> 00:01:09.235
+and self.items is going
+to be an empty list.
+
+29
+00:01:09.235 --> 00:01:12.654
+Whenever we create a store object,
+
+30
+00:01:12.654 --> 00:01:16.487
+it's going to have these
+two properties in it.
+
+31
+00:01:17.620 --> 00:01:19.750
+Let's move on to the second instruction.
+
+32
+00:01:19.750 --> 00:01:22.962
+The add-item method, which
+should append a dictionary
+
+33
+00:01:22.962 --> 00:01:26.832
+representing an items to
+the store's items property.
+
+34
+00:01:26.832 --> 00:01:31.047
+The dictionary should
+have keys, name and price.
+
+35
+00:01:31.047 --> 00:01:34.839
+Okay, so the comment down
+here's a bit more succinct,
+
+36
+00:01:34.839 --> 00:01:36.486
+it tells us exactly what to do.
+
+37
+00:01:36.486 --> 00:01:39.254
+Create a dictionary with
+the keys, name and price
+
+38
+00:01:39.254 --> 00:01:42.087
+and append that to the self.items.
+
+39
+00:01:43.686 --> 00:01:46.785
+Notice how the add-item
+method has two arguments
+
+40
+00:01:46.785 --> 00:01:48.892
+other than self, name and price.
+
+41
+00:01:48.892 --> 00:01:51.252
+So, we're going to create a dictionary
+
+42
+00:01:51.252 --> 00:01:53.728
+with keys, name and price and I think
+
+43
+00:01:53.728 --> 00:01:56.726
+it's reasonable to assume
+that this dictionary
+
+44
+00:01:56.726 --> 00:02:00.259
+is also going to use these two arguments.
+
+45
+00:02:00.259 --> 00:02:04.206
+So we're going to do
+an item is a dictionary
+
+46
+00:02:04.206 --> 00:02:08.373
+with keys, name and that's
+going to be something price,
+
+47
+00:02:10.325 --> 00:02:12.788
+and that's going to be something else.
+
+48
+00:02:12.788 --> 00:02:13.621
+And this is our dictionary
+
+49
+00:02:13.621 --> 00:02:15.926
+and has two keys, name and price
+
+50
+00:02:15.926 --> 00:02:20.695
+and the values are going
+to be the argument values.
+
+51
+00:02:20.695 --> 00:02:23.232
+Now, this is not explicit in the exercise
+
+52
+00:02:23.232 --> 00:02:27.212
+because I want you to
+start making assumptions
+
+53
+00:02:27.212 --> 00:02:29.227
+about the code you're seeing
+
+54
+00:02:29.227 --> 00:02:33.394
+and I think this is a
+reasonable assumption to make.
+
+55
+00:02:34.439 --> 00:02:36.667
+So, we've got name, and that's
+going to use the argument
+
+56
+00:02:36.667 --> 00:02:38.866
+and price and that's
+going to use the argument.
+
+57
+00:02:38.866 --> 00:02:43.033
+What this means is that when
+you call this add-item method,
+
+58
+00:02:44.314 --> 00:02:46.200
+you're going to pass in the name
+
+59
+00:02:46.200 --> 00:02:48.378
+and the price of the item you want to add,
+
+60
+00:02:48.378 --> 00:02:50.041
+and that's going to create the item
+
+61
+00:02:50.041 --> 00:02:51.676
+and add it to the store for you.
+
+62
+00:02:51.676 --> 00:02:54.209
+All you have to do, is not create an item
+
+63
+00:02:54.209 --> 00:02:55.376
+and give it to this method,
+
+64
+00:02:55.376 --> 00:02:56.547
+but just give it the values
+
+65
+00:02:56.547 --> 00:03:00.927
+that you want to add
+to the store as items.
+
+66
+00:03:00.927 --> 00:03:04.784
+Naturally, we have to
+make sure to add the item.
+
+67
+00:03:04.784 --> 00:03:08.451
+So, self.items.append(item)
+
+68
+00:03:10.284 --> 00:03:13.784
+That will append the item into self.items.
+
+69
+00:03:16.361 --> 00:03:18.008
+And that's it.
+
+70
+00:03:18.008 --> 00:03:18.936
+The stock_price method,
+
+71
+00:03:18.936 --> 00:03:20.268
+which is a third instruction here,
+
+72
+00:03:20.268 --> 00:03:23.032
+which should add up each item price inside
+
+73
+00:03:23.032 --> 00:03:27.679
+self.items to come up with
+a total and return that.
+
+74
+00:03:27.679 --> 00:03:31.846
+Okay, so let's add up all
+of the prices in self.items.
+
+75
+00:03:33.093 --> 00:03:34.836
+In a previous exercise, we looked at
+
+76
+00:03:34.836 --> 00:03:36.591
+how to do this in one way,
+
+77
+00:03:36.591 --> 00:03:40.167
+which was to create a total = 0 variable
+
+78
+00:03:40.167 --> 00:03:43.834
+and then iterate over
+for item in self.items
+
+79
+00:03:45.321 --> 00:03:47.192
+iterate over all the items,
+
+80
+00:03:47.192 --> 00:03:51.359
+and say total += item(price)
+and then return total.
+
+81
+00:03:53.394 --> 00:03:55.895
+This would totally work.
+
+82
+00:03:55.895 --> 00:03:59.056
+We start with zero, we go over each item,
+
+83
+00:03:59.056 --> 00:04:01.279
+we add to the total the price of the item,
+
+84
+00:04:01.279 --> 00:04:03.490
+then we return the total.
+
+85
+00:04:03.490 --> 00:04:06.866
+However, now that we've
+looked at list comprehension,
+
+86
+00:04:06.866 --> 00:04:09.122
+there's a better way of doing it,
+
+87
+00:04:09.122 --> 00:04:13.122
+which is return sum(item.price)
+
+88
+00:04:14.949 --> 00:04:16.866
+for item in self.items.
+
+89
+00:04:18.220 --> 00:04:20.655
+This is substantially more concise
+
+90
+00:04:20.655 --> 00:04:23.545
+and as soon as you get
+more to grips with Python,
+
+91
+00:04:23.545 --> 00:04:24.655
+if you haven't already,
+
+92
+00:04:24.655 --> 00:04:26.942
+I think this is actually more readable,
+
+93
+00:04:26.942 --> 00:04:28.269
+because you can very quickly see that
+
+94
+00:04:28.269 --> 00:04:29.851
+you're getting all the item prices,
+
+95
+00:04:29.851 --> 00:04:32.882
+and you're adding them all up.
+
+96
+00:04:32.882 --> 00:04:35.098
+Once again, to recap
+what's happening here is
+
+97
+00:04:35.098 --> 00:04:37.681
+we're iterating over the items,
+
+98
+00:04:38.866 --> 00:04:40.594
+but we're only putting the item price
+
+99
+00:04:40.594 --> 00:04:42.921
+into our new list, which we're creating
+
+100
+00:04:42.921 --> 00:04:44.921
+with list comprehension.
+
+101
+00:04:45.870 --> 00:04:47.754
+When we have a list of item prices,
+
+102
+00:04:47.754 --> 00:04:51.358
+we're summing them all up
+and we're returning that.
+
+103
+00:04:51.358 --> 00:04:53.775
+So, let's check the solution.
+
+104
+00:04:56.663 --> 00:04:59.131
+And there we have it,
+the solution is correct.
+
+105
+00:04:59.131 --> 00:05:02.363
+So, we've learned a bit more
+about how these objects work,
+
+106
+00:05:02.363 --> 00:05:04.623
+and I'll see you in the very next video.
+

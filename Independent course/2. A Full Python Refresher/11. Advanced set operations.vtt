@@ -1,0 +1,530 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.954
+- [Instructor] Hi and welcome back.
+
+2
+00:00:01.954 --> 00:00:04.888
+In this video we're looking at
+some advanced set operations
+
+3
+00:00:04.888 --> 00:00:06.212
+and they're not gonna take very long.
+
+4
+00:00:06.212 --> 00:00:07.268
+There are just a couple of them
+
+5
+00:00:07.268 --> 00:00:10.185
+that I think you should know about.
+
+6
+00:00:13.525 --> 00:00:16.513
+Let's create a set that
+I'm gonna call set_one
+
+7
+00:00:16.513 --> 00:00:19.099
+and this is gonna be one,
+two, three, four, five
+
+8
+00:00:19.099 --> 00:00:20.249
+and then a set_two
+
+9
+00:00:20.249 --> 00:00:24.416
+that's gonna be one, three,
+five, seven, nine, and 11.
+
+10
+00:00:26.123 --> 00:00:30.290
+A set is a collection of
+unique and unordered elements.
+
+11
+00:00:31.454 --> 00:00:34.492
+Therefore what really matters
+
+12
+00:00:34.492 --> 00:00:37.242
+is which elements are in the set.
+
+13
+00:00:39.724 --> 00:00:41.889
+It doesn't matter if the
+one is at the beginning
+
+14
+00:00:41.889 --> 00:00:42.954
+because this is unordered
+
+15
+00:00:42.954 --> 00:00:45.149
+so really we cannot get that.
+
+16
+00:00:45.149 --> 00:00:48.233
+What matters is the one is there,
+
+17
+00:00:48.233 --> 00:00:50.319
+the one is there.
+
+18
+00:00:50.319 --> 00:00:54.486
+The two is in set_one but
+there is no two in set_two.
+
+19
+00:00:55.522 --> 00:00:56.549
+That's really what matters.
+
+20
+00:00:56.549 --> 00:00:59.780
+Which elements are in the set?
+
+21
+00:00:59.780 --> 00:01:03.864
+For example, you may have
+a set of lottery numbers
+
+22
+00:01:03.864 --> 00:01:05.550
+that you have played
+
+23
+00:01:05.550 --> 00:01:09.236
+and you may have a set of
+the winning lottery numbers
+
+24
+00:01:09.236 --> 00:01:13.319
+and you may wanna see
+which numbers are in which.
+
+25
+00:01:14.310 --> 00:01:18.310
+So let's imagine set_one
+is your_lottery_numbers
+
+26
+00:01:19.824 --> 00:01:22.699
+and set_two is the winning_numbers
+
+27
+00:01:22.699 --> 00:01:25.048
+so you've obviously earned
+quite a lot of money
+
+28
+00:01:25.048 --> 00:01:26.589
+because there are quite
+a few numbers there
+
+29
+00:01:26.589 --> 00:01:29.181
+that are the same three numbers.
+
+30
+00:01:29.181 --> 00:01:32.931
+So how would we check
+if these numbers match?
+
+31
+00:01:34.440 --> 00:01:35.723
+Well we can
+
+32
+00:01:35.723 --> 00:01:39.890
+print(your_lottery_numbers.intersection(winning_numbers)).
+
+33
+00:01:44.140 --> 00:01:45.728
+This should be numbers.
+
+34
+00:01:45.728 --> 00:01:47.739
+I'm gonna comment out this
+other print statement there
+
+35
+00:01:47.739 --> 00:01:50.970
+because we don't need it just now.
+
+36
+00:01:50.970 --> 00:01:52.972
+So we're printing something
+a bit larger here.
+
+37
+00:01:52.972 --> 00:01:56.579
+Your_lottery_numbers is this first set
+
+38
+00:01:56.579 --> 00:01:59.329
+and we're gonna say .intersection
+
+39
+00:02:00.522 --> 00:02:04.280
+and that's another method
+that is gonna take in
+
+40
+00:02:04.280 --> 00:02:07.113
+the other set inside the brackets.
+
+41
+00:02:09.175 --> 00:02:11.471
+So if you've ever done maths
+
+42
+00:02:11.471 --> 00:02:14.091
+you'll know what an intersection is
+
+43
+00:02:14.091 --> 00:02:18.105
+but if not let's just
+look at what comes out
+
+44
+00:02:18.105 --> 00:02:20.272
+and we can run this again.
+
+45
+00:02:22.697 --> 00:02:24.871
+I'm actually gonna clear it first
+
+46
+00:02:24.871 --> 00:02:25.937
+and run it again.
+
+47
+00:02:25.937 --> 00:02:27.481
+What do you think is gonna come out
+
+48
+00:02:27.481 --> 00:02:30.814
+with the intersection of these two sets?
+
+49
+00:02:33.644 --> 00:02:35.106
+We get another set.
+
+50
+00:02:35.106 --> 00:02:38.400
+So this evidently produces a set
+
+51
+00:02:38.400 --> 00:02:39.578
+and that's the output
+
+52
+00:02:39.578 --> 00:02:42.350
+and the set contains one, three, and five
+
+53
+00:02:42.350 --> 00:02:46.517
+which as we know are the numbers
+that are in the first set
+
+54
+00:02:47.795 --> 00:02:50.782
+and also in the second set.
+
+55
+00:02:50.782 --> 00:02:55.577
+So this calculates the
+numbers that are in both sets.
+
+56
+00:02:55.577 --> 00:02:56.410
+Okay?
+
+57
+00:02:58.819 --> 00:02:59.835
+We can also do
+
+58
+00:02:59.835 --> 00:03:04.002
+print(your_lottery_numbers.union(winning_numbers)).
+
+59
+00:03:08.163 --> 00:03:11.413
+What do you think the union will print?
+
+60
+00:03:12.942 --> 00:03:15.528
+If you've done maths,
+this is an easy question
+
+61
+00:03:15.528 --> 00:03:18.588
+but if not, I'll give you a wee hint.
+
+62
+00:03:18.588 --> 00:03:22.671
+Union is gonna essentially
+add the sets together.
+
+63
+00:03:25.862 --> 00:03:28.779
+So our first set has five elements.
+
+64
+00:03:30.096 --> 00:03:32.261
+Our second set has seven elements.
+
+65
+00:03:32.261 --> 00:03:33.611
+A quick question for you.
+
+66
+00:03:33.611 --> 00:03:36.691
+Would you expect the set
+that gets printed out
+
+67
+00:03:36.691 --> 00:03:39.774
+to have five plus seven, 12 elements?
+
+68
+00:03:40.937 --> 00:03:41.770
+Would you expect the set
+
+69
+00:03:41.770 --> 00:03:45.270
+that gets printed out to have 12 elements?
+
+70
+00:03:47.230 --> 00:03:49.729
+Hopefully you said no
+
+71
+00:03:49.729 --> 00:03:52.533
+because this set as you can
+see only has nine elements.
+
+72
+00:03:52.533 --> 00:03:53.437
+Nine? 10?
+
+73
+00:03:53.437 --> 00:03:57.099
+Six, eight, eight elements, that's right.
+
+74
+00:03:57.099 --> 00:03:59.988
+Evidently I can't see very well
+
+75
+00:03:59.988 --> 00:04:01.492
+or rather count.
+
+76
+00:04:01.492 --> 00:04:05.659
+So the union is the one,
+two, three, four, and five,
+
+77
+00:04:07.730 --> 00:04:10.473
+that's the first set here,
+
+78
+00:04:10.473 --> 00:04:14.982
+and we are uniting that
+set with this other set.
+
+79
+00:04:14.982 --> 00:04:17.177
+So we do one, two, three, four, five
+
+80
+00:04:17.177 --> 00:04:20.213
+and we add the one to it
+but one's already there
+
+81
+00:04:20.213 --> 00:04:22.419
+so we discard that.
+
+82
+00:04:22.419 --> 00:04:24.683
+Then we add three but
+three's already there
+
+83
+00:04:24.683 --> 00:04:25.780
+so we discard that.
+
+84
+00:04:25.780 --> 00:04:27.600
+Then we add five but five's already there
+
+85
+00:04:27.600 --> 00:04:28.950
+so we discard that.
+
+86
+00:04:28.950 --> 00:04:30.696
+And then we add seven, nine, and 11
+
+87
+00:04:30.696 --> 00:04:33.581
+so we end up with eight elements.
+
+88
+00:04:33.581 --> 00:04:36.823
+One, two, three, four,
+five, seven, nine, and 11.
+
+89
+00:04:36.823 --> 00:04:39.170
+Remember there are no duplicates.
+
+90
+00:04:39.170 --> 00:04:41.132
+In sets every element has to be unique
+
+91
+00:04:41.132 --> 00:04:45.132
+so that's why one, three,
+and five never appear.
+
+92
+00:04:47.642 --> 00:04:49.247
+Finally we can also do
+
+93
+00:04:49.247 --> 00:04:53.414
+print((1, 2, 3, 4).difference((1, 2)))
+
+94
+00:04:59.464 --> 00:05:02.384
+and that should be like that.
+
+95
+00:05:02.384 --> 00:05:03.501
+It doesn't matter in Python.
+
+96
+00:05:03.501 --> 00:05:06.832
+You can have them like this if you prefer
+
+97
+00:05:06.832 --> 00:05:10.418
+but I like my code to
+look a specific way sadly
+
+98
+00:05:10.418 --> 00:05:11.668
+so there we go.
+
+99
+00:05:13.315 --> 00:05:16.647
+Okay, what do you think
+this we're gonna print out?
+
+100
+00:05:16.647 --> 00:05:19.633
+One, two, three, four, difference.
+
+101
+00:05:19.633 --> 00:05:23.466
+What is the difference
+between these two sets?
+
+102
+00:05:26.733 --> 00:05:29.751
+The difference between the
+two sets is three and four.
+
+103
+00:05:29.751 --> 00:05:31.580
+That's the numbers that are different
+
+104
+00:05:31.580 --> 00:05:34.580
+and then we get three and four back.
+
+105
+00:05:35.820 --> 00:05:38.621
+So these three set operations
+
+106
+00:05:38.621 --> 00:05:41.204
+are really useful in some cases
+
+107
+00:05:42.278 --> 00:05:46.429
+and just not very useful at
+all the majority of the time.
+
+108
+00:05:46.429 --> 00:05:49.499
+However if you know about these
+
+109
+00:05:49.499 --> 00:05:50.974
+there will be a moment in time
+
+110
+00:05:50.974 --> 00:05:54.172
+where you will realise that
+this is the perfect solution
+
+111
+00:05:54.172 --> 00:05:56.561
+for something you wanna do
+
+112
+00:05:56.561 --> 00:05:58.796
+and then you'll know that this exists.
+
+113
+00:05:58.796 --> 00:06:00.592
+And most of the time you
+won't use them at all
+
+114
+00:06:00.592 --> 00:06:03.213
+but nevertheless they are there
+
+115
+00:06:03.213 --> 00:06:06.718
+and if for example you wanna
+calculate lottery numbers,
+
+116
+00:06:06.718 --> 00:06:08.162
+maybe you will,
+
+117
+00:06:08.162 --> 00:06:11.657
+then this is perfect,
+the perfect tool really.
+
+118
+00:06:11.657 --> 00:06:15.354
+If you ever wanna deal with
+unique and unordered things
+
+119
+00:06:15.354 --> 00:06:18.104
+then this is also a perfect tool.
+
+120
+00:06:19.012 --> 00:06:20.361
+So that's it for this video.
+
+121
+00:06:20.361 --> 00:06:22.068
+Hope you learned something here
+
+122
+00:06:22.068 --> 00:06:24.190
+and I'll see you in the very next one.
+

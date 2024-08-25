@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Delete Book {% endblock  %}
+
+{% block content %}
+{% if user.is_authenticated %} You are logged in as {{ user }}
+<h1>Delete Book:{{ book.title }}</h1>
+<form action="{% url 'users:delete_book' book.id %}" method="post">
+    {% csrf_token %}
+   {{form.as_p}}
+   <button type="submit">Delete Book</button>
+</form>
+<a href="{% url 'users:logout' %}">Logout</a>
+<a href="{% url 'users:books' pk=1 %}">View Books</a>
+{% else %}
+<p>You need to be logged in to delete book. Please <a href="{% url 'users:login' %}">login</a>.</p>
+{% endif %}
+{% endblock  %}

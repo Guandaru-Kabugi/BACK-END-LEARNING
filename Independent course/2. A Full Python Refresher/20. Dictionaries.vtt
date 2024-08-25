@@ -1,0 +1,500 @@
+﻿WEBVTT
+
+1
+00:00:00.880 --> 00:00:02.041
+- [Instructor] Hi and welcome back.
+
+2
+00:00:02.041 --> 00:00:04.537
+In this video we're
+looking at dictionaries.
+
+3
+00:00:04.537 --> 00:00:06.778
+A dictionary is another type of data
+
+4
+00:00:06.778 --> 00:00:09.217
+just like the list, tuple, and set.
+
+5
+00:00:09.217 --> 00:00:10.717
+We're at the time.
+
+6
+00:00:11.562 --> 00:00:12.851
+Remember sets?
+
+7
+00:00:12.851 --> 00:00:16.101
+We had something that looked like this.
+
+8
+00:00:17.727 --> 00:00:21.894
+And a set is a collection of
+unordered, unique elements.
+
+9
+00:00:23.636 --> 00:00:26.636
+But these elements are on their own.
+
+10
+00:00:28.350 --> 00:00:30.707
+It would be nice, and
+indeed Python has this,
+
+11
+00:00:30.707 --> 00:00:32.646
+which is what a dictionary is,
+
+12
+00:00:32.646 --> 00:00:35.396
+if we could have keys and values.
+
+13
+00:00:37.475 --> 00:00:38.308
+For example, if we could do something like
+
+14
+00:00:38.308 --> 00:00:42.225
+my_dict = , for example.
+
+15
+00:00:47.924 --> 00:00:48.841
+And age 90.
+
+16
+00:00:54.925 --> 00:00:58.842
+These two things here
+are unique and unordered,
+
+17
+00:01:01.647 --> 00:01:04.730
+but they're not on their own anymore.
+
+18
+00:01:06.268 --> 00:01:09.020
+So now they are separated by a colon
+
+19
+00:01:09.020 --> 00:01:13.187
+and there is a relationship
+between the key and the value.
+
+20
+00:01:15.231 --> 00:01:18.981
+Now keys and values
+don't have to be strings.
+
+21
+00:01:20.804 --> 00:01:23.962
+Indeed, this value here
+is 90, which is a number,
+
+22
+00:01:23.962 --> 00:01:27.629
+but the key can also
+be a number if we want.
+
+23
+00:01:34.155 --> 00:01:37.488
+For example, this is another dictionary.
+
+24
+00:01:38.323 --> 00:01:41.586
+This might be useful, for
+example, for a sequence
+
+25
+00:01:41.586 --> 00:01:44.767
+where the first number
+is 15, the second is 75,
+
+26
+00:01:44.767 --> 00:01:46.184
+the third is 150.
+
+27
+00:01:47.228 --> 00:01:50.228
+Maybe interesting in some scenarios.
+
+28
+00:01:52.011 --> 00:01:53.056
+But this dictionary there,
+
+29
+00:01:53.056 --> 00:01:56.223
+now that's the really interesting one.
+
+30
+00:01:57.213 --> 00:01:59.380
+Because we can store data.
+
+31
+00:02:01.206 --> 00:02:03.761
+Now we've got name and age,
+
+32
+00:02:03.761 --> 00:02:06.373
+but we can also have other things.
+
+33
+00:02:06.373 --> 00:02:10.540
+Like grades, which should
+be a string in this case.
+
+34
+00:02:12.735 --> 00:02:16.818
+And then we can have a
+list of grades, and so on.
+
+35
+00:02:18.064 --> 00:02:20.897
+So a dictionary is a key value set
+
+36
+00:02:23.892 --> 00:02:25.553
+which allows us to store data
+
+37
+00:02:25.553 --> 00:02:27.259
+or to just store keys and values,
+
+38
+00:02:27.259 --> 00:02:30.022
+depending on what we need them for.
+
+39
+00:02:30.022 --> 00:02:33.549
+Let's look at a couple of examples.
+
+40
+00:02:33.549 --> 00:02:36.347
+For example, a lottery player.
+
+41
+00:02:36.347 --> 00:02:40.294
+And we can have name
+being something like Rolf
+
+42
+00:02:40.294 --> 00:02:43.544
+and numbers being a tuple in this case.
+
+43
+00:02:47.225 --> 00:02:49.048
+Something like that.
+
+44
+00:02:49.048 --> 00:02:50.314
+So this could be a dictionary
+
+45
+00:02:50.314 --> 00:02:54.481
+and this dictionary describes
+a specific lottery player.
+
+46
+00:02:55.712 --> 00:02:59.379
+Rolf is the name and
+he's got these numbers.
+
+47
+00:03:00.821 --> 00:03:04.988
+Another example could be,
+for example, universities.
+
+48
+00:03:07.879 --> 00:03:11.296
+And this could be a list of dictionaries.
+
+49
+00:03:20.999 --> 00:03:22.666
+Something like that.
+
+50
+00:03:28.301 --> 00:03:31.468
+And then US, these things should be...
+
+51
+00:03:32.841 --> 00:03:34.341
+Strings of course.
+
+52
+00:03:36.521 --> 00:03:38.611
+So here is an example where we've got
+
+53
+00:03:38.611 --> 00:03:41.339
+a list of dictionaries.
+
+54
+00:03:41.339 --> 00:03:43.255
+Here's an example where we've got
+
+55
+00:03:43.255 --> 00:03:45.623
+a list within a dictionary.
+
+56
+00:03:45.623 --> 00:03:47.887
+Here's an example we've got
+a tuple within a dictionary.
+
+57
+00:03:47.887 --> 00:03:51.463
+So as you can see, we're
+not constrained in any way.
+
+58
+00:03:51.463 --> 00:03:55.046
+We can put tuples as
+the value for any key.
+
+59
+00:03:56.607 --> 00:04:00.881
+We can put lists as the value for any key.
+
+60
+00:04:00.881 --> 00:04:02.350
+As far as Python's concerned,
+
+61
+00:04:02.350 --> 00:04:04.336
+we can put anything that we want.
+
+62
+00:04:04.336 --> 00:04:06.124
+And anything we want as the value.
+
+63
+00:04:06.124 --> 00:04:10.291
+So we can have something
+like another_dict_in_dict,
+
+64
+00:04:11.418 --> 00:04:14.065
+and this can be something like...
+
+65
+00:04:14.065 --> 00:04:18.232
+Key can be another dictionary,
+for example, which has...
+
+66
+00:04:22.854 --> 00:04:24.521
+Something like that.
+
+67
+00:04:26.209 --> 00:04:28.368
+So we can have dictionaries
+within dictionaries,
+
+68
+00:04:28.368 --> 00:04:30.528
+we can have lists in dictionaries,
+tuples in dictionaries.
+
+69
+00:04:30.528 --> 00:04:32.945
+We're not constrained at all.
+
+70
+00:04:34.440 --> 00:04:38.607
+And dictionaries is usually
+used to represent things.
+
+71
+00:04:39.781 --> 00:04:41.975
+For example, this dictionary's
+not a very good example,
+
+72
+00:04:41.975 --> 00:04:43.937
+but this one here, we've got a dictionary
+
+73
+00:04:43.937 --> 00:04:46.840
+representing a specific university,
+
+74
+00:04:46.840 --> 00:04:47.673
+and then we've got another
+
+75
+00:04:47.673 --> 00:04:49.731
+dictionary representing university.
+
+76
+00:04:49.731 --> 00:04:53.446
+Here we've got a dictionary
+representing a lottery player.
+
+77
+00:04:53.446 --> 00:04:56.139
+And these are all really useful.
+
+78
+00:04:56.139 --> 00:05:00.222
+For example, we could
+calculate the total numbers
+
+79
+00:05:01.689 --> 00:05:03.500
+of our lottery player by doing
+
+80
+00:05:03.500 --> 00:05:07.500
+sum(lottery_player['numbers']).
+
+81
+00:05:09.665 --> 00:05:13.334
+And this now is going to add together
+
+82
+00:05:13.334 --> 00:05:16.085
+the numbers of this
+lottery player variable,
+
+83
+00:05:16.085 --> 00:05:18.047
+which is a dictionary.
+
+84
+00:05:18.047 --> 00:05:20.869
+Do notice that there's a small difference.
+
+85
+00:05:20.869 --> 00:05:25.036
+With a set we couldn't
+access element number zero,
+
+86
+00:05:26.128 --> 00:05:30.295
+but with a dictionary, we
+can access a specific key.
+
+87
+00:05:32.049 --> 00:05:34.766
+And in this case, we're
+accessing the key numbers.
+
+88
+00:05:34.766 --> 00:05:39.259
+Then the same way with
+square brackets around it.
+
+89
+00:05:39.259 --> 00:05:42.324
+So lottery_player,
+square bracket, numbers,
+
+90
+00:05:42.324 --> 00:05:44.623
+and then closing the square bracket,
+
+91
+00:05:44.623 --> 00:05:47.932
+gives us the value assigned to that key.
+
+92
+00:05:47.932 --> 00:05:50.932
+So it would give us this tuple here.
+
+93
+00:05:51.995 --> 00:05:52.828
+Okay.
+
+94
+00:05:52.828 --> 00:05:55.328
+So hopefully that makes sense.
+
+95
+00:05:56.244 --> 00:06:00.411
+And we can also do other
+things with dictionaries.
+
+96
+00:06:01.504 --> 00:06:04.837
+Like for example lottery_player['name'].
+
+97
+00:06:06.531 --> 00:06:09.979
+We can change that to
+be John, for example.
+
+98
+00:06:09.979 --> 00:06:13.312
+Then we can change this dictionary here.
+
+99
+00:06:14.727 --> 00:06:18.810
+Obviously
+lottery_player['numbers'][0] = 50,
+
+100
+00:06:23.156 --> 00:06:26.529
+this we cannot do because
+lottery_player['numbers']
+
+101
+00:06:26.529 --> 00:06:30.650
+is a tuple and tuples are
+immutable, as we know.
+
+102
+00:06:30.650 --> 00:06:34.377
+So the same rules as always still apply
+
+103
+00:06:34.377 --> 00:06:36.963
+but now we've got another
+tool in our tool set
+
+104
+00:06:36.963 --> 00:06:38.542
+which is the dictionary,
+
+105
+00:06:38.542 --> 00:06:42.209
+which allows us to have
+key and value pairs.
+
+106
+00:06:44.080 --> 00:06:46.866
+In the next video we're going to introduce
+
+107
+00:06:46.866 --> 00:06:49.838
+some concept that is
+then going to translate
+
+108
+00:06:49.838 --> 00:06:52.033
+into object-oriented programming.
+
+109
+00:06:52.033 --> 00:06:53.101
+But wait until the next video.
+
+110
+00:06:53.101 --> 00:06:56.328
+Then we're gonna cover this small concept,
+
+111
+00:06:56.328 --> 00:06:57.594
+and then in a following one,
+
+112
+00:06:57.594 --> 00:06:59.556
+we'll go into object-oriented programming.
+
+113
+00:06:59.556 --> 00:07:02.098
+I'm very excited to continue
+this course with you
+
+114
+00:07:02.098 --> 00:07:04.041
+so I'll see you in the very next video.
+

@@ -1,0 +1,689 @@
+﻿WEBVTT
+
+1
+00:00:00.775 --> 00:00:02.700
+- [Instructor] Hi and welcome
+back to the programme.
+
+2
+00:00:02.700 --> 00:00:03.533
+In this video, we're going to look
+
+3
+00:00:03.533 --> 00:00:05.783
+at more complex decorators.
+
+4
+00:00:06.824 --> 00:00:08.432
+The more complex decorator
+
+5
+00:00:08.432 --> 00:00:12.833
+is a decorator that can
+accept arguments itself.
+
+6
+00:00:12.833 --> 00:00:17.000
+For example, something like
+decorator_with_arguments(56).
+
+7
+00:00:24.992 --> 00:00:25.825
+Something like that.
+
+8
+00:00:25.825 --> 00:00:28.908
+So here, the decorator is now getting
+
+9
+00:00:29.967 --> 00:00:32.217
+a set of arguments as well.
+
+10
+00:00:36.967 --> 00:00:39.050
+And then my_function_too.
+
+11
+00:00:41.300 --> 00:00:43.550
+I'm gonna comment this one.
+
+12
+00:00:44.541 --> 00:00:46.592
+So now we need to create a decorator
+
+13
+00:00:46.592 --> 00:00:48.659
+that will accept arguments,
+
+14
+00:00:48.659 --> 00:00:52.826
+so this is naturally gonna
+be a bit of a longer one.
+
+15
+00:00:54.832 --> 00:00:57.617
+So I'm gonna create the
+decorator with argument
+
+16
+00:00:57.617 --> 00:01:00.232
+and this decorator is gonna
+take in a single argument.
+
+17
+00:01:00.232 --> 00:01:02.315
+In this case, the number.
+
+18
+00:01:04.466 --> 00:01:07.725
+This number is gonna be the 56.
+
+19
+00:01:07.725 --> 00:01:10.892
+What goes inside here is my_decorator,
+
+20
+00:01:13.133 --> 00:01:15.058
+just as we had up here,
+
+21
+00:01:15.058 --> 00:01:18.475
+and this decorator takes in the function.
+
+22
+00:01:19.958 --> 00:01:24.041
+Then we use functools to
+wrap around the function
+
+23
+00:01:25.457 --> 00:01:27.540
+with this other function.
+
+24
+00:01:31.366 --> 00:01:35.366
+And then we are gonna
+print, "In the decorator."
+
+25
+00:01:37.008 --> 00:01:40.175
+And then we're gonna run the function.
+
+26
+00:01:41.142 --> 00:01:44.534
+And then we're gonna essentially print,
+
+27
+00:01:44.534 --> 00:01:46.367
+"After the decorator."
+
+28
+00:01:47.283 --> 00:01:49.967
+Then we're gonna return the
+function that runs function.
+
+29
+00:01:49.967 --> 00:01:54.050
+And finally, we also have
+to return my_decorator.
+
+30
+00:01:56.274 --> 00:01:59.108
+So we've gone a level deeper
+
+31
+00:01:59.108 --> 00:02:02.574
+with this decorator with argument
+
+32
+00:02:02.574 --> 00:02:04.741
+and that is very confusing
+
+33
+00:02:05.699 --> 00:02:09.175
+because now we've got three levels
+
+34
+00:02:09.175 --> 00:02:12.900
+of functions nested one inside another.
+
+35
+00:02:12.900 --> 00:02:14.508
+And this is something
+that we can do in Python.
+
+36
+00:02:14.508 --> 00:02:17.349
+We can define functions
+inside the functions,
+
+37
+00:02:17.349 --> 00:02:19.042
+as we are doing,
+
+38
+00:02:19.042 --> 00:02:20.832
+but it gets confusing very quickly.
+
+39
+00:02:20.832 --> 00:02:24.717
+But don't worry, it doesn't
+go deeper than three levels
+
+40
+00:02:24.717 --> 00:02:27.384
+when we are creating decorators.
+
+41
+00:02:30.792 --> 00:02:33.875
+So let's run it and see what happens.
+
+42
+00:02:38.592 --> 00:02:39.425
+And I made a typo.
+
+43
+00:02:39.425 --> 00:02:41.866
+This should be wraps, my apologies.
+
+44
+00:02:41.866 --> 00:02:46.525
+The error said, "Module
+functools has no attribute wrap,"
+
+45
+00:02:46.525 --> 00:02:48.658
+and it doesn't, it is wraps.
+
+46
+00:02:48.658 --> 00:02:49.491
+My bad.
+
+47
+00:02:49.491 --> 00:02:52.258
+So let's save that and run it again.
+
+48
+00:02:52.258 --> 00:02:54.508
+And now we get the function
+
+49
+00:02:55.641 --> 00:02:57.475
+just as we did above.
+
+50
+00:02:57.475 --> 00:02:59.682
+So the function prints hello
+
+51
+00:02:59.682 --> 00:03:01.799
+and we're also seeing, "In the decorator,"
+
+52
+00:03:01.799 --> 00:03:03.058
+and "After the decorator,"
+
+53
+00:03:03.058 --> 00:03:06.517
+so we're running this function here.
+
+54
+00:03:06.517 --> 00:03:08.575
+We have access to the number,
+
+55
+00:03:08.575 --> 00:03:11.208
+so potentially, we could do something
+
+56
+00:03:11.208 --> 00:03:12.958
+like if number is 56,
+
+57
+00:03:15.000 --> 00:03:18.417
+we can print, "Not running the function."
+
+58
+00:03:19.383 --> 00:03:22.383
+And if not, we can run the function.
+
+59
+00:03:24.200 --> 00:03:25.951
+So if the number is 56,
+
+60
+00:03:25.951 --> 00:03:28.832
+we're gonna print, "Not
+running the function,"
+
+61
+00:03:28.832 --> 00:03:33.191
+and if the number isn't 56, if
+the number is something else,
+
+62
+00:03:33.191 --> 00:03:36.066
+we are gonna run the function.
+
+63
+00:03:36.066 --> 00:03:38.042
+In this case, we're passing in 56,
+
+64
+00:03:38.042 --> 00:03:40.357
+so we should see nothing
+
+65
+00:03:40.357 --> 00:03:43.724
+or, "Not running the
+function," printed out.
+
+66
+00:03:43.724 --> 00:03:45.783
+And indeed we do.
+
+67
+00:03:45.783 --> 00:03:48.725
+So that's really, really useful
+
+68
+00:03:48.725 --> 00:03:51.850
+even though it may not seem like it.
+
+69
+00:03:51.850 --> 00:03:56.016
+For example, in a
+decorator with arguments,
+
+70
+00:03:56.016 --> 00:04:00.657
+we can pass something like
+the user's permissions.
+
+71
+00:04:00.657 --> 00:04:03.924
+If we're creating a website
+that has an admin page,
+
+72
+00:04:03.924 --> 00:04:06.192
+we can pass in the user's permissions
+
+73
+00:04:06.192 --> 00:04:09.141
+and then if the user doesn't match
+
+74
+00:04:09.141 --> 00:04:11.207
+the appropriate permissions,
+
+75
+00:04:11.207 --> 00:04:15.000
+we don't show them the
+admin page, for example.
+
+76
+00:04:15.000 --> 00:04:16.416
+In the decorator with arguments,
+
+77
+00:04:16.416 --> 00:04:18.749
+we can also do other things.
+
+78
+00:04:21.033 --> 00:04:24.866
+For example, inserting
+elements to a database.
+
+79
+00:04:26.658 --> 00:04:28.783
+We can only insert some elements
+
+80
+00:04:28.783 --> 00:04:33.133
+if they match some certain
+criteria, and things like that.
+
+81
+00:04:33.133 --> 00:04:34.307
+So there's a lot of things
+
+82
+00:04:34.307 --> 00:04:37.407
+that these decorators can be useful for
+
+83
+00:04:37.407 --> 00:04:41.642
+but it's also easy to
+misuse them, overuse them.
+
+84
+00:04:41.642 --> 00:04:45.083
+I, myself, do not use
+decorators very often
+
+85
+00:04:45.083 --> 00:04:47.174
+but there are some scenarios,
+
+86
+00:04:47.174 --> 00:04:51.341
+they're just so useful for
+very concisely doing things.
+
+87
+00:04:52.842 --> 00:04:55.699
+For example, in the case
+where we have an admin page
+
+88
+00:04:55.699 --> 00:04:59.592
+and we only wanna show some
+people some admin pages,
+
+89
+00:04:59.592 --> 00:05:01.592
+we just put this in front of the method
+
+90
+00:05:01.592 --> 00:05:03.367
+that shows the admin page
+
+91
+00:05:03.367 --> 00:05:06.866
+and that can potentially
+deal with determining
+
+92
+00:05:06.866 --> 00:05:09.791
+whether the user's an admin or not.
+
+93
+00:05:09.791 --> 00:05:11.082
+If you don't do that,
+
+94
+00:05:11.082 --> 00:05:14.517
+then you'll have a bunch
+of code in your method
+
+95
+00:05:14.517 --> 00:05:17.875
+to deal with whether the
+user's an admin or not.
+
+96
+00:05:17.875 --> 00:05:19.650
+And if you have many admin pages,
+
+97
+00:05:19.650 --> 00:05:23.000
+you could potentially end up
+with a lot of duplicated code
+
+98
+00:05:23.000 --> 00:05:26.667
+which you get rid of
+if you use a decorator.
+
+99
+00:05:28.733 --> 00:05:29.792
+And also something to remember
+
+100
+00:05:29.792 --> 00:05:32.307
+is that sometimes your function
+
+101
+00:05:32.307 --> 00:05:34.640
+may take in some parameters.
+
+102
+00:05:35.667 --> 00:05:39.475
+And if it does, then you have
+to be able to deal with them.
+
+103
+00:05:39.475 --> 00:05:42.507
+So your decorator should always,
+
+104
+00:05:42.507 --> 00:05:44.775
+and this function that runs func,
+
+105
+00:05:44.775 --> 00:05:48.299
+you should also have args and kwargs
+
+106
+00:05:48.299 --> 00:05:52.508
+and you should always pass args
+and kwargs to the function.
+
+107
+00:05:52.508 --> 00:05:54.615
+That way, when we call the function
+
+108
+00:05:54.615 --> 00:05:57.275
+using something like that,
+
+109
+00:05:57.275 --> 00:06:00.675
+we will also pass in the
+parameters to this function
+
+110
+00:06:00.675 --> 00:06:04.717
+and they will be passed
+to this function there.
+
+111
+00:06:04.717 --> 00:06:06.791
+So then when we run it,
+
+112
+00:06:06.791 --> 00:06:09.792
+well, we get, "Not running the function,"
+
+113
+00:06:09.792 --> 00:06:12.709
+but we can print x plus y there.
+
+114
+00:06:14.342 --> 00:06:16.258
+We will get 124 there
+
+115
+00:06:16.258 --> 00:06:20.107
+because they're being passed
+to the function that runs func
+
+116
+00:06:20.107 --> 00:06:23.417
+and then from that into the func itself
+
+117
+00:06:23.417 --> 00:06:25.575
+which is my_function_too.
+
+118
+00:06:25.575 --> 00:06:28.325
+So just to recap, my_function_too
+
+119
+00:06:29.346 --> 00:06:30.846
+is this func here.
+
+120
+00:06:31.808 --> 00:06:34.341
+The 57 is the number up here.
+
+121
+00:06:34.341 --> 00:06:37.058
+So we first create a
+method that is a decorator
+
+122
+00:06:37.058 --> 00:06:39.049
+that takes in a parameter,
+that's the number.
+
+123
+00:06:39.049 --> 00:06:41.617
+It can take many parameters as well.
+
+124
+00:06:41.617 --> 00:06:44.450
+Then we create the decorator.
+
+125
+00:06:44.450 --> 00:06:48.099
+This one contains the wraps function
+
+126
+00:06:48.099 --> 00:06:50.507
+which is gonna tell us and tell Python
+
+127
+00:06:50.507 --> 00:06:51.600
+that this function here
+
+128
+00:06:51.600 --> 00:06:55.733
+is going to be replacing
+this function down here.
+
+129
+00:06:55.733 --> 00:06:57.349
+That function accepts
+any number of arguments
+
+130
+00:06:57.349 --> 00:06:59.482
+and keyword argument because sometimes
+
+131
+00:06:59.482 --> 00:07:02.757
+we will be calling that
+function with those arguments
+
+132
+00:07:02.757 --> 00:07:05.291
+and then it should also
+execute the function
+
+133
+00:07:05.291 --> 00:07:07.067
+with those arguments.
+
+134
+00:07:07.067 --> 00:07:09.296
+Finally, we can do things before
+
+135
+00:07:09.296 --> 00:07:11.408
+or after the function, if we want,
+
+136
+00:07:11.408 --> 00:07:14.142
+or we can potentially entirely omit
+
+137
+00:07:14.142 --> 00:07:17.166
+running the function and not running.
+
+138
+00:07:17.166 --> 00:07:20.392
+At the end, we have to
+return this function
+
+139
+00:07:20.392 --> 00:07:22.641
+and then we also have
+to return the decorator
+
+140
+00:07:22.641 --> 00:07:24.724
+so that that get applied.
+
+141
+00:07:26.225 --> 00:07:29.750
+I would recommend keeping
+a hold of this template,
+
+142
+00:07:29.750 --> 00:07:32.174
+in fact, these two templates,
+
+143
+00:07:32.174 --> 00:07:35.174
+for decorators with and without parameters
+
+144
+00:07:35.174 --> 00:07:36.842
+because as soon as you need a decorator,
+
+145
+00:07:36.842 --> 00:07:39.758
+you will forget how to write them.
+
+146
+00:07:39.758 --> 00:07:41.550
+So it's good to have a
+hold of these templates
+
+147
+00:07:41.550 --> 00:07:43.742
+because the first few times, you'll forget
+
+148
+00:07:43.742 --> 00:07:47.492
+and then as you write some
+more, you will easily remember.
+
+149
+00:07:47.492 --> 00:07:49.108
+That's everything for this video,
+
+150
+00:07:49.108 --> 00:07:51.999
+and indeed, for the Python refresher.
+
+151
+00:07:51.999 --> 00:07:55.724
+So we have covered everything
+that I wanted to cover
+
+152
+00:07:55.724 --> 00:07:59.908
+and if you weren't before, I
+hope that you are now ready
+
+153
+00:07:59.908 --> 00:08:03.032
+to go into REST API development.
+
+154
+00:08:03.032 --> 00:08:06.407
+So I'm very excited to
+get into that with you
+
+155
+00:08:06.407 --> 00:08:08.833
+and if you ever have any
+questions, let me know
+
+156
+00:08:08.833 --> 00:08:11.375
+and I'm always available
+to guide you personally
+
+157
+00:08:11.375 --> 00:08:13.599
+and to answer questions.
+
+158
+00:08:13.599 --> 00:08:17.669
+Without further ado, I'll
+see you in the next section.
+

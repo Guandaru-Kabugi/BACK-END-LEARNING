@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} Delete Librarian {% endblock  %}
+
+{% block content %}
+{% if user.is_authenticated %} You are logged in as {{ user }}
+<h1>Delete Librarian:{{ UserProfile.user }}</h1>
+<form action="{% url 'users:delete_librarian' %}" method="post">
+    {% csrf_token %}
+   {{form.as_p}}
+   <button type="submit">Delete Librarian</button>
+</form>
+<a href="{% url 'users:logout' %}">Logout</a>
+{% else %}
+<p>You need to be logged in to delete librarian. Please <a href="{% url 'users:login' %}">login</a>.</p>
+{% endif %}
+{% endblock  %}

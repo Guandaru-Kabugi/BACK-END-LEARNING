@@ -1,0 +1,621 @@
+﻿WEBVTT
+
+1
+00:00:00.531 --> 00:00:01.667
+- [Instructor] Hi and welcome back.
+
+2
+00:00:01.667 --> 00:00:03.126
+We are here on the dictionaries
+
+3
+00:00:03.126 --> 00:00:05.591
+and students coding exercise,
+
+4
+00:00:05.591 --> 00:00:08.496
+and this is a slightly longer
+and more complex exercise,
+
+5
+00:00:08.496 --> 00:00:11.000
+because we are progressing
+through the course,
+
+6
+00:00:11.000 --> 00:00:14.454
+and we are getting deeper into Python.
+
+7
+00:00:14.454 --> 00:00:15.303
+So let's have a look.
+
+8
+00:00:15.303 --> 00:00:17.085
+It has three parts.
+
+9
+00:00:17.085 --> 00:00:20.452
+First one, create a dictionary
+variable called student.
+
+10
+00:00:20.452 --> 00:00:22.202
+It's partially defined here,
+
+11
+00:00:22.202 --> 00:00:23.869
+and we're gonna look into exactly
+
+12
+00:00:23.869 --> 00:00:26.340
+how we create this variable.
+
+13
+00:00:26.340 --> 00:00:29.237
+Then we're going to modify
+a variable called grades
+
+14
+00:00:29.237 --> 00:00:30.810
+down here so that it contains
+
+15
+00:00:30.810 --> 00:00:32.999
+the value of a dictionary's key.
+
+16
+00:00:32.999 --> 00:00:35.434
+We've got more information
+on the comments.
+
+17
+00:00:35.434 --> 00:00:37.104
+And finally, we're going
+to implement a function
+
+18
+00:00:37.104 --> 00:00:40.998
+calculating a total average
+grade for a class of students,
+
+19
+00:00:40.998 --> 00:00:42.894
+with again, good more
+information on the comments.
+
+20
+00:00:42.894 --> 00:00:44.810
+Let's go straight in.
+
+21
+00:00:44.810 --> 00:00:46.592
+For the first one, we're
+going to create a variable
+
+22
+00:00:46.592 --> 00:00:49.957
+called students that
+had a dictionary in it,
+
+23
+00:00:49.957 --> 00:00:53.097
+and the dictionary has
+to contain three keys,
+
+24
+00:00:53.097 --> 00:00:55.595
+name, school, and grades.
+
+25
+00:00:55.595 --> 00:00:57.193
+Okay, so let's do that first.
+
+26
+00:00:57.193 --> 00:00:58.097
+The dictionary as we know
+
+27
+00:00:58.097 --> 00:01:01.111
+is with opening and closing curly braces.
+
+28
+00:01:01.111 --> 00:01:04.525
+And then we're gonna
+have name is something,
+
+29
+00:01:04.525 --> 00:01:08.076
+school is something,
+and grades is something.
+
+30
+00:01:08.076 --> 00:01:08.930
+We don't know what yet.
+
+31
+00:01:08.930 --> 00:01:10.748
+Let's have a look.
+
+32
+00:01:10.748 --> 00:01:14.151
+The values for each must be Jose for name,
+
+33
+00:01:14.151 --> 00:01:16.367
+computing for school, and a topple
+
+34
+00:01:16.367 --> 00:01:20.274
+with the values 66, 77, and 88 for grades.
+
+35
+00:01:20.274 --> 00:01:21.187
+Let's do that.
+
+36
+00:01:21.187 --> 00:01:24.452
+The name has to be Jose, which is my name.
+
+37
+00:01:24.452 --> 00:01:27.341
+School has to be computing.
+
+38
+00:01:27.341 --> 00:01:31.379
+Definitely not that,
+computing, there we go.
+
+39
+00:01:31.379 --> 00:01:33.174
+Normally I can spell.
+
+40
+00:01:33.174 --> 00:01:35.145
+And that the grades have to have a topple
+
+41
+00:01:35.145 --> 00:01:37.685
+with the values 66, 77, and 88,
+
+42
+00:01:37.685 --> 00:01:41.189
+so we're gonna delete that
+string, quotation marks,
+
+43
+00:01:41.189 --> 00:01:45.861
+and we're gonna put the topple
+in here, 66, 77, and 88.
+
+44
+00:01:45.861 --> 00:01:47.352
+Notice that because this is a topple
+
+45
+00:01:47.352 --> 00:01:50.667
+with multiple values, we
+don't need a comma at the end.
+
+46
+00:01:50.667 --> 00:01:53.556
+In fact, we should not put it in there.
+
+47
+00:01:53.556 --> 00:01:56.306
+Okay, so now we have our student.
+
+48
+00:01:57.755 --> 00:02:01.922
+And we can move on to the
+next set of instructions.
+
+49
+00:02:02.787 --> 00:02:05.816
+Assume the argument, data,
+which is the argument
+
+50
+00:02:05.816 --> 00:02:08.670
+to this function here, is a dictionary.
+
+51
+00:02:08.670 --> 00:02:11.222
+Modify the grades variable so it accesses
+
+52
+00:02:11.222 --> 00:02:14.240
+the grades key of the data dictionary.
+
+53
+00:02:14.240 --> 00:02:16.863
+Okay, so the grades variable right now
+
+54
+00:02:16.863 --> 00:02:18.439
+doesn't equal anything,
+
+55
+00:02:18.439 --> 00:02:21.428
+and we have to make it
+equal to the grades key
+
+56
+00:02:21.428 --> 00:02:23.320
+of the data dictionary.
+
+57
+00:02:23.320 --> 00:02:27.062
+Well, we know how to access
+a key in a dictionary.
+
+58
+00:02:27.062 --> 00:02:30.242
+We just have to do data,
+which is our argument,
+
+59
+00:02:30.242 --> 00:02:32.159
+our dictionary, grades.
+
+60
+00:02:34.543 --> 00:02:35.376
+There we go.
+
+61
+00:02:35.376 --> 00:02:37.645
+Now, the grades variable is accessing
+
+62
+00:02:37.645 --> 00:02:39.813
+the grades key of the data dictionary.
+
+63
+00:02:39.813 --> 00:02:41.562
+There we go.
+
+64
+00:02:41.562 --> 00:02:45.497
+Some other students have
+done this, student['grades'],
+
+65
+00:02:45.497 --> 00:02:49.757
+and that is a totally
+reasonable thing to do,
+
+66
+00:02:49.757 --> 00:02:53.836
+except the student variable
+is a global variable
+
+67
+00:02:53.836 --> 00:02:58.695
+that is available for every
+method, every function.
+
+68
+00:02:58.695 --> 00:03:00.824
+So whenever we call this function here,
+
+69
+00:03:00.824 --> 00:03:04.001
+this average grade
+function, we're always going
+
+70
+00:03:04.001 --> 00:03:05.518
+to use this variable here
+
+71
+00:03:05.518 --> 00:03:08.670
+instead of the argument, which is data.
+
+72
+00:03:08.670 --> 00:03:11.667
+This means that if we call average grade
+
+73
+00:03:11.667 --> 00:03:14.812
+with this variable here as an argument,
+
+74
+00:03:14.812 --> 00:03:17.125
+then it will work fine.
+
+75
+00:03:17.125 --> 00:03:19.273
+But if we call it with
+a different argument,
+
+76
+00:03:19.273 --> 00:03:22.393
+then it will still use the
+student dictionary here,
+
+77
+00:03:22.393 --> 00:03:24.757
+and it will return incorrect data.
+
+78
+00:03:24.757 --> 00:03:28.126
+So make sure to use, as, oh sorry.
+
+79
+00:03:28.126 --> 00:03:31.148
+I'm pressed them to pressing
+save on every few seconds,
+
+80
+00:03:31.148 --> 00:03:35.261
+make sure to use that data argument there.
+
+81
+00:03:35.261 --> 00:03:37.425
+And finally, implement the function below,
+
+82
+00:03:37.425 --> 00:03:40.561
+which is average grade for all students.
+
+83
+00:03:40.561 --> 00:03:42.515
+Given a list of students,
+
+84
+00:03:42.515 --> 00:03:44.775
+which as we know are dictionaries,
+
+85
+00:03:44.775 --> 00:03:47.214
+calculate the average grade of the class.
+
+86
+00:03:47.214 --> 00:03:48.820
+So, given a list of students,
+
+87
+00:03:48.820 --> 00:03:50.268
+that's this student list here,
+
+88
+00:03:50.268 --> 00:03:52.174
+this is the list of our students,
+
+89
+00:03:52.174 --> 00:03:55.951
+we must add all the grades
+of all students together,
+
+90
+00:03:55.951 --> 00:03:58.201
+and you must also count
+how many grades there are
+
+91
+00:03:58.201 --> 00:04:00.534
+in total in the entire list.
+
+92
+00:04:01.664 --> 00:04:04.604
+Okay, so we have two
+variables, total and count.
+
+93
+00:04:04.604 --> 00:04:08.870
+Presumably, total must be
+the sum of all the grades,
+
+94
+00:04:08.870 --> 00:04:12.601
+and count must be the amount
+of grades that we have.
+
+95
+00:04:12.601 --> 00:04:14.788
+And from each student
+in this student list,
+
+96
+00:04:14.788 --> 00:04:17.333
+we have to add to these two variables
+
+97
+00:04:17.333 --> 00:04:19.803
+so that at the end, it returns
+
+98
+00:04:19.803 --> 00:04:21.247
+the total divided by the count,
+
+99
+00:04:21.247 --> 00:04:24.411
+which should give us the average.
+
+100
+00:04:24.411 --> 00:04:26.687
+So, how do we calculate the total?
+
+101
+00:04:26.687 --> 00:04:30.687
+Well, we can say total
+equals total plus the sum
+
+102
+00:04:31.950 --> 00:04:33.783
+of the student grades.
+
+103
+00:04:35.963 --> 00:04:38.705
+And then the sum is going
+to add up all the values
+
+104
+00:04:38.705 --> 00:04:40.473
+in a list or a topple,
+
+105
+00:04:40.473 --> 00:04:43.268
+and the student is, each of the students
+
+106
+00:04:43.268 --> 00:04:45.628
+in the student list, student grades
+
+107
+00:04:45.628 --> 00:04:47.039
+will give us that topple.
+
+108
+00:04:47.039 --> 00:04:49.787
+Sum will give us the total of that topple,
+
+109
+00:04:49.787 --> 00:04:51.751
+and it's going to modify
+the total variable
+
+110
+00:04:51.751 --> 00:04:52.584
+so that it is the existing number
+
+111
+00:04:52.584 --> 00:04:56.251
+of total plus the sum
+of this other student,
+
+112
+00:04:58.216 --> 00:05:01.241
+and the count is going
+to be count equals count
+
+113
+00:05:01.241 --> 00:05:04.408
+plus the length of the student grades.
+
+114
+00:05:05.302 --> 00:05:07.105
+And that is going to give us
+
+115
+00:05:07.105 --> 00:05:10.527
+the count of student
+grades for this student.
+
+116
+00:05:10.527 --> 00:05:12.761
+It's gonna add it to the existing count,
+
+117
+00:05:12.761 --> 00:05:14.579
+and it's gonna override the count variable
+
+118
+00:05:14.579 --> 00:05:16.722
+with that value.
+
+119
+00:05:16.722 --> 00:05:18.110
+And then at the end,
+we're gonna return total
+
+120
+00:05:18.110 --> 00:05:22.141
+divided by count, which is
+going to give us the average.
+
+121
+00:05:22.141 --> 00:05:25.468
+Because it's quite common
+to do total = total +
+
+122
+00:05:25.468 --> 00:05:28.996
+and count = count +, with any variable,
+
+123
+00:05:28.996 --> 00:05:30.721
+Python gives us a shortcut,
+
+124
+00:05:30.721 --> 00:05:33.721
+which is +=, +=.
+
+125
+00:05:34.824 --> 00:05:36.160
+So this means the same thing.
+
+126
+00:05:36.160 --> 00:05:39.032
+Total is gonna add to the total
+
+127
+00:05:39.032 --> 00:05:40.505
+the sum of the student grades,
+
+128
+00:05:40.505 --> 00:05:42.808
+and it's gonna add to the count
+
+129
+00:05:42.808 --> 00:05:46.056
+the length of the student grades.
+
+130
+00:05:46.056 --> 00:05:49.016
+Notice that if you do just count plus
+
+131
+00:05:49.016 --> 00:05:51.754
+the length of student
+grades, you're calculating
+
+132
+00:05:51.754 --> 00:05:54.429
+what you want, but you
+are not assigning it
+
+133
+00:05:54.429 --> 00:05:57.137
+back to the variable, so
+hence, this would not work.
+
+134
+00:05:57.137 --> 00:06:00.106
+You need the equal sign there.
+
+135
+00:06:00.106 --> 00:06:02.281
+Let's check the solution,
+and it should give us
+
+136
+00:06:02.281 --> 00:06:04.059
+that all is correct.
+
+137
+00:06:04.059 --> 00:06:05.523
+And indeed, there we go.
+
+138
+00:06:05.523 --> 00:06:07.069
+So now we've learned a bit more
+
+139
+00:06:07.069 --> 00:06:09.600
+about how this sort of works.
+
+140
+00:06:09.600 --> 00:06:11.658
+Hopefully you managed to do
+this on your own earlier,
+
+141
+00:06:11.658 --> 00:06:14.191
+but if not, hopefully
+this clears things up.
+
+142
+00:06:14.191 --> 00:06:16.183
+I'll see you on the next video.
+

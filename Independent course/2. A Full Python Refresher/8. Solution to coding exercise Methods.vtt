@@ -1,0 +1,333 @@
+﻿WEBVTT
+
+1
+00:00:00.183 --> 00:00:01.652
+- [Instructor] Hi and welcome back.
+
+2
+00:00:01.652 --> 00:00:03.668
+This is the second coding exercise.
+
+3
+00:00:03.668 --> 00:00:07.284
+Let's have a look at it
+and at how we'd solve it.
+
+4
+00:00:07.284 --> 00:00:11.106
+The instructions are to
+complete the method return_42,
+
+5
+00:00:11.106 --> 00:00:12.906
+which is down here,
+
+6
+00:00:12.906 --> 00:00:16.406
+by making it actually return the value 42.
+
+7
+00:00:17.431 --> 00:00:19.056
+And the second set of instructions
+
+8
+00:00:19.056 --> 00:00:22.949
+is to create a method, which
+must be called my_method,
+
+9
+00:00:22.949 --> 00:00:25.859
+and it takes two arguments
+and returns the results
+
+10
+00:00:25.859 --> 00:00:28.963
+of its two arguments multiplied together.
+
+11
+00:00:28.963 --> 00:00:32.463
+Okay, so let's start with return_42.
+
+12
+00:00:32.463 --> 00:00:34.040
+We've got the def keyword,
+
+13
+00:00:34.040 --> 00:00:36.984
+which is used to define a new method,
+
+14
+00:00:36.984 --> 00:00:38.741
+or a function in this case,
+
+15
+00:00:38.741 --> 00:00:40.094
+since it's not in a class.
+
+16
+00:00:40.094 --> 00:00:43.635
+We looked at that in a few videos.
+
+17
+00:00:43.635 --> 00:00:46.470
+And then we've got return_42.
+
+18
+00:00:46.470 --> 00:00:49.106
+That's the name of this function.
+
+19
+00:00:49.106 --> 00:00:51.487
+Open and close brackets,
+
+20
+00:00:51.487 --> 00:00:53.655
+which tells us that this is a function
+
+21
+00:00:53.655 --> 00:00:55.358
+and that it takes no arguments,
+
+22
+00:00:55.358 --> 00:00:59.226
+or else we'd have the arguments
+inside those brackets.
+
+23
+00:00:59.226 --> 00:01:02.993
+And then a colon, which
+tells us that what comes next
+
+24
+00:01:02.993 --> 00:01:05.410
+is the body of this function.
+
+25
+00:01:06.253 --> 00:01:08.851
+And what we've got here is the body.
+
+26
+00:01:08.851 --> 00:01:12.430
+And as you see it's got
+some spaces in front
+
+27
+00:01:12.430 --> 00:01:13.729
+and that's very important,
+
+28
+00:01:13.729 --> 00:01:16.484
+because Python works by
+looking at these spaces
+
+29
+00:01:16.484 --> 00:01:19.636
+and it realises that this
+function here has a body
+
+30
+00:01:19.636 --> 00:01:22.038
+and the body has to have
+some spaces in front of it.
+
+31
+00:01:22.038 --> 00:01:23.979
+And all the lines that are under the colon
+
+32
+00:01:23.979 --> 00:01:27.466
+and half-spaces are the
+body of the function.
+
+33
+00:01:27.466 --> 00:01:30.195
+So we're gonna complete this method here,
+
+34
+00:01:30.195 --> 00:01:31.715
+this function here,
+
+35
+00:01:31.715 --> 00:01:34.298
+by making it return 42.
+
+36
+00:01:34.298 --> 00:01:37.131
+So all we have to do is return 42.
+
+37
+00:01:38.679 --> 00:01:41.798
+And now whenever we call this function,
+
+38
+00:01:41.798 --> 00:01:46.018
+we are going to receive the value 42 back.
+
+39
+00:01:46.018 --> 00:01:47.297
+And that's what this function does
+
+40
+00:01:47.297 --> 00:01:49.497
+and that's what it should do.
+
+41
+00:01:49.497 --> 00:01:52.479
+Next we're gonna create
+another one called my_method
+
+42
+00:01:52.479 --> 00:01:54.820
+and that's gonna take two
+arguments and return the results
+
+43
+00:01:54.820 --> 00:01:57.876
+of its two arguments multiplied together.
+
+44
+00:01:57.876 --> 00:02:02.171
+So once again, we're gonna
+type the def keyword,
+
+45
+00:02:02.171 --> 00:02:05.004
+the name of the method, my_method.
+
+46
+00:02:06.801 --> 00:02:08.308
+Open and close brackets,
+
+47
+00:02:08.308 --> 00:02:11.311
+and inside these brackets
+we're gonna have the arguments.
+
+48
+00:02:11.311 --> 00:02:13.749
+And we know that it takes two arguments
+
+49
+00:02:13.749 --> 00:02:16.863
+and returns the results of
+them multiplied together.
+
+50
+00:02:16.863 --> 00:02:19.382
+So the two arguments
+can be anything we want.
+
+51
+00:02:19.382 --> 00:02:21.632
+For example, arg1 and arg2.
+
+52
+00:02:22.876 --> 00:02:24.648
+And these are gonna be two arguments.
+
+53
+00:02:24.648 --> 00:02:26.561
+So we when we call this function here
+
+54
+00:02:26.561 --> 00:02:29.190
+we're gonna receive two values.
+
+55
+00:02:29.190 --> 00:02:33.357
+The values that we receive are
+gonna go into arg1 and arg2.
+
+56
+00:02:34.862 --> 00:02:37.962
+Remember arg1 and arg2 are just names.
+
+57
+00:02:37.962 --> 00:02:39.765
+These are just variables
+
+58
+00:02:39.765 --> 00:02:41.063
+and they're gonna receive values
+
+59
+00:02:41.063 --> 00:02:44.813
+from whatever part of
+our code executes this.
+
+60
+00:02:46.423 --> 00:02:47.481
+And all we have to do
+
+61
+00:02:47.481 --> 00:02:49.316
+is return the multiplication of those two,
+
+62
+00:02:49.316 --> 00:02:51.649
+so arg1 times arg 2.
+
+63
+00:02:54.066 --> 00:02:56.421
+Remember you don't have
+to execute the method
+
+64
+00:02:56.421 --> 00:02:57.601
+in this exercise.
+
+65
+00:02:57.601 --> 00:02:59.400
+You only have to define it.
+
+66
+00:02:59.400 --> 00:03:03.945
+If you execute the method, it
+may confuse the code checker.
+
+67
+00:03:03.945 --> 00:03:06.969
+So don't actually run these.
+
+68
+00:03:06.969 --> 00:03:09.921
+Only define them, which
+is what we've done here.
+
+69
+00:03:09.921 --> 00:03:12.254
+So let's check the solution.
+
+70
+00:03:13.910 --> 00:03:15.899
+And as we can see, the
+solution is correct.
+
+71
+00:03:15.899 --> 00:03:17.329
+We've got two functions here,
+
+72
+00:03:17.329 --> 00:03:20.662
+or two methods, return_42 and my_method.
+
+73
+00:03:21.653 --> 00:03:24.153
+And return_42 returns the value 42.
+
+74
+00:03:24.153 --> 00:03:26.200
+My_method returns two arguments,
+
+75
+00:03:26.200 --> 00:03:29.117
+arg1 and arg2, multiplied together.
+
+76
+00:03:30.241 --> 00:03:31.870
+So that's everything for this video.
+
+77
+00:03:31.870 --> 00:03:32.823
+I'll see you on the next one.
+

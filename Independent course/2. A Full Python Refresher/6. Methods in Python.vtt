@@ -1,0 +1,1110 @@
+﻿WEBVTT
+
+1
+00:00:00.601 --> 00:00:02.712
+- [Instructor] Hi, and
+welcome back to the programme.
+
+2
+00:00:02.712 --> 00:00:05.033
+In this video, we're continuing
+with the previous code,
+
+3
+00:00:05.033 --> 00:00:07.977
+and we're looking at methods.
+
+4
+00:00:07.977 --> 00:00:11.528
+In the last video, we
+saw the print method,
+
+5
+00:00:11.528 --> 00:00:15.639
+and we understood that print
+was something that you can do.
+
+6
+00:00:15.639 --> 00:00:20.312
+So methods are always,
+should always be actions.
+
+7
+00:00:20.312 --> 00:00:23.051
+In this case, the print
+method just prints something
+
+8
+00:00:23.051 --> 00:00:26.599
+out to the console so
+that the user can see it.
+
+9
+00:00:26.599 --> 00:00:28.333
+In addition, we can also, of course,
+
+10
+00:00:28.333 --> 00:00:30.306
+create our own methods.
+
+11
+00:00:30.306 --> 00:00:32.900
+If our programmes could
+only use the print method,
+
+12
+00:00:32.900 --> 00:00:36.067
+that would be a pretty boring programme.
+
+13
+00:00:37.359 --> 00:00:42.254
+In Python as well, we can
+always type the hash symbol,
+
+14
+00:00:42.254 --> 00:00:46.202
+and what that does is that
+deactivates a certain line,
+
+15
+00:00:46.202 --> 00:00:49.300
+and that, in programming,
+is called a comment.
+
+16
+00:00:49.300 --> 00:00:52.450
+So here, I'm just going to
+separate two sections of code
+
+17
+00:00:52.450 --> 00:00:54.652
+by two hash symbols to make sure,
+
+18
+00:00:54.652 --> 00:00:56.708
+make it easy for us to understand
+
+19
+00:00:56.708 --> 00:00:59.178
+that this is a different sort of section.
+
+20
+00:00:59.178 --> 00:01:00.550
+When I share this file with you,
+
+21
+00:01:00.550 --> 00:01:03.300
+it'll also make it easier on you.
+
+22
+00:01:04.237 --> 00:01:06.070
+So we've got the print method,
+
+23
+00:01:06.070 --> 00:01:09.744
+and the print method
+we saw accept a value.
+
+24
+00:01:09.744 --> 00:01:12.255
+In this case, we gave it a value of 56,
+
+25
+00:01:12.255 --> 00:01:15.599
+and here, we have it a value, hello.
+
+26
+00:01:15.599 --> 00:01:18.658
+However, we can also
+create our own methods,
+
+27
+00:01:18.658 --> 00:01:19.991
+so let's do just that.
+
+28
+00:01:19.991 --> 00:01:21.874
+Let's create a method that replicates
+
+29
+00:01:21.874 --> 00:01:24.452
+what the print method does.
+
+30
+00:01:24.452 --> 00:01:25.599
+The first thing we have to do
+
+31
+00:01:25.599 --> 00:01:29.930
+is to tell Python we're going
+to be defining a new method.
+
+32
+00:01:29.930 --> 00:01:32.376
+And we do that with a def keyword,
+
+33
+00:01:32.376 --> 00:01:35.437
+and notice how Atom already knows that def
+
+34
+00:01:35.437 --> 00:01:39.520
+is a Python keyword because
+it puts it in purple.
+
+35
+00:01:40.536 --> 00:01:42.665
+After the def keyword, we use a space,
+
+36
+00:01:42.665 --> 00:01:45.665
+and then we type in our method name.
+
+37
+00:01:47.198 --> 00:01:49.142
+I'm going to call it my_print_method,
+
+38
+00:01:49.142 --> 00:01:50.870
+but you can call it whatever you want.
+
+39
+00:01:50.870 --> 00:01:54.235
+The same restrictions as with
+variable names apply here.
+
+40
+00:01:54.235 --> 00:01:56.462
+So you can make it as long
+or as short as you want,
+
+41
+00:01:56.462 --> 00:01:58.534
+but it cannot start with a number,
+
+42
+00:01:58.534 --> 00:02:02.357
+and it cannot contain
+any special characters.
+
+43
+00:02:02.357 --> 00:02:03.682
+After my_print_method,
+
+44
+00:02:03.682 --> 00:02:07.656
+we must also include a pair of brackets,
+
+45
+00:02:07.656 --> 00:02:12.361
+and the brackets here are so
+we can include parameters.
+
+46
+00:02:12.361 --> 00:02:14.708
+Let's talk about that in just a moment.
+
+47
+00:02:14.708 --> 00:02:17.552
+Then, we're gonna put a colon,
+
+48
+00:02:17.552 --> 00:02:19.949
+and then we're going to press Enter.
+
+49
+00:02:19.949 --> 00:02:23.155
+Notice how Atom already
+starts the next line
+
+50
+00:02:23.155 --> 00:02:25.155
+slightly more spaced in.
+
+51
+00:02:26.199 --> 00:02:28.375
+This is called indentation,
+
+52
+00:02:28.375 --> 00:02:31.185
+and it's really important in Python.
+
+53
+00:02:31.185 --> 00:02:33.058
+Whenever you see a colon,
+
+54
+00:02:33.058 --> 00:02:35.641
+the next line must be indented.
+
+55
+00:02:37.765 --> 00:02:41.060
+And all the indented lines,
+which we can have many,
+
+56
+00:02:41.060 --> 00:02:43.837
+will belong inside this method.
+
+57
+00:02:43.837 --> 00:02:46.573
+So, for example, my_print_method
+may be something like
+
+58
+00:02:46.573 --> 00:02:51.536
+print("Hello"), and then
+we can also print "World."
+
+59
+00:02:51.536 --> 00:02:55.231
+Notice how the two lines are indented.
+
+60
+00:02:55.231 --> 00:02:59.794
+Afterwards, we can keep
+essentially the indented lines,
+
+61
+00:02:59.794 --> 00:03:03.453
+and all the lines will run
+when we run the method,
+
+62
+00:03:03.453 --> 00:03:06.940
+or we can stop indenting
+just by deleting that space
+
+63
+00:03:06.940 --> 00:03:09.191
+and any lines we write after this
+
+64
+00:03:09.191 --> 00:03:12.002
+will not belong inside the method.
+
+65
+00:03:12.002 --> 00:03:16.989
+This is gonna start making
+sense as we look at Python more.
+
+66
+00:03:16.989 --> 00:03:19.356
+Okay, so what I'm going to
+do is I'm going to comment
+
+67
+00:03:19.356 --> 00:03:23.142
+these out to disable them, essentially,
+
+68
+00:03:23.142 --> 00:03:26.516
+and then we're going to
+go back to the terminal,
+
+69
+00:03:26.516 --> 00:03:29.578
+and we're going to run our file again.
+
+70
+00:03:29.578 --> 00:03:30.544
+So what do you think
+
+71
+00:03:30.544 --> 00:03:34.127
+is going to come out
+when we run this file?
+
+72
+00:03:37.850 --> 00:03:39.047
+Hopefully you gave it some thought.
+
+73
+00:03:39.047 --> 00:03:40.843
+You can always pause the video if you need
+
+74
+00:03:40.843 --> 00:03:43.770
+to give it a bit more thought,
+and that's really important
+
+75
+00:03:43.770 --> 00:03:47.123
+in this course, and I will
+do this asking you questions
+
+76
+00:03:47.123 --> 00:03:50.508
+over and over, just to
+make you think of it.
+
+77
+00:03:50.508 --> 00:03:53.990
+So, what's gonna happen
+is absolutely nothing.
+
+78
+00:03:53.990 --> 00:03:56.312
+Nothing gets printed out.
+
+79
+00:03:56.312 --> 00:03:57.312
+So, why not?
+
+80
+00:03:58.184 --> 00:04:00.195
+We've clearly said print("Hello"),
+
+81
+00:04:00.195 --> 00:04:02.685
+and we've clearly said print("world"),
+
+82
+00:04:02.685 --> 00:04:05.185
+and yet nothing is coming out.
+
+83
+00:04:06.853 --> 00:04:09.048
+Well, here's why.
+
+84
+00:04:09.048 --> 00:04:13.215
+We've created a method that
+prints hello and prints world,
+
+85
+00:04:14.956 --> 00:04:19.123
+but the act of creating the
+method does not run the method.
+
+86
+00:04:20.377 --> 00:04:23.224
+So we also have to run the method after.
+
+87
+00:04:23.224 --> 00:04:26.247
+And we do that my doing my_print_method
+
+88
+00:04:26.247 --> 00:04:28.523
+and then open and close bracket.
+
+89
+00:04:28.523 --> 00:04:31.137
+The opening and closing bracket at the end
+
+90
+00:04:31.137 --> 00:04:34.574
+tells us that we are running the method.
+
+91
+00:04:34.574 --> 00:04:36.828
+So let's save this and run it again,
+
+92
+00:04:36.828 --> 00:04:41.013
+and now, I'm sure you expect
+the right thing to come out,
+
+93
+00:04:41.013 --> 00:04:43.013
+and that is hello world.
+
+94
+00:04:44.321 --> 00:04:46.432
+So, what's the brackets for?
+
+95
+00:04:46.432 --> 00:04:48.550
+Why do we need them?
+
+96
+00:04:48.550 --> 00:04:51.999
+Well, the brackets are
+there for a specific reason,
+
+97
+00:04:51.999 --> 00:04:56.166
+which is for parameters, to
+give the method some values.
+
+98
+00:04:57.036 --> 00:05:00.783
+For example, we can call it my_parameter,
+
+99
+00:05:00.783 --> 00:05:02.561
+and then instead of printing hello world,
+
+100
+00:05:02.561 --> 00:05:05.394
+we're going to print my_parameter.
+
+101
+00:05:09.444 --> 00:05:12.561
+So, what do you think is going to happen
+
+102
+00:05:12.561 --> 00:05:14.478
+when we run this again?
+
+103
+00:05:15.901 --> 00:05:17.006
+Give it some thought,
+
+104
+00:05:17.006 --> 00:05:20.826
+and maybe even try it out
+yourselves in your code editors,
+
+105
+00:05:20.826 --> 00:05:25.658
+because what will happen is
+not nothing extraordinary,
+
+106
+00:05:25.658 --> 00:05:28.241
+but maybe something unexpected.
+
+107
+00:05:30.330 --> 00:05:33.812
+We get a lot more than we signed up for.
+
+108
+00:05:33.812 --> 00:05:35.645
+We've got a traceback,
+
+109
+00:05:36.852 --> 00:05:39.435
+and then we've got a TypeError.
+
+110
+00:05:40.683 --> 00:05:43.464
+The traceback in any programming language
+
+111
+00:05:43.464 --> 00:05:47.771
+is just a list of what went wrong, really,
+
+112
+00:05:47.771 --> 00:05:50.040
+and it tells you where things went wrong.
+
+113
+00:05:50.040 --> 00:05:52.551
+So here, it's telling us that in our file,
+
+114
+00:05:52.551 --> 00:05:55.301
+variables_methods.py, in line 17,
+
+115
+00:05:56.406 --> 00:05:59.048
+my_print_method went wrong,
+
+116
+00:05:59.048 --> 00:06:01.595
+and then it also tells
+us the type of error;
+
+117
+00:06:01.595 --> 00:06:06.192
+in this case, that's a
+TypeError, quite redundant,
+
+118
+00:06:06.192 --> 00:06:10.359
+and it says my_print_method
+takes exactly one argument,
+
+119
+00:06:11.303 --> 00:06:13.607
+but zero were given.
+
+120
+00:06:13.607 --> 00:06:16.182
+Okay, so let's analyse
+exactly what this means.
+
+121
+00:06:16.182 --> 00:06:19.263
+We can see that we ran my_print_method
+
+122
+00:06:19.263 --> 00:06:22.773
+in the same way that we ran
+the print method earlier.
+
+123
+00:06:22.773 --> 00:06:26.940
+The print method here had
+one argument, my_variable,
+
+124
+00:06:27.922 --> 00:06:31.172
+and my_print_method has zero arguments.
+
+125
+00:06:32.151 --> 00:06:34.651
+We've given it zero arguments.
+
+126
+00:06:35.732 --> 00:06:39.963
+Here is one of the arguments
+which, for your convenience,
+
+127
+00:06:39.963 --> 00:06:41.853
+I will rename to my_argument.
+
+128
+00:06:41.853 --> 00:06:43.106
+That seems to make more sense.
+
+129
+00:06:43.106 --> 00:06:45.176
+Parameters and arguments
+are the same thing,
+
+130
+00:06:45.176 --> 00:06:47.569
+and me coming from a Java background,
+
+131
+00:06:47.569 --> 00:06:48.826
+I tend to call them parameters,
+
+132
+00:06:48.826 --> 00:06:51.995
+but in Python, they're
+usually called arguments.
+
+133
+00:06:51.995 --> 00:06:54.245
+My_argument is exactly one,
+
+134
+00:06:55.290 --> 00:06:58.126
+so we have one argument there.
+
+135
+00:06:58.126 --> 00:06:59.667
+We've given it zero.
+
+136
+00:06:59.667 --> 00:07:02.978
+Therefore, Python says, hey,
+you've got a problem here.
+
+137
+00:07:02.978 --> 00:07:06.421
+My_print_method expects
+you to give it one value,
+
+138
+00:07:06.421 --> 00:07:08.033
+and you have not given it any values,
+
+139
+00:07:08.033 --> 00:07:10.654
+so therefore, we break.
+
+140
+00:07:10.654 --> 00:07:12.743
+So let's give it a value.
+
+141
+00:07:12.743 --> 00:07:16.314
+For example, this string,
+the string hello, world.
+
+142
+00:07:16.314 --> 00:07:18.051
+And as you can remember,
+
+143
+00:07:18.051 --> 00:07:21.718
+this hello world then
+goes into my_argument,
+
+144
+00:07:22.782 --> 00:07:26.782
+so my_argument in this
+line becomes hello world,
+
+145
+00:07:27.668 --> 00:07:30.114
+and then we're going to print that out.
+
+146
+00:07:30.114 --> 00:07:33.006
+So let's save the file and
+go back and run it again,
+
+147
+00:07:33.006 --> 00:07:37.788
+and what do you think is
+gonna be printed out now?
+
+148
+00:07:37.788 --> 00:07:41.955
+And as you may imagine, the
+words hello world come out.
+
+149
+00:07:43.310 --> 00:07:46.278
+So all we've done here is we've
+said, my_argument is gonna
+
+150
+00:07:46.278 --> 00:07:50.445
+equal hello world, and then
+we're gonna print that out.
+
+151
+00:07:52.674 --> 00:07:55.477
+Let's have another example of a method.
+
+152
+00:07:55.477 --> 00:07:58.144
+For example, my_multiply_method,
+
+153
+00:07:59.416 --> 00:08:02.736
+and this methods is not going
+to have one argument but two.
+
+154
+00:08:02.736 --> 00:08:05.236
+So number one, and number two,
+
+155
+00:08:06.879 --> 00:08:08.532
+and as you can see
+here, multiple arguments
+
+156
+00:08:08.532 --> 00:08:11.155
+are separated by commas,
+and that tells Python
+
+157
+00:08:11.155 --> 00:08:15.473
+these are two separate
+arguments that we want.
+
+158
+00:08:15.473 --> 00:08:19.690
+What goes at the end of
+any method definition?
+
+159
+00:08:19.690 --> 00:08:22.793
+You know it, it's the
+colon, and afterwards,
+
+160
+00:08:22.793 --> 00:08:27.110
+every line has to be indented
+further than the def.
+
+161
+00:08:27.110 --> 00:08:29.270
+So the def was at the very
+beginning of the line.
+
+162
+00:08:29.270 --> 00:08:32.043
+The next line has to be indented further.
+
+163
+00:08:32.043 --> 00:08:34.933
+Normally, in Python, the
+indentation is four spaces,
+
+164
+00:08:34.933 --> 00:08:36.156
+but it can be anything.
+
+165
+00:08:36.156 --> 00:08:38.830
+But it has to be at least one space.
+
+166
+00:08:38.830 --> 00:08:41.324
+So here, I've got four
+spaces of indentation.
+
+167
+00:08:41.324 --> 00:08:45.206
+You can have fewer or more, if you prefer.
+
+168
+00:08:45.206 --> 00:08:46.475
+My_multiply_method is then
+
+169
+00:08:46.475 --> 00:08:49.464
+is going to do something
+called returning a value.
+
+170
+00:08:49.464 --> 00:08:50.767
+So what we're gonna do
+is we're going to return
+
+171
+00:08:50.767 --> 00:08:53.767
+number_one multiplied by number_two.
+
+172
+00:08:57.802 --> 00:09:01.969
+Once again, we can do result,
+which is a new variable,
+
+173
+00:09:02.916 --> 00:09:06.083
+is my_multiply_method, five and three.
+
+174
+00:09:08.847 --> 00:09:11.961
+So what do you think is going
+to happen in this instance?
+
+175
+00:09:11.961 --> 00:09:14.783
+What do you think will be the result?
+
+176
+00:09:14.783 --> 00:09:15.616
+This variable here,
+
+177
+00:09:15.616 --> 00:09:18.863
+what will be the value
+that we store in it?
+
+178
+00:09:18.863 --> 00:09:22.905
+Give it a wild guess, but
+I'm sure you expect 15
+
+179
+00:09:22.905 --> 00:09:25.100
+to be in this variable at the end.
+
+180
+00:09:25.100 --> 00:09:27.375
+So, first let's verify
+that you are correct.
+
+181
+00:09:27.375 --> 00:09:32.154
+I'm going to print result,
+and I'm going to comment
+
+182
+00:09:32.154 --> 00:09:34.771
+this out so it doesn't get printed out,
+
+183
+00:09:34.771 --> 00:09:38.030
+go back to the terminal, run this again,
+
+184
+00:09:38.030 --> 00:09:42.211
+and of course you were
+correct, it got the 15 out.
+
+185
+00:09:42.211 --> 00:09:44.154
+So, here's what happened.
+
+186
+00:09:44.154 --> 00:09:46.782
+We created my_multiply_method,
+
+187
+00:09:46.782 --> 00:09:49.550
+which takes in two parameters,
+
+188
+00:09:49.550 --> 00:09:53.625
+one called number_one and
+one called number_two,
+
+189
+00:09:53.625 --> 00:09:57.693
+and then the method itself
+didn't print anything.
+
+190
+00:09:57.693 --> 00:10:00.193
+All it did was return a value.
+
+191
+00:10:01.466 --> 00:10:04.447
+So here's what happened, in order.
+
+192
+00:10:04.447 --> 00:10:07.635
+First, the five became number_one,
+
+193
+00:10:07.635 --> 00:10:09.482
+sorry, or number_one became five.
+
+194
+00:10:09.482 --> 00:10:10.907
+Number_two became three.
+
+195
+00:10:10.907 --> 00:10:14.658
+So these values went in that direction.
+
+196
+00:10:14.658 --> 00:10:18.867
+Number_one times number_two
+got calculated and gave us 15,
+
+197
+00:10:18.867 --> 00:10:21.265
+and then when we return,
+
+198
+00:10:21.265 --> 00:10:25.432
+what happened was that this
+entire thing became 15,
+
+199
+00:10:26.281 --> 00:10:29.631
+and then the 15 got assigned to result.
+
+200
+00:10:29.631 --> 00:10:30.867
+So that's what returning is.
+
+201
+00:10:30.867 --> 00:10:34.110
+It just essentially
+replaces the method call
+
+202
+00:10:34.110 --> 00:10:36.188
+by the return value,
+
+203
+00:10:36.188 --> 00:10:38.336
+and then you can do things with it.
+
+204
+00:10:38.336 --> 00:10:39.238
+And in this case, what we did
+
+205
+00:10:39.238 --> 00:10:43.147
+was put it inside the result variable.
+
+206
+00:10:43.147 --> 00:10:46.993
+Of course, if we comment the print out,
+
+207
+00:10:46.993 --> 00:10:50.251
+and we run the programme,
+we can surely expect
+
+208
+00:10:50.251 --> 00:10:53.501
+something or maybe nothing will happen.
+
+209
+00:10:55.058 --> 00:10:56.334
+And you've probably got it right.
+
+210
+00:10:56.334 --> 00:10:58.568
+Nothing happens, because once again,
+
+211
+00:10:58.568 --> 00:11:00.397
+we've not printed anything out.
+
+212
+00:11:00.397 --> 00:11:02.315
+All we've done is created a variable,
+
+213
+00:11:02.315 --> 00:11:06.482
+and creating a variable
+does not print things out.
+
+214
+00:11:08.318 --> 00:11:10.272
+We can also take it that step further
+
+215
+00:11:10.272 --> 00:11:13.939
+and use my_print_method
+to print the result.
+
+216
+00:11:14.828 --> 00:11:16.796
+Now, here's what's gonna happen.
+
+217
+00:11:16.796 --> 00:11:19.337
+First, we're going to calculate
+the 15 and put it inside
+
+218
+00:11:19.337 --> 00:11:24.086
+result, and then result is
+going to go into my_argument,
+
+219
+00:11:24.086 --> 00:11:26.979
+and that's gonna get printed out.
+
+220
+00:11:26.979 --> 00:11:30.120
+Let's save the file and run this again.
+
+221
+00:11:30.120 --> 00:11:31.870
+And the 15 comes out.
+
+222
+00:11:37.030 --> 00:11:38.315
+Something to notice here
+
+223
+00:11:38.315 --> 00:11:41.428
+is that we've got the my_multiply_method,
+
+224
+00:11:41.428 --> 00:11:44.215
+and we're putting the
+value into a variable.
+
+225
+00:11:44.215 --> 00:11:45.686
+But we don't have to do that.
+
+226
+00:11:45.686 --> 00:11:49.706
+We can do my_print_method,
+my_multiply_method,
+
+227
+00:11:49.706 --> 00:11:51.327
+five and three,
+
+228
+00:11:51.327 --> 00:11:54.712
+and I'm going to comment this out,
+
+229
+00:11:54.712 --> 00:11:56.950
+and the same thing will happen,
+
+230
+00:11:56.950 --> 00:11:58.886
+the same order.
+
+231
+00:11:58.886 --> 00:12:01.458
+First, the five will go into number_one
+
+232
+00:12:01.458 --> 00:12:03.903
+and the three will go into number_two.
+
+233
+00:12:03.903 --> 00:12:07.629
+We will calculate the result
+of my_multiply_method,
+
+234
+00:12:07.629 --> 00:12:11.782
+which is 15, and then
+we're gonna use that result
+
+235
+00:12:11.782 --> 00:12:15.901
+as my argument, and then
+we're gonna print that out.
+
+236
+00:12:15.901 --> 00:12:18.329
+So, exactly the same thing
+here is going to happen,
+
+237
+00:12:18.329 --> 00:12:20.062
+and we can nest these methods,
+
+238
+00:12:20.062 --> 00:12:22.932
+put them inside one another,
+as much as we'd like,
+
+239
+00:12:22.932 --> 00:12:25.083
+and naturally, if we do that many times,
+
+240
+00:12:25.083 --> 00:12:27.195
+the code becomes really
+long and complicated
+
+241
+00:12:27.195 --> 00:12:28.537
+and difficult to read,
+
+242
+00:12:28.537 --> 00:12:32.101
+so I would not suggest you do that.
+
+243
+00:12:32.101 --> 00:12:35.682
+This pattern here, putting
+things in variables
+
+244
+00:12:35.682 --> 00:12:39.502
+and then using those
+variables, is more readable,
+
+245
+00:12:39.502 --> 00:12:43.502
+and therefore it's usually
+easier to understand.
+
+246
+00:12:44.941 --> 00:12:47.725
+So really, that's
+everything for this video.
+
+247
+00:12:47.725 --> 00:12:49.583
+So I hope you learned something,
+
+248
+00:12:49.583 --> 00:12:51.651
+and let's quickly move onto the next one.
+
+249
+00:12:51.651 --> 00:12:54.731
+We're going to be looking
+at some more types of data
+
+250
+00:12:54.731 --> 00:12:57.998
+that we can use in Python,
+other than numbers and strings.
+
+251
+00:12:57.998 --> 00:13:00.042
+I'll see you in the next video.
+

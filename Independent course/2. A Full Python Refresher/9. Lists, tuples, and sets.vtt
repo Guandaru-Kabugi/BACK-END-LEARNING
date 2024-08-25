@@ -1,0 +1,690 @@
+﻿WEBVTT
+
+1
+00:00:00.858 --> 00:00:02.155
+- [Instructor] Hi and welcome back.
+
+2
+00:00:02.155 --> 00:00:03.220
+In this video we're looking at
+
+3
+00:00:03.220 --> 00:00:05.874
+lists, tuples, and sets.
+
+4
+00:00:05.874 --> 00:00:07.078
+The first thing to do is to create
+
+5
+00:00:07.078 --> 00:00:09.137
+a new file and I'm gonna save it,
+
+6
+00:00:09.137 --> 00:00:12.658
+and call it lists_tuples_sets.py,
+
+7
+00:00:12.658 --> 00:00:14.204
+that's just so Atom knows that
+
+8
+00:00:14.204 --> 00:00:16.544
+this is a Python file and gives a syntax.
+
+9
+00:00:16.544 --> 00:00:19.650
+Highlighting, and things like that.
+
+10
+00:00:19.650 --> 00:00:22.801
+In the last video, we looked at variables,
+
+11
+00:00:22.801 --> 00:00:25.861
+and we saw that we could create variables
+
+12
+00:00:25.861 --> 00:00:28.862
+such as strings, or integers,
+
+13
+00:00:28.862 --> 00:00:31.872
+and we could essentially store the value,
+
+14
+00:00:31.872 --> 00:00:33.877
+of whatever it is we wanted to store,
+
+15
+00:00:33.877 --> 00:00:38.106
+inside a box called, in
+this case, my variable.
+
+16
+00:00:38.106 --> 00:00:41.847
+But, what we noticed, maybe
+we didn't notice, but,
+
+17
+00:00:41.847 --> 00:00:45.680
+what was there, is a
+variable for every value.
+
+18
+00:00:46.771 --> 00:00:49.249
+So here's why that can be a problem.
+
+19
+00:00:49.249 --> 00:00:52.603
+Say you have a programme that calculates
+
+20
+00:00:52.603 --> 00:00:55.939
+the average grade of a student.
+
+21
+00:00:55.939 --> 00:00:57.965
+So, a student can have a number of grades,
+
+22
+00:00:57.965 --> 00:01:00.721
+such as grade one, which can be 77,
+
+23
+00:01:00.721 --> 00:01:03.971
+grade two, that can be 80, grade three,
+
+24
+00:01:05.191 --> 00:01:07.032
+that can be 90, it's obviously
+
+25
+00:01:07.032 --> 00:01:09.834
+getting better over time.
+
+26
+00:01:09.834 --> 00:01:13.792
+And you wanna calculate the
+average of these things.
+
+27
+00:01:13.792 --> 00:01:16.255
+We know that an average is the sum
+
+28
+00:01:16.255 --> 00:01:19.255
+of the elements, 77 plus 80 plus 90,
+
+29
+00:01:20.496 --> 00:01:22.261
+divided by the number of elements,
+
+30
+00:01:22.261 --> 00:01:24.215
+in this case, three.
+
+31
+00:01:24.215 --> 00:01:26.993
+So we could calculate
+the average by saying
+
+32
+00:01:26.993 --> 00:01:30.660
+grade one, plus grade
+two, plus grade three,
+
+33
+00:01:32.179 --> 00:01:35.762
+divided by three, also
+remembering that the
+
+34
+00:01:37.920 --> 00:01:40.586
+divide has preference over the plus,
+
+35
+00:01:40.586 --> 00:01:44.239
+so we have to put the brackets in there.
+
+36
+00:01:44.239 --> 00:01:46.557
+Okay, so this is fair enough.
+
+37
+00:01:46.557 --> 00:01:48.651
+But what is there are more exams,
+
+38
+00:01:48.651 --> 00:01:52.068
+grade four equals 95, grade 5 equals 100,
+
+39
+00:01:56.084 --> 00:01:57.666
+then we have to go back to our code
+
+40
+00:01:57.666 --> 00:02:01.788
+and change it, grade
+four, plus grade five,
+
+41
+00:02:01.788 --> 00:02:03.571
+divided by five, and then if this
+
+42
+00:02:03.571 --> 00:02:05.161
+keeps increasing obviously this
+
+43
+00:02:05.161 --> 00:02:06.889
+becomes more and more unsustainable,
+
+44
+00:02:06.889 --> 00:02:09.367
+you end up with maybe 20 variables,
+
+45
+00:02:09.367 --> 00:02:11.372
+and then you have to
+change the code every time,
+
+46
+00:02:11.372 --> 00:02:15.338
+and also having something
+like this, means that if, um,
+
+47
+00:02:15.338 --> 00:02:18.129
+if you've got somebody
+using your programme,
+
+48
+00:02:18.129 --> 00:02:20.946
+and they want more grades,
+
+49
+00:02:20.946 --> 00:02:23.297
+they're gonna need to change the code,
+
+50
+00:02:23.297 --> 00:02:25.444
+and so on so it's not really sustainable.
+
+51
+00:02:25.444 --> 00:02:27.583
+So ideally what we would have,
+
+52
+00:02:27.583 --> 00:02:30.166
+is a way to keep adding grades,
+
+53
+00:02:31.070 --> 00:02:33.992
+without creating more variables.
+
+54
+00:02:33.992 --> 00:02:36.649
+And fortunately we have
+that, it is called a list,
+
+55
+00:02:36.649 --> 00:02:40.649
+so we can do something
+like 77, 80, 90, 95, 100.
+
+56
+00:02:43.904 --> 00:02:45.789
+And then instead of grade one,
+
+57
+00:02:45.789 --> 00:02:49.568
+we would obviously call this grades.
+
+58
+00:02:49.568 --> 00:02:53.240
+And here's how we would
+calculate an average.
+
+59
+00:02:53.240 --> 00:02:57.498
+Now that we've got the grades,
+this is a list of grades,
+
+60
+00:02:57.498 --> 00:02:59.914
+or, well, this is really
+just a list of numbers
+
+61
+00:02:59.914 --> 00:03:02.891
+but we can imagine they are grades,
+
+62
+00:03:02.891 --> 00:03:04.681
+and, they are comma separated,
+
+63
+00:03:04.681 --> 00:03:06.481
+and they are between square brackets,
+
+64
+00:03:06.481 --> 00:03:09.186
+so we've got five grades here,
+
+65
+00:03:09.186 --> 00:03:11.976
+we've got exactly grades dot,
+
+66
+00:03:11.976 --> 00:03:13.893
+sorry, len grades here.
+
+67
+00:03:16.162 --> 00:03:19.428
+Len is a method, just like print is,
+
+68
+00:03:19.428 --> 00:03:23.428
+but it calculates the
+number of items in a list,
+
+69
+00:03:24.680 --> 00:03:27.013
+so len grades would give us,
+
+70
+00:03:28.174 --> 00:03:30.322
+and I'm here kind of
+waiting for an answer,
+
+71
+00:03:30.322 --> 00:03:33.511
+that I know isn't coming,
+it will give us five,
+
+72
+00:03:33.511 --> 00:03:35.279
+because there are five elements there.
+
+73
+00:03:35.279 --> 00:03:39.362
+So let's save that, and
+if we wanted to calculate
+
+74
+00:03:41.004 --> 00:03:44.200
+the sum of grades, take a wild guess
+
+75
+00:03:44.200 --> 00:03:46.365
+as to how you would do that.
+
+76
+00:03:46.365 --> 00:03:47.534
+And I'll give you a hint,
+
+77
+00:03:47.534 --> 00:03:51.117
+we want to calculate
+the sum of the grades.
+
+78
+00:03:52.881 --> 00:03:56.671
+I'm sure you guessed
+it, it is sum of grades.
+
+79
+00:03:56.671 --> 00:03:58.768
+And that would be that.
+
+80
+00:03:58.768 --> 00:04:00.970
+So we would sum the grades together,
+
+81
+00:04:00.970 --> 00:04:03.975
+divided by the length
+of grades which is five,
+
+82
+00:04:03.975 --> 00:04:06.129
+and that would give it an average.
+
+83
+00:04:06.129 --> 00:04:07.285
+So what does that mean?
+
+84
+00:04:07.285 --> 00:04:09.827
+Well, we can add more grades,
+
+85
+00:04:09.827 --> 00:04:12.801
+and then sum and len automatically
+
+86
+00:04:12.801 --> 00:04:15.471
+calculate the correct thing.
+
+87
+00:04:15.471 --> 00:04:19.638
+So that's a list, and there
+is a fairly similar thing,
+
+88
+00:04:21.971 --> 00:04:25.138
+that is using single, normal brackets.
+
+89
+00:04:26.397 --> 00:04:29.196
+And this is called a tuple.
+
+90
+00:04:29.196 --> 00:04:31.972
+The only difference
+with a tuple, to a list,
+
+91
+00:04:31.972 --> 00:04:35.257
+is that the tuple is something
+that's called immutable.
+
+92
+00:04:35.257 --> 00:04:38.757
+So we cannot increase the size of a tuple.
+
+93
+00:04:39.747 --> 00:04:43.424
+So this tuple for example
+has seven elements,
+
+94
+00:04:43.424 --> 00:04:46.857
+and we can obviously
+add more elements here,
+
+95
+00:04:46.857 --> 00:04:50.524
+but, there are ways for
+our code to increase
+
+96
+00:04:52.782 --> 00:04:57.247
+the size of grades, we can
+add elements using code,
+
+97
+00:04:57.247 --> 00:05:01.448
+grades.append(108) for example.
+
+98
+00:05:01.448 --> 00:05:03.365
+A couple grades, there.
+
+99
+00:05:05.216 --> 00:05:09.933
+There are ways to increase
+the size of the list,
+
+100
+00:05:09.933 --> 00:05:13.349
+there are no ways of
+increasing the size of a tuple,
+
+101
+00:05:13.349 --> 00:05:15.766
+because tuples are immutable.
+
+102
+00:05:18.012 --> 00:05:20.186
+Immutable, they cannot be mutated,
+
+103
+00:05:20.186 --> 00:05:21.910
+they cannot be changed.
+
+104
+00:05:21.910 --> 00:05:26.490
+So once you have a tuple, you
+cannot increase it's size.
+
+105
+00:05:26.490 --> 00:05:29.573
+And whereas you can do grades.append,
+
+106
+00:05:30.781 --> 00:05:33.263
+or your list variable.append,
+
+107
+00:05:33.263 --> 00:05:34.668
+and that increases the size of the list
+
+108
+00:05:34.668 --> 00:05:37.902
+by adding an item at the end.
+
+109
+00:05:37.902 --> 00:05:40.904
+Finally, we've also got set grades.
+
+110
+00:05:40.904 --> 00:05:45.193
+This is not a very useful
+type of data in this case,
+
+111
+00:05:45.193 --> 00:05:47.776
+but nevertheless you could have
+
+112
+00:05:48.758 --> 00:05:52.508
+a set of grades, and
+what a set of grades is,
+
+113
+00:05:54.934 --> 00:05:59.395
+or, just a set really, is
+a collection of unique,
+
+114
+00:05:59.395 --> 00:06:01.145
+unique and unordered.
+
+115
+00:06:04.001 --> 00:06:06.457
+So what that means is, they are unique,
+
+116
+00:06:06.457 --> 00:06:09.566
+so here we've got two hundreds,
+
+117
+00:06:09.566 --> 00:06:12.604
+and so this would not be okay for a set,
+
+118
+00:06:12.604 --> 00:06:13.998
+and they're also unordered,
+
+119
+00:06:13.998 --> 00:06:15.356
+and what that means is that,
+
+120
+00:06:15.356 --> 00:06:16.564
+it doesn't necessarily have to
+
+121
+00:06:16.564 --> 00:06:18.481
+be in order to the set.
+
+122
+00:06:19.317 --> 00:06:22.699
+Um, so for example, if we print grades,
+
+123
+00:06:22.699 --> 00:06:24.714
+we will always get 77 at the start,
+
+124
+00:06:24.714 --> 00:06:28.228
+because that's the first
+element, if we print set grades,
+
+125
+00:06:28.228 --> 00:06:30.609
+we may not get 77 at the beginning.
+
+126
+00:06:30.609 --> 00:06:32.364
+We may get 77 at the beginning,
+
+127
+00:06:32.364 --> 00:06:35.125
+but we may also not get
+77 at the beginning.
+
+128
+00:06:35.125 --> 00:06:37.151
+So, let's go ahead into the terminal,
+
+129
+00:06:37.151 --> 00:06:38.734
+and print this out,
+
+130
+00:06:39.723 --> 00:06:42.512
+and as you can see, we printed out a set,
+
+131
+00:06:42.512 --> 00:06:44.963
+and we didn't get 77 in the beginning,
+
+132
+00:06:44.963 --> 00:06:45.796
+we got 80.
+
+133
+00:06:47.053 --> 00:06:48.852
+And also, as an aside, notice how
+
+134
+00:06:48.852 --> 00:06:51.478
+there's only one hundred there,
+
+135
+00:06:51.478 --> 00:06:54.057
+whereas in our set we've got two hundreds.
+
+136
+00:06:54.057 --> 00:06:55.931
+That's because this was there twice,
+
+137
+00:06:55.931 --> 00:06:59.002
+so one of them just got removed.
+
+138
+00:06:59.002 --> 00:07:01.966
+So that's what unique and unordered means.
+
+139
+00:07:01.966 --> 00:07:05.502
+And the tuple grades, um,
+they're just immutable,
+
+140
+00:07:05.502 --> 00:07:07.872
+so you cannot increase the size,
+
+141
+00:07:07.872 --> 00:07:09.199
+and finally the list is sort of
+
+142
+00:07:09.199 --> 00:07:10.950
+the most flexible of them all.
+
+143
+00:07:10.950 --> 00:07:13.654
+You can, remove elements,
+you can add elements,
+
+144
+00:07:13.654 --> 00:07:15.885
+and all that stuff.
+
+145
+00:07:15.885 --> 00:07:17.055
+In some cases you may wanna
+
+146
+00:07:17.055 --> 00:07:18.877
+use a tuple over a list,
+
+147
+00:07:18.877 --> 00:07:21.225
+when you don't need to be able
+
+148
+00:07:21.225 --> 00:07:23.638
+to remove or add elements.
+
+149
+00:07:23.638 --> 00:07:26.191
+And sometimes that can be a bit safer.
+
+150
+00:07:26.191 --> 00:07:27.978
+And you would wanna
+use a set when you have
+
+151
+00:07:27.978 --> 00:07:30.996
+a collection of unique
+and unordered elements,
+
+152
+00:07:30.996 --> 00:07:34.911
+that you may wanna do set operations with.
+
+153
+00:07:34.911 --> 00:07:36.976
+Set operations are very important,
+
+154
+00:07:36.976 --> 00:07:38.675
+and we're gonna look at
+them in the very next video,
+
+155
+00:07:38.675 --> 00:07:40.672
+alongside with a couple other things
+
+156
+00:07:40.672 --> 00:07:43.957
+that we can do with lists and tuples.
+
+157
+00:07:43.957 --> 00:07:45.071
+So without further ado,
+
+158
+00:07:45.071 --> 00:07:46.564
+I'll see you in the very next video,
+
+159
+00:07:46.564 --> 00:07:47.902
+and we're gonna quickly go over,
+
+160
+00:07:47.902 --> 00:07:49.982
+what we can do with
+these three data types.
+
+161
+00:07:49.982 --> 00:07:51.449
+I'll see you there.
+

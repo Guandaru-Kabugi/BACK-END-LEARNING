@@ -1,0 +1,543 @@
+﻿WEBVTT
+
+1
+00:00:00.163 --> 00:00:01.452
+- [Instructor] Hi and welcome back.
+
+2
+00:00:01.452 --> 00:00:02.947
+We are now at the @classmethod
+
+3
+00:00:02.947 --> 00:00:05.335
+and @staticmethod coding exercise.
+
+4
+00:00:05.335 --> 00:00:08.900
+This one is a bit more
+of a complicated one.
+
+5
+00:00:08.900 --> 00:00:12.043
+We have to complete two
+method implementations.
+
+6
+00:00:12.043 --> 00:00:16.277
+The franchise method, which
+takes in a store as an argument,
+
+7
+00:00:16.277 --> 00:00:18.623
+and it should return a new store object
+
+8
+00:00:18.623 --> 00:00:22.790
+with a name equal to the argument
+plus the franchise string.
+
+9
+00:00:23.703 --> 00:00:24.808
+And the store_details method
+
+10
+00:00:24.808 --> 00:00:26.793
+which also takes in a store as an argument
+
+11
+00:00:26.793 --> 00:00:27.736
+and it should return a string
+
+12
+00:00:27.736 --> 00:00:30.296
+representing the argument.
+
+13
+00:00:30.296 --> 00:00:32.754
+Okay, let's have a wee look
+at exactly what this means.
+
+14
+00:00:32.754 --> 00:00:34.310
+I've given you a few examples here
+
+15
+00:00:34.310 --> 00:00:37.477
+of what exactly should be printed out.
+
+16
+00:00:39.439 --> 00:00:42.385
+Imagine we have two stores.
+
+17
+00:00:42.385 --> 00:00:45.262
+Store is a store with name Test
+
+18
+00:00:45.262 --> 00:00:47.415
+and store2 is a store with name Amazon
+
+19
+00:00:47.415 --> 00:00:49.283
+and in store2 we're gonna add an item,
+
+20
+00:00:49.283 --> 00:00:51.700
+Keyboard with a price of 160.
+
+21
+00:00:53.335 --> 00:00:55.978
+The franchise method is
+gonna be called as the store,
+
+22
+00:00:55.978 --> 00:00:58.741
+the class store.franchise
+
+23
+00:00:58.741 --> 00:01:01.739
+and we're gonna pass in the store object
+
+24
+00:01:01.739 --> 00:01:03.986
+and it's going to return a store object
+
+25
+00:01:03.986 --> 00:01:06.486
+with name Test - Franchise.
+
+26
+00:01:07.733 --> 00:01:10.670
+And similarly we call it with
+store2 which is called Amazon.
+
+27
+00:01:10.670 --> 00:01:12.404
+We're gonna return a store object
+
+28
+00:01:12.404 --> 00:01:14.986
+with name Amazon - Franchise.
+
+29
+00:01:14.986 --> 00:01:17.282
+So notice it's not going to return
+
+30
+00:01:17.282 --> 00:01:19.596
+the string Amazon - Franchise.
+
+31
+00:01:19.596 --> 00:01:21.377
+It's going to return a store object
+
+32
+00:01:21.377 --> 00:01:24.044
+with name Amazon - Franchise.
+
+33
+00:01:25.022 --> 00:01:27.960
+And the store_details is
+gonna be called with a store
+
+34
+00:01:27.960 --> 00:01:29.043
+so store test
+
+35
+00:01:29.890 --> 00:01:32.439
+and is going to return
+Test, the name of the store,
+
+36
+00:01:32.439 --> 00:01:35.189
+comma, total stock price is zero.
+
+37
+00:01:36.622 --> 00:01:40.200
+And similarly if we call it
+with store2 which has an item
+
+38
+00:01:40.200 --> 00:01:44.117
+it's gonna be Amazon,
+total stock price is 160.
+
+39
+00:01:45.758 --> 00:01:46.855
+Okay?
+
+40
+00:01:46.855 --> 00:01:48.388
+When completing the store_details method
+
+41
+00:01:48.388 --> 00:01:49.993
+you may need to convert the output
+
+42
+00:01:49.993 --> 00:01:52.950
+of store.stock_price to an integer
+
+43
+00:01:52.950 --> 00:01:54.271
+and you can do this like so,
+
+44
+00:01:54.271 --> 00:01:57.299
+int(Store.stock_price).
+
+45
+00:01:57.299 --> 00:02:00.750
+Let's have a look at this coding exercise.
+
+46
+00:02:00.750 --> 00:02:03.220
+First thing to do is to remind ourselves
+
+47
+00:02:03.220 --> 00:02:06.637
+of exactly what these existing methods do
+
+48
+00:02:08.026 --> 00:02:11.550
+and what the store objects are like.
+
+49
+00:02:11.550 --> 00:02:13.621
+So we've got an init method
+
+50
+00:02:13.621 --> 00:02:15.826
+that tells us the store
+object has two properties:
+
+51
+00:02:15.826 --> 00:02:17.909
+self.name and self.items.
+
+52
+00:02:18.754 --> 00:02:22.796
+We can add an item which simply
+appends to this empty list
+
+53
+00:02:22.796 --> 00:02:25.546
+a dictionary with name and price.
+
+54
+00:02:26.746 --> 00:02:31.068
+And then we have stock_price
+which returns the total value
+
+55
+00:02:31.068 --> 00:02:34.318
+of all the items in stock in this store
+
+56
+00:02:35.497 --> 00:02:37.467
+as you can see.
+
+57
+00:02:37.467 --> 00:02:38.942
+And then we have our two methods
+
+58
+00:02:38.942 --> 00:02:40.668
+that we have to implement ourselves:
+
+59
+00:02:40.668 --> 00:02:44.193
+the franchise method and
+the store_details method.
+
+60
+00:02:44.193 --> 00:02:47.741
+The franchise method has
+to return another store
+
+61
+00:02:47.741 --> 00:02:50.058
+with the same name as the argument
+
+62
+00:02:50.058 --> 00:02:52.891
+plus the string " - Franchise."
+
+63
+00:02:54.061 --> 00:02:55.370
+So let's do that.
+
+64
+00:02:55.370 --> 00:02:58.037
+How do we create a store object?
+
+65
+00:02:58.874 --> 00:03:03.224
+Well we can say something
+like new_store = Store
+
+66
+00:03:03.224 --> 00:03:05.121
+and here we have to give it a name
+
+67
+00:03:05.121 --> 00:03:09.062
+because if you remember, the
+init method takes in a name
+
+68
+00:03:09.062 --> 00:03:11.033
+so we have to give the store this name
+
+69
+00:03:11.033 --> 00:03:12.821
+and we know from the instructions
+
+70
+00:03:12.821 --> 00:03:14.692
+that the store's name that we return
+
+71
+00:03:14.692 --> 00:03:18.451
+has to be the same name as the argument
+
+72
+00:03:18.451 --> 00:03:19.534
+so store.name
+
+73
+00:03:23.481 --> 00:03:26.291
+plus this "- Franchise" thing here
+
+74
+00:03:26.291 --> 00:03:28.072
+so " - Franchise."
+
+75
+00:03:28.072 --> 00:03:30.721
+Notice that there is a
+space before the dash
+
+76
+00:03:30.721 --> 00:03:32.176
+and there's a space after the dash
+
+77
+00:03:32.176 --> 00:03:34.481
+so we have to make sure to
+have those there as well.
+
+78
+00:03:34.481 --> 00:03:35.346
+This is very important
+
+79
+00:03:35.346 --> 00:03:38.922
+or else the code checker
+won't be able to deduce
+
+80
+00:03:38.922 --> 00:03:41.856
+that you have the right name.
+
+81
+00:03:41.856 --> 00:03:43.389
+Okay now that we have created the store
+
+82
+00:03:43.389 --> 00:03:45.302
+we can return it.
+
+83
+00:03:45.302 --> 00:03:46.703
+Return new_store.
+
+84
+00:03:46.703 --> 00:03:49.345
+That's our variable there.
+
+85
+00:03:49.345 --> 00:03:53.974
+Of course we could just
+skip the variable entirely,
+
+86
+00:03:53.974 --> 00:03:55.082
+return the store.
+
+87
+00:03:55.082 --> 00:03:58.020
+This is totally fine, same thing.
+
+88
+00:03:58.020 --> 00:03:59.736
+Because this is a class method
+
+89
+00:03:59.736 --> 00:04:02.366
+we have this cls argument here
+
+90
+00:04:02.366 --> 00:04:05.578
+and cls is a reference to the class.
+
+91
+00:04:05.578 --> 00:04:07.996
+That's Store by the way.
+
+92
+00:04:07.996 --> 00:04:10.860
+So cls is the same thing as Store
+
+93
+00:04:10.860 --> 00:04:12.332
+so for the sake of learning
+
+94
+00:04:12.332 --> 00:04:13.569
+we can just replace them
+
+95
+00:04:13.569 --> 00:04:16.736
+and that means exactly the same thing.
+
+96
+00:04:18.570 --> 00:04:21.243
+Let's move on to the store_details.
+
+97
+00:04:21.243 --> 00:04:24.555
+This only has to return a string
+representing the argument.
+
+98
+00:04:24.555 --> 00:04:26.941
+Store is a store object
+
+99
+00:04:26.941 --> 00:04:28.874
+and it has to be something in the format
+
+100
+00:04:28.874 --> 00:04:32.338
+"NAME, total stock price: TOTAL."
+
+101
+00:04:32.338 --> 00:04:34.714
+So I'm gonna copy that
+
+102
+00:04:34.714 --> 00:04:37.314
+and what I'm gonna do is return this
+
+103
+00:04:37.314 --> 00:04:41.481
+.format(store.name,
+int(store.stock_price())).
+
+104
+00:04:47.527 --> 00:04:51.509
+Now we have to replace
+name for the curly braces
+
+105
+00:04:51.509 --> 00:04:54.646
+and total for the curly braces as well.
+
+106
+00:04:54.646 --> 00:04:55.479
+Here's what's happening here
+
+107
+00:04:55.479 --> 00:04:57.469
+I went a bit quickly there.
+
+108
+00:04:57.469 --> 00:05:00.103
+We've got our format string
+
+109
+00:05:00.103 --> 00:05:02.144
+which has two sets of curly braces
+
+110
+00:05:02.144 --> 00:05:06.336
+and we're gonna go and put
+store.name in the first one
+
+111
+00:05:06.336 --> 00:05:08.697
+and store.stock_price,
+
+112
+00:05:08.697 --> 00:05:12.030
+this is the method that is defined here,
+
+113
+00:05:13.178 --> 00:05:14.551
+convert it to an integer,
+
+114
+00:05:14.551 --> 00:05:18.330
+and put it in the second place there.
+
+115
+00:05:18.330 --> 00:05:19.741
+There are many other ways
+that you could do this.
+
+116
+00:05:19.741 --> 00:05:23.803
+You could add the values
+together and so on and so forth
+
+117
+00:05:23.803 --> 00:05:26.904
+but, nevertheless, this is the way I do it
+
+118
+00:05:26.904 --> 00:05:29.737
+so that's why I'm showing it to you here.
+
+119
+00:05:29.737 --> 00:05:32.471
+Let's check our solution
+
+120
+00:05:32.471 --> 00:05:36.187
+and as you can see that is all correct.
+
+121
+00:05:36.187 --> 00:05:38.593
+We've looked at the cls keyword
+
+122
+00:05:38.593 --> 00:05:40.354
+and we've implemented the franchise method
+
+123
+00:05:40.354 --> 00:05:44.139
+to return a new store with a given name
+
+124
+00:05:44.139 --> 00:05:46.650
+and we've also looked at
+the store_details method
+
+125
+00:05:46.650 --> 00:05:48.420
+which returns a string representation
+
+126
+00:05:48.420 --> 00:05:50.003
+of some store data.
+
+127
+00:05:51.082 --> 00:05:52.423
+So that's everything for this video
+
+128
+00:05:52.423 --> 00:05:54.190
+and I'll see you on the next one.
+

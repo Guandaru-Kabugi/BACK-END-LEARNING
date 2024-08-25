@@ -1,0 +1,711 @@
+﻿WEBVTT
+
+1
+00:00:00.726 --> 00:00:02.541
+- Hi and welcome back.
+
+2
+00:00:02.541 --> 00:00:03.904
+In this video we're looking just at
+
+3
+00:00:03.904 --> 00:00:08.740
+a few things that we can do
+with lists, tuples, and sets.
+
+4
+00:00:08.740 --> 00:00:10.993
+The first thing that we can do with a list
+
+5
+00:00:10.993 --> 00:00:15.160
+that we cannot do with a
+tuple is to increase its size.
+
+6
+00:00:16.005 --> 00:00:18.014
+I'm gonna just remove a few elements
+
+7
+00:00:18.014 --> 00:00:22.181
+from these things so they're
+a bit easier to understand.
+
+8
+00:00:23.528 --> 00:00:27.695
+So we can do something
+like grades.append(100)
+
+9
+00:00:32.999 --> 00:00:36.930
+And what that will do, it
+will add an item at the end.
+
+10
+00:00:36.930 --> 00:00:38.699
+That's what append means.
+
+11
+00:00:38.699 --> 00:00:43.128
+So when we print grades
+out, which I will do now,
+
+12
+00:00:43.128 --> 00:00:45.686
+I'm gonna first clear this though,
+
+13
+00:00:45.686 --> 00:00:48.295
+I'm gonna run the programme,
+it's gonna print grades,
+
+14
+00:00:48.295 --> 00:00:51.654
+and I'm sure that you know
+what is gonna come out.
+
+15
+00:00:51.654 --> 00:00:54.252
+Remember, we've got the
+list with three elements
+
+16
+00:00:54.252 --> 00:00:57.335
+and then we're adding one at the end.
+
+17
+00:00:58.205 --> 00:01:01.516
+So what comes out is the ordered list.
+
+18
+00:01:01.516 --> 00:01:05.104
+Lists are always ordered in the order
+
+19
+00:01:05.104 --> 00:01:07.644
+that we put elements in.
+
+20
+00:01:07.644 --> 00:01:10.578
+So, it's not in ascending order.
+
+21
+00:01:10.578 --> 00:01:14.193
+If we change this for 50
+and we run this again,
+
+22
+00:01:14.193 --> 00:01:15.779
+the 50 is still at the end.
+
+23
+00:01:15.779 --> 00:01:18.116
+So it's not ascending order, it's just
+
+24
+00:01:18.116 --> 00:01:20.777
+the order that it was created in.
+
+25
+00:01:20.777 --> 00:01:24.944
+So in this case, 77, 80,
+90, and then 50 at the end.
+
+26
+00:01:27.198 --> 00:01:30.144
+The tuple, however, you cannot do this.
+
+27
+00:01:30.144 --> 00:01:33.894
+So you cannot increase
+the size of the tuple.
+
+28
+00:01:37.458 --> 00:01:39.226
+But what we can do, however,
+
+29
+00:01:39.226 --> 00:01:42.019
+is to change the tuple entirely.
+
+30
+00:01:42.019 --> 00:01:46.186
+We can say tuple_grades
+= tuple_grades + (100,)
+
+31
+00:01:49.769 --> 00:01:50.868
+And notice that this is some very
+
+32
+00:01:50.868 --> 00:01:53.519
+specific syntax I'm using here.
+
+33
+00:01:53.519 --> 00:01:56.141
+And I'm gonna show you
+exactly what that is.
+
+34
+00:01:56.141 --> 00:01:59.494
+What I'm saying is tuple_grades is a box.
+
+35
+00:01:59.494 --> 00:02:02.994
+It is a box that currently has this tuple.
+
+36
+00:02:03.903 --> 00:02:05.638
+But now what I'm gonna do is I'm gonna say
+
+37
+00:02:05.638 --> 00:02:09.805
+tuple_grades is a box, and
+is a box that has this value.
+
+38
+00:02:11.379 --> 00:02:13.533
+Notice that the fact that
+I'm using tuple_grades
+
+39
+00:02:13.533 --> 00:02:17.414
+to assign to tuple_grades
+isn't a problem in Python.
+
+40
+00:02:17.414 --> 00:02:18.877
+All that this will do is it will
+
+41
+00:02:18.877 --> 00:02:21.547
+evaluate the right side first
+
+42
+00:02:21.547 --> 00:02:24.525
+and then it will put it into this box.
+
+43
+00:02:24.525 --> 00:02:26.240
+So all it will do is it will say,
+
+44
+00:02:26.240 --> 00:02:27.845
+"What's tuple_grades?
+
+45
+00:02:27.845 --> 00:02:31.396
+"Oh, that's this tuple
+here, (77, 80, 90)."
+
+46
+00:02:31.396 --> 00:02:35.563
+And it's gonna add another
+tuple to it, which is 100.
+
+47
+00:02:36.451 --> 00:02:39.223
+Notice how there has to
+be a comma at the end.
+
+48
+00:02:39.223 --> 00:02:43.014
+If there is no comma, this is not a tuple,
+
+49
+00:02:43.014 --> 00:02:45.298
+this is a number with a pair of
+
+50
+00:02:45.298 --> 00:02:47.614
+useless brackets around it.
+
+51
+00:02:47.614 --> 00:02:49.563
+So you must have the comma there
+
+52
+00:02:49.563 --> 00:02:51.962
+if you only have one element.
+
+53
+00:02:51.962 --> 00:02:53.129
+If you have two elements,
+then you'll always
+
+54
+00:02:53.129 --> 00:02:54.339
+have the comma there, of course,
+
+55
+00:02:54.339 --> 00:02:56.940
+because you need to separate
+the elements somehow.
+
+56
+00:02:56.940 --> 00:02:59.085
+Okay, so make sure to keep the comma,
+
+57
+00:02:59.085 --> 00:03:00.444
+and then we're gonna run this and
+
+58
+00:03:00.444 --> 00:03:03.027
+you know what's gonna come out.
+
+59
+00:03:04.883 --> 00:03:07.566
+And it is as you would expect.
+
+60
+00:03:07.566 --> 00:03:09.740
+We've not changed the tuple.
+
+61
+00:03:09.740 --> 00:03:12.738
+The tuple is still (77, 80, 90).
+
+62
+00:03:12.738 --> 00:03:15.684
+What we've done is we have
+calculated what it would be
+
+63
+00:03:15.684 --> 00:03:19.165
+to add two tuples and we've
+put that in the variables.
+
+64
+00:03:19.165 --> 00:03:21.054
+We've not actually changed this tuple.
+
+65
+00:03:21.054 --> 00:03:23.887
+We've only calculated a new tuple.
+
+66
+00:03:24.830 --> 00:03:26.270
+Okay.
+
+67
+00:03:26.270 --> 00:03:27.814
+So that is all good.
+
+68
+00:03:27.814 --> 00:03:30.524
+What do I mean with "change the tuple"?
+
+69
+00:03:30.524 --> 00:03:33.938
+Well, there's a few things that we can do.
+
+70
+00:03:33.938 --> 00:03:35.842
+I'm gonna delete that
+line and I'm gonna say
+
+71
+00:03:35.842 --> 00:03:38.460
+print(grades[0])
+
+72
+00:03:38.460 --> 00:03:41.061
+Notice how we've got some
+square brackets there
+
+73
+00:03:41.061 --> 00:03:44.103
+and inside it we've got zero.
+
+74
+00:03:44.103 --> 00:03:46.216
+This grades variable is our list
+
+75
+00:03:46.216 --> 00:03:50.938
+and we know that there is
+no value zero in this list.
+
+76
+00:03:50.938 --> 00:03:54.607
+So, what do you think this is
+going to do when we run it?
+
+77
+00:03:54.607 --> 00:03:56.901
+Will it give us an error?
+
+78
+00:03:56.901 --> 00:03:59.593
+Will it print something out?
+
+79
+00:03:59.593 --> 00:04:01.343
+Well, let's find out.
+
+80
+00:04:02.611 --> 00:04:05.212
+Okay, so 77 comes out.
+
+81
+00:04:05.212 --> 00:04:08.079
+There's no error and that's
+because this zero here
+
+82
+00:04:08.079 --> 00:04:11.438
+is not meaning one of these values.
+
+83
+00:04:11.438 --> 00:04:14.637
+It's meaning the position of the value.
+
+84
+00:04:14.637 --> 00:04:16.854
+We always start counting from zero,
+
+85
+00:04:16.854 --> 00:04:20.051
+so grades[0] is the first element,
+
+86
+00:04:20.051 --> 00:04:22.775
+grades[1] Would be the second element,
+
+87
+00:04:22.775 --> 00:04:25.144
+grades[2] Would be the
+third element, and so on.
+
+88
+00:04:25.144 --> 00:04:28.227
+So this is index 0, index 1, index 2.
+
+89
+00:04:31.018 --> 00:04:33.167
+And obviously, because this is a list
+
+90
+00:04:33.167 --> 00:04:35.054
+and we can change lists, we can also say
+
+91
+00:04:35.054 --> 00:04:37.730
+grades[0] = 60 and then we can
+
+92
+00:04:37.730 --> 00:04:41.063
+assign a value to this specific element.
+
+93
+00:04:45.633 --> 00:04:47.206
+So I'm gonna save that and run it again,
+
+94
+00:04:47.206 --> 00:04:49.482
+and what do you think
+is gonna come out now?
+
+95
+00:04:49.482 --> 00:04:53.065
+We've probably changed
+element number zero,
+
+96
+00:04:54.836 --> 00:04:57.760
+and now we've printing
+the grades after it.
+
+97
+00:04:57.760 --> 00:05:01.843
+So, what do you think is
+going to be printed out?
+
+98
+00:05:04.375 --> 00:05:07.515
+As you would expect, the [60, 80, 90]
+
+99
+00:05:07.515 --> 00:05:09.750
+because the list has changed.
+
+100
+00:05:09.750 --> 00:05:13.781
+We've changed the zeroth
+element, the first element,
+
+101
+00:05:13.781 --> 00:05:17.267
+and we've made it 60 instead of 77.
+
+102
+00:05:17.267 --> 00:05:21.737
+Now I'm gonna copy this
+tuple_grades and paste it in here.
+
+103
+00:05:21.737 --> 00:05:24.692
+And what do you think is
+gonna happen when we run this,
+
+104
+00:05:24.692 --> 00:05:27.812
+knowing that a tuple is immutable
+
+105
+00:05:27.812 --> 00:05:29.895
+and you cannot change it?
+
+106
+00:05:34.463 --> 00:05:36.941
+And this is what we get.
+
+107
+00:05:36.941 --> 00:05:40.999
+We get a traceback, just
+a list of what went wrong,
+
+108
+00:05:40.999 --> 00:05:44.676
+and it says that it went
+wrong in our file, line six,
+
+109
+00:05:44.676 --> 00:05:48.843
+and the line that failed
+is tuple_grades[0] = 60
+
+110
+00:05:49.998 --> 00:05:52.912
+This equal sign is called assignment,
+
+111
+00:05:52.912 --> 00:05:56.530
+and that's when we assign
+a value, 60 in this case,
+
+112
+00:05:56.530 --> 00:06:00.932
+to something, in this
+case, tuple_grades[0]
+
+113
+00:06:00.932 --> 00:06:03.957
+So the error we get is
+a TypeError that says,
+
+114
+00:06:03.957 --> 00:06:08.124
+"'tuple' object does not
+support item assignment."
+
+115
+00:06:09.137 --> 00:06:11.199
+You cannot assign things.
+
+116
+00:06:11.199 --> 00:06:12.073
+Why?
+
+117
+00:06:12.073 --> 00:06:15.465
+Because an assignment will
+most likely change things.
+
+118
+00:06:15.465 --> 00:06:16.583
+And you cannot change things because
+
+119
+00:06:16.583 --> 00:06:19.825
+this is a tuple and tuples are immutable.
+
+120
+00:06:19.825 --> 00:06:22.130
+So this fails because we cannot
+
+121
+00:06:22.130 --> 00:06:24.547
+change the values in a tuple.
+
+122
+00:06:26.579 --> 00:06:29.996
+Finally, let's have a look at set_grades.
+
+123
+00:06:32.138 --> 00:06:35.090
+This is a bit of a funny one because
+
+124
+00:06:35.090 --> 00:06:38.018
+we know that sets are not immutable,
+
+125
+00:06:38.018 --> 00:06:40.425
+so we should be able to change it.
+
+126
+00:06:40.425 --> 00:06:44.016
+But we also know they are unordered.
+
+127
+00:06:44.016 --> 00:06:46.795
+So, if they don't have an order,
+
+128
+00:06:46.795 --> 00:06:49.830
+which element is element number zero?
+
+129
+00:06:49.830 --> 00:06:52.247
+Is it 77, is it 80, is it 90?
+
+130
+00:06:53.895 --> 00:06:55.395
+Is it any of them?
+
+131
+00:06:56.649 --> 00:07:00.816
+So what do you think will
+happen when we run the file now?
+
+132
+00:07:05.029 --> 00:07:06.921
+The same thing.
+
+133
+00:07:06.921 --> 00:07:09.048
+Because it's unordered,
+it doesn't make sense
+
+134
+00:07:09.048 --> 00:07:12.305
+to access a specific
+element because that element
+
+135
+00:07:12.305 --> 00:07:14.763
+may not be the same every time.
+
+136
+00:07:14.763 --> 00:07:16.438
+So we get essentially the same error,
+
+137
+00:07:16.438 --> 00:07:20.438
+"'set' object does not
+support item assignment."
+
+138
+00:07:21.904 --> 00:07:24.353
+However, we can add things to a set.
+
+139
+00:07:24.353 --> 00:07:27.532
+We can do that with the add method.
+
+140
+00:07:27.532 --> 00:07:31.699
+So we can say set_grades.add
+and then add the 60 to it.
+
+141
+00:07:35.752 --> 00:07:37.638
+And as you can see, that puts the 60
+
+142
+00:07:37.638 --> 00:07:40.221
+in there, in the set somewhere.
+
+143
+00:07:41.582 --> 00:07:44.582
+And of course, if we run this twice,
+
+144
+00:07:45.919 --> 00:07:48.967
+this still only appears once,
+
+145
+00:07:48.967 --> 00:07:49.878
+we don't get an error.
+
+146
+00:07:49.878 --> 00:07:52.696
+We just get nothing because the 60
+
+147
+00:07:52.696 --> 00:07:55.245
+was already there when we added it.
+
+148
+00:07:55.245 --> 00:07:57.245
+So it only appears once.
+
+149
+00:08:00.417 --> 00:08:03.142
+Okay, so this is a few
+things that you can do
+
+150
+00:08:03.142 --> 00:08:05.058
+with lists, tuples, and sets,
+
+151
+00:08:05.058 --> 00:08:08.359
+and we've also looked at
+exactly what immutable means
+
+152
+00:08:08.359 --> 00:08:10.698
+and also some things that you cannot do
+
+153
+00:08:10.698 --> 00:08:12.951
+with tuples and sets,
+and we've also looked at
+
+154
+00:08:12.951 --> 00:08:15.664
+how to append elements to a list,
+
+155
+00:08:15.664 --> 00:08:18.886
+and that's just doing grades.append
+
+156
+00:08:18.886 --> 00:08:22.389
+and then we can append
+another element to the list.
+
+157
+00:08:22.389 --> 00:08:23.323
+In the next video, we're going to look at
+
+158
+00:08:23.323 --> 00:08:26.972
+some more advanced and
+specific set operations
+
+159
+00:08:26.972 --> 00:08:29.472
+that we can use, and they have
+
+160
+00:08:30.685 --> 00:08:33.291
+a very particular set of use cases,
+
+161
+00:08:33.291 --> 00:08:34.884
+or scenarios that we may wanna use them
+
+162
+00:08:34.884 --> 00:08:37.023
+in computer science and
+in software development,
+
+163
+00:08:37.023 --> 00:08:40.611
+so pay attention and I'll see
+you in the very next video.
+

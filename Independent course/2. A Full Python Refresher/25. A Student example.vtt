@@ -1,0 +1,477 @@
+﻿WEBVTT
+
+1
+00:00:00.872 --> 00:00:02.179
+- [Instructor] Hi and welcome back.
+
+2
+00:00:02.179 --> 00:00:05.089
+In this video we're going
+to look at a student class.
+
+3
+00:00:05.089 --> 00:00:05.972
+Which is then going to be used
+
+4
+00:00:05.972 --> 00:00:09.251
+over the next few videos as well.
+
+5
+00:00:09.251 --> 00:00:11.283
+Classes are always defined in the same way
+
+6
+00:00:11.283 --> 00:00:14.094
+using class and then the class name.
+
+7
+00:00:14.094 --> 00:00:17.589
+And they always, really,
+should have an init method.
+
+8
+00:00:17.589 --> 00:00:20.246
+The init method takes in self,
+
+9
+00:00:20.246 --> 00:00:23.117
+which is the object that we are creating,
+
+10
+00:00:23.117 --> 00:00:26.784
+and also any number of
+arguments after that.
+
+11
+00:00:28.116 --> 00:00:30.190
+And then, that's gonna be name and school.
+
+12
+00:00:30.190 --> 00:00:32.220
+Self dot name is gonna be name.
+
+13
+00:00:32.220 --> 00:00:34.680
+Self dot school is gonna be school.
+
+14
+00:00:34.680 --> 00:00:39.680
+And also self dot marks
+is gonna be an empty list.
+
+15
+00:00:39.680 --> 00:00:41.808
+So this is my student class.
+
+16
+00:00:41.808 --> 00:00:44.310
+When I create a student like Anna,
+
+17
+00:00:44.310 --> 00:00:46.127
+they're gonna be created in the format
+
+18
+00:00:46.127 --> 00:00:48.127
+of Anna MIT for example.
+
+19
+00:00:52.230 --> 00:00:54.524
+So this creates an object
+
+20
+00:00:54.524 --> 00:00:56.710
+which has self dot name,
+
+21
+00:00:56.710 --> 00:01:00.090
+self dot school, and self dot marks.
+
+22
+00:01:00.090 --> 00:01:02.960
+And then self dot name
+is assigned to be Anna.
+
+23
+00:01:02.960 --> 00:01:04.992
+Self dot school is assigned to be school.
+
+24
+00:01:04.992 --> 00:01:09.465
+Self dot marks is assigned
+to be an empty list.
+
+25
+00:01:09.465 --> 00:01:10.508
+Okay.
+
+26
+00:01:10.508 --> 00:01:11.710
+And then we can do things
+
+27
+00:01:11.710 --> 00:01:15.627
+like Anna dot marks dot
+append 56, for example.
+
+28
+00:01:17.344 --> 00:01:19.094
+Print Anna dot marks.
+
+29
+00:01:19.975 --> 00:01:22.590
+And then I'm gonna comment
+this other print statement out
+
+30
+00:01:22.590 --> 00:01:25.655
+just to make things a bit easier.
+
+31
+00:01:25.655 --> 00:01:27.276
+When I run this,
+
+32
+00:01:27.276 --> 00:01:29.506
+you would surely expect a list
+
+33
+00:01:29.506 --> 00:01:31.506
+with the value 56 in it,
+
+34
+00:01:33.414 --> 00:01:36.437
+but you get an error
+because I made a typo.
+
+35
+00:01:36.437 --> 00:01:38.526
+Let's try that again.
+
+36
+00:01:38.526 --> 00:01:39.464
+And there we go.
+
+37
+00:01:39.464 --> 00:01:42.217
+You get the value 56 out,
+
+38
+00:01:42.217 --> 00:01:43.384
+and that's it.
+
+39
+00:01:44.307 --> 00:01:45.600
+We, really that's all we did.
+
+40
+00:01:45.600 --> 00:01:49.767
+We created a sort of data store
+with the three properties.
+
+41
+00:01:52.004 --> 00:01:54.620
+Two of them will be Anna and MIT.
+
+42
+00:01:54.620 --> 00:01:56.380
+And the other one was an empty list,
+
+43
+00:01:56.380 --> 00:01:59.820
+and then we appended an item to it.
+
+44
+00:01:59.820 --> 00:02:02.061
+We can extend the student class
+
+45
+00:02:02.061 --> 00:02:03.728
+by allowing it to do something
+
+46
+00:02:03.728 --> 00:02:05.245
+in the same way that the lottery player
+
+47
+00:02:05.245 --> 00:02:07.276
+could calculate a total.
+
+48
+00:02:07.276 --> 00:02:09.249
+Maybe something more
+interesting for a student
+
+49
+00:02:09.249 --> 00:02:12.577
+is to be able to calculate an average.
+
+50
+00:02:12.577 --> 00:02:14.661
+And I think that you
+can do that yourselves.
+
+51
+00:02:14.661 --> 00:02:15.911
+You can pause the video
+
+52
+00:02:15.911 --> 00:02:20.345
+and implement the average
+function yourselves.
+
+53
+00:02:20.345 --> 00:02:22.894
+Just follow the example
+of the lottery player
+
+54
+00:02:22.894 --> 00:02:24.894
+to calculate an average.
+
+55
+00:02:29.662 --> 00:02:30.814
+Hopefully you managed.
+
+56
+00:02:30.814 --> 00:02:34.397
+The way I would do it
+is average with self,
+
+57
+00:02:35.287 --> 00:02:37.787
+and then it would return
+the sum of the marks
+
+58
+00:02:37.787 --> 00:02:39.759
+divided by the length of the marks.
+
+59
+00:02:39.759 --> 00:02:42.006
+We've seen this before.
+
+60
+00:02:42.006 --> 00:02:43.756
+How we could do this,
+
+61
+00:02:44.621 --> 00:02:47.204
+and then if we have more marks,
+
+62
+00:02:49.877 --> 00:02:53.568
+then we can do something
+like Anna dot average.
+
+63
+00:02:53.568 --> 00:02:55.228
+So now that we've got two marks,
+
+64
+00:02:55.228 --> 00:02:56.537
+we can add them together.
+
+65
+00:02:56.537 --> 00:03:01.014
+Divide it by two because that's
+the length of self dot marks
+
+66
+00:03:01.014 --> 00:03:04.597
+and then we're gonna
+print that out, right?
+
+67
+00:03:05.911 --> 00:03:07.106
+Let's have a wee look.
+
+68
+00:03:07.106 --> 00:03:08.314
+What do you think's gonna happen
+
+69
+00:03:08.314 --> 00:03:10.542
+when we run this code?
+
+70
+00:03:10.542 --> 00:03:15.444
+Have any of you spotted
+the, really two mistakes,
+
+71
+00:03:15.444 --> 00:03:16.951
+that are there?
+
+72
+00:03:16.951 --> 00:03:18.099
+And if you haven't spotted them,
+
+73
+00:03:18.099 --> 00:03:19.974
+I would recommend pause the video now
+
+74
+00:03:19.974 --> 00:03:21.724
+and try to spot them.
+
+75
+00:03:25.545 --> 00:03:28.212
+The two errors are very similar.
+
+76
+00:03:30.072 --> 00:03:33.568
+Let's press play and then
+see if you can figure it out.
+
+77
+00:03:33.568 --> 00:03:35.599
+I'm sure you can.
+
+78
+00:03:35.599 --> 00:03:38.255
+We get a traceback as usual,
+
+79
+00:03:38.255 --> 00:03:41.223
+and then we get two things printed out.
+
+80
+00:03:41.223 --> 00:03:44.977
+The first one is when we run
+the method Anna dot average,
+
+81
+00:03:44.977 --> 00:03:49.306
+and the other one is exactly
+which line caused the error,
+
+82
+00:03:49.306 --> 00:03:51.537
+which was line 29.
+
+83
+00:03:51.537 --> 00:03:53.255
+And it says name error
+
+84
+00:03:53.255 --> 00:03:56.422
+because the name marks is not defined.
+
+85
+00:03:59.193 --> 00:04:00.878
+If the name marks is not defined,
+
+86
+00:04:00.878 --> 00:04:02.378
+why could that be?
+
+87
+00:04:08.182 --> 00:04:11.465
+Maybe it should be self dot marks.
+
+88
+00:04:11.465 --> 00:04:14.901
+In the same way that here
+it was self dot numbers.
+
+89
+00:04:14.901 --> 00:04:16.042
+And you would be right.
+
+90
+00:04:16.042 --> 00:04:17.625
+Marks isn't a thing
+
+91
+00:04:19.218 --> 00:04:23.067
+because the marks are not
+associated with nothing.
+
+92
+00:04:23.067 --> 00:04:24.999
+They're associated with the object,
+
+93
+00:04:24.999 --> 00:04:26.718
+and the object is self.
+
+94
+00:04:26.718 --> 00:04:29.885
+So it should always be self dot marks.
+
+95
+00:04:31.933 --> 00:04:33.495
+Now we can run this again,
+
+96
+00:04:33.495 --> 00:04:36.662
+and we get 63.5, which is the average.
+
+97
+00:04:40.099 --> 00:04:43.540
+Okay, so that was that for this video.
+
+98
+00:04:43.540 --> 00:04:45.781
+Just another example of
+object-oriented programming.
+
+99
+00:04:45.781 --> 00:04:50.155
+And remember that objects
+are just stores of data,
+
+100
+00:04:50.155 --> 00:04:52.342
+such as the name and the school,
+
+101
+00:04:52.342 --> 00:04:55.937
+but also potentially some
+methods, some actions,
+
+102
+00:04:55.937 --> 00:04:57.968
+some things they can do.
+
+103
+00:04:57.968 --> 00:04:59.633
+And when you combine those two together,
+
+104
+00:04:59.633 --> 00:05:00.565
+that's an object.
+
+105
+00:05:00.565 --> 00:05:04.474
+It's just a construct
+used to make things easier
+
+106
+00:05:04.474 --> 00:05:07.766
+rather than using a
+dictionary for everything.
+
+107
+00:05:07.766 --> 00:05:08.964
+So without further ado,
+
+108
+00:05:08.964 --> 00:05:10.268
+I'll see you in the next video.
+
+109
+00:05:10.268 --> 00:05:11.101
+We're gonna be looking
+
+110
+00:05:11.101 --> 00:05:14.120
+at some more advanced
+object-oriented stuff.
+
+111
+00:05:14.120 --> 00:05:15.671
+I'll see you there.
+

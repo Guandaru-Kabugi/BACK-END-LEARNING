@@ -1,0 +1,536 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.661
+- [Narrator] Hi and welcome
+back to the programme.
+
+2
+00:00:02.661 --> 00:00:05.503
+In this video we're going to
+cover something quite advanced
+
+3
+00:00:05.503 --> 00:00:09.927
+that we've seen before but we
+didn't really know it worked.
+
+4
+00:00:09.927 --> 00:00:13.927
+I'm talking about
+@classmethod or @staticmethod.
+
+5
+00:00:15.667 --> 00:00:19.351
+These are called
+decorators and a decorator
+
+6
+00:00:19.351 --> 00:00:23.518
+is just a function that gets
+called before another function.
+
+7
+00:00:28.756 --> 00:00:32.207
+We're also going to look
+at importing other things.
+
+8
+00:00:32.207 --> 00:00:35.036
+In some cases, our Python
+code may need to use
+
+9
+00:00:35.036 --> 00:00:37.286
+somebody else's code as well.
+
+10
+00:00:37.286 --> 00:00:39.745
+If somebody else has written
+something that you can use,
+
+11
+00:00:39.745 --> 00:00:41.446
+then you shouldn't reinvent the wheel
+
+12
+00:00:41.446 --> 00:00:43.705
+and write everything again.
+
+13
+00:00:43.705 --> 00:00:48.486
+Python comes with a large
+number of very useful libraries,
+
+14
+00:00:48.486 --> 00:00:51.246
+it's actually code that
+someone else has written.
+
+15
+00:00:51.246 --> 00:00:53.597
+And in order to write decorators,
+
+16
+00:00:53.597 --> 00:00:54.964
+we need to use one of them.
+
+17
+00:00:54.964 --> 00:00:56.870
+So let's import it.
+
+18
+00:00:56.870 --> 00:00:59.370
+This is the functools library,
+
+19
+00:01:00.628 --> 00:01:03.376
+stands for function tools.
+
+20
+00:01:03.376 --> 00:01:05.216
+And we're gonna need it because
+
+21
+00:01:05.216 --> 00:01:08.403
+a decorator is going to essentially
+
+22
+00:01:08.403 --> 00:01:10.127
+going to use this library
+
+23
+00:01:10.127 --> 00:01:13.877
+to allow us to do
+something with the methods.
+
+24
+00:01:15.976 --> 00:01:20.660
+And I'm going to create a
+method called my_decorator
+
+25
+00:01:20.660 --> 00:01:24.007
+and it's going to take in a parameter.
+
+26
+00:01:24.007 --> 00:01:25.693
+The parameter, I'm going to call func.
+
+27
+00:01:25.693 --> 00:01:26.779
+You can call it whatever you want,
+
+28
+00:01:26.779 --> 00:01:29.529
+it's just a variable as you know.
+
+29
+00:01:31.457 --> 00:01:34.766
+Then, it's funny because in order to
+
+30
+00:01:34.766 --> 00:01:38.091
+declare a decorator, in
+order to create a decorator,
+
+31
+00:01:38.091 --> 00:01:41.697
+we need to use a decorator,
+which is quite redundant.
+
+32
+00:01:41.697 --> 00:01:46.240
+But I'm going to do @functools.wraps(func)
+
+33
+00:01:46.240 --> 00:01:50.407
+and then function_that_runs_func();
+
+34
+00:01:52.265 --> 00:01:55.471
+and then here's where it gets fun.
+
+35
+00:01:55.471 --> 00:01:59.638
+Print (*In the decorator!*) func()
+
+36
+00:02:04.570 --> 00:02:07.903
+and then return function_that_runs_func.
+
+37
+00:02:09.766 --> 00:02:12.623
+Okay, so this is my decorator.
+
+38
+00:02:12.623 --> 00:02:16.198
+It looks really horrible but that's what
+
+39
+00:02:16.198 --> 00:02:17.448
+a decorator is.
+
+40
+00:02:18.931 --> 00:02:22.848
+You have the decorator
+and you have a function,
+
+41
+00:02:26.098 --> 00:02:28.681
+and this function wraps around.
+
+42
+00:02:34.979 --> 00:02:38.008
+This function wraps around the function
+
+43
+00:02:38.008 --> 00:02:40.695
+that you pass in as a parameter.
+
+44
+00:02:40.695 --> 00:02:45.156
+And then you can do things
+before or after the function.
+
+45
+00:02:45.156 --> 00:02:47.884
+So here's what happens, really.
+
+46
+00:02:47.884 --> 00:02:52.051
+You say @my_decorator and
+then you define a function,
+
+47
+00:02:54.206 --> 00:02:58.373
+print (*I'm the
+function!*), my_function().
+
+48
+00:03:01.344 --> 00:03:03.844
+Okay, so this is pretty tough.
+
+49
+00:03:04.936 --> 00:03:06.620
+The first few times that
+I looked at decorators
+
+50
+00:03:06.620 --> 00:03:10.203
+a while ago and they
+were really confusing,
+
+51
+00:03:11.261 --> 00:03:13.470
+so hopefully we can dispel
+some of that confusion
+
+52
+00:03:13.470 --> 00:03:15.053
+through this video.
+
+53
+00:03:17.178 --> 00:03:18.976
+The first thing that happens is
+
+54
+00:03:18.976 --> 00:03:22.222
+that you define your decorator, okay.
+
+55
+00:03:22.222 --> 00:03:25.789
+But really the interesting
+bit happens in here.
+
+56
+00:03:25.789 --> 00:03:29.039
+You apply the decorator to my_function,
+
+57
+00:03:30.831 --> 00:03:34.748
+so what that does, is
+that changes my_function.
+
+58
+00:03:37.107 --> 00:03:39.856
+My_function executes this code,
+
+59
+00:03:39.856 --> 00:03:41.118
+so what we're gonna do is we're gonna pass
+
+60
+00:03:41.118 --> 00:03:44.201
+my_function to the decorator as func.
+
+61
+00:03:46.504 --> 00:03:49.394
+And then we're going to create a function
+
+62
+00:03:49.394 --> 00:03:51.634
+that's going to wrap around it.
+
+63
+00:03:51.634 --> 00:03:54.479
+And it's gonna say (*In the decorator!*),
+
+64
+00:03:54.479 --> 00:03:57.695
+And then it's going to run the function,
+
+65
+00:03:57.695 --> 00:03:59.317
+remember this function
+here is the parameter,
+
+66
+00:03:59.317 --> 00:04:02.304
+which is my_function, so
+we're gonna run that function
+
+67
+00:04:02.304 --> 00:04:05.933
+and print this code and then after that,
+
+68
+00:04:05.933 --> 00:04:09.073
+we're gonna print after the decorator.
+
+69
+00:04:09.073 --> 00:04:12.184
+And we return the function_that_runs_func
+
+70
+00:04:12.184 --> 00:04:15.246
+and this function here, that runs
+
+71
+00:04:15.246 --> 00:04:17.869
+this print statement, the function,
+
+72
+00:04:17.869 --> 00:04:19.670
+and this print statement.
+
+73
+00:04:19.670 --> 00:04:22.936
+This function here is
+the one that replaces
+
+74
+00:04:22.936 --> 00:04:26.004
+my_function, so then
+my_function stops being
+
+75
+00:04:26.004 --> 00:04:29.350
+my_function and it becomes
+this function here,
+
+76
+00:04:29.350 --> 00:04:30.517
+which is this.
+
+77
+00:04:33.082 --> 00:04:35.249
+So it's a pretty mind
+boggling sort of thing
+
+78
+00:04:35.249 --> 00:04:36.999
+that's going on here.
+
+79
+00:04:37.920 --> 00:04:40.476
+So what we do is we pass my_function,
+
+80
+00:04:40.476 --> 00:04:43.059
+create a function that uses it,
+
+81
+00:04:44.177 --> 00:04:47.094
+and then replace my_function
+by that function.
+
+82
+00:04:47.094 --> 00:04:49.811
+So, essentially we're
+extending the function
+
+83
+00:04:49.811 --> 00:04:53.644
+with some stuff in front
+and some stuff after.
+
+84
+00:04:56.144 --> 00:04:58.811
+Let's clear this and run it, and
+
+85
+00:05:00.512 --> 00:05:04.546
+as you can see, we get in the decorator,
+
+86
+00:05:04.546 --> 00:05:08.046
+I'm the function, and after the decorator.
+
+87
+00:05:11.272 --> 00:05:13.939
+We cannot run func if we want it
+
+88
+00:05:14.895 --> 00:05:17.950
+and then we just get this code here.
+
+89
+00:05:17.950 --> 00:05:20.812
+As you can see, this function is
+
+90
+00:05:20.812 --> 00:05:23.903
+essentially getting replaced by this one,
+
+91
+00:05:23.903 --> 00:05:25.486
+this function here.
+
+92
+00:05:26.741 --> 00:05:29.854
+So we no longer even call this.
+
+93
+00:05:29.854 --> 00:05:33.771
+Your decorator should
+always call the function,
+
+94
+00:05:35.163 --> 00:05:38.718
+because if not, really it doesn't matter
+
+95
+00:05:38.718 --> 00:05:40.994
+what you're decorating because it's never
+
+96
+00:05:40.994 --> 00:05:42.564
+going to run.
+
+97
+00:05:42.564 --> 00:05:44.355
+So make sure to always call the function
+
+98
+00:05:44.355 --> 00:05:48.159
+from your decorator, and this is the way
+
+99
+00:05:48.159 --> 00:05:50.260
+that decorators are built.
+
+100
+00:05:50.260 --> 00:05:53.387
+So you're passing
+my_function to the decorator
+
+101
+00:05:53.387 --> 00:05:56.683
+and then you're wrapping
+another function around it.
+
+102
+00:05:56.683 --> 00:05:57.949
+This is some magic that
+happens in functools
+
+103
+00:05:57.949 --> 00:06:00.900
+and I'm not going to
+go into how this works.
+
+104
+00:06:00.900 --> 00:06:04.968
+And then basically, this
+function_that_runs_func
+
+105
+00:06:04.968 --> 00:06:07.275
+is what runs some stuff in front,
+
+106
+00:06:07.275 --> 00:06:10.851
+then runs the function, then
+runs some stuff after it,
+
+107
+00:06:10.851 --> 00:06:12.891
+then returns the value that is
+
+108
+00:06:12.891 --> 00:06:16.014
+what replaces this function here.
+
+109
+00:06:16.014 --> 00:06:17.300
+When you run the function, then
+
+110
+00:06:17.300 --> 00:06:21.043
+what you're really
+running is this function.
+
+111
+00:06:21.043 --> 00:06:22.964
+So I hope that makes sense.
+
+112
+00:06:22.964 --> 00:06:25.703
+This is what a simple
+decorator looks like.
+
+113
+00:06:25.703 --> 00:06:27.030
+In the next video, we're going to look at
+
+114
+00:06:27.030 --> 00:06:30.502
+complex decorators,
+which are slightly more
+
+115
+00:06:30.502 --> 00:06:33.517
+annoying, so I will see
+you in the very next video
+
+116
+00:06:33.517 --> 00:06:35.184
+and we're gonna look at that, and
+
+117
+00:06:35.184 --> 00:06:38.952
+hopefully with those two, you're going to
+
+118
+00:06:38.952 --> 00:06:41.848
+complete your Python
+knowledge and we'll be able to
+
+119
+00:06:41.848 --> 00:06:44.004
+move into creating
+(inaudible), which is the focus
+
+120
+00:06:44.004 --> 00:06:46.764
+of this course; so I'm really excited to
+
+121
+00:06:46.764 --> 00:06:50.284
+guide you into the next video and beyond.
+
+122
+00:06:50.284 --> 00:06:51.784
+I'll see you then.
+

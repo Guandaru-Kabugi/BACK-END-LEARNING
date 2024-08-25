@@ -1,0 +1,602 @@
+﻿WEBVTT
+
+1
+00:00:00.206 --> 00:00:02.623
+- [Instructor] Hi and welcome
+back to the programme.
+
+2
+00:00:02.623 --> 00:00:05.688
+In this video we're
+looking at if statements.
+
+3
+00:00:05.688 --> 00:00:08.265
+First thing to do again is
+create a new file and save it.
+
+4
+00:00:08.265 --> 00:00:10.598
+That's if statements dot py.
+
+5
+00:00:12.049 --> 00:00:16.104
+And we've looked at if
+statements before when we have
+
+6
+00:00:16.104 --> 00:00:17.984
+a variable should app.
+
+7
+00:00:17.984 --> 00:00:19.901
+Such as should continue
+
+8
+00:00:21.259 --> 00:00:22.854
+if it's true
+
+9
+00:00:22.854 --> 00:00:25.073
+if should continue
+
+10
+00:00:25.073 --> 00:00:29.240
+it's true then we can print
+something out like hello.
+
+11
+00:00:30.966 --> 00:00:33.782
+Now let's go back to the
+terminal and do python
+
+12
+00:00:33.782 --> 00:00:38.453
+three point five if statements,
+and that prints out hello
+
+13
+00:00:38.453 --> 00:00:40.120
+as you would expect.
+
+14
+00:00:42.016 --> 00:00:46.183
+Now what do you think happens
+if I remove equal equal true?
+
+15
+00:00:50.788 --> 00:00:54.506
+What do you think happens
+if I run this again?
+
+16
+00:00:54.506 --> 00:00:57.371
+Will we get something printed out?
+
+17
+00:00:57.371 --> 00:00:59.817
+Will we get an error?
+
+18
+00:00:59.817 --> 00:01:02.484
+Will we get nothing printed out?
+
+19
+00:01:04.249 --> 00:01:06.983
+We'll still get hello and that's because
+
+20
+00:01:06.983 --> 00:01:08.170
+the equal equal true
+
+21
+00:01:08.170 --> 00:01:09.587
+is not necessary.
+
+22
+00:01:10.425 --> 00:01:14.520
+We can say if we should continue
+print hello that kind of
+
+23
+00:01:14.520 --> 00:01:15.520
+makes sense.
+
+24
+00:01:16.726 --> 00:01:20.859
+Obviously the variable
+name could be anything.
+
+25
+00:01:20.859 --> 00:01:23.652
+In this case it maybe
+doesn't make as much sense.
+
+26
+00:01:23.652 --> 00:01:27.470
+But nevertheless the equal
+equal true is implied
+
+27
+00:01:27.470 --> 00:01:29.963
+if we don't include anything.
+
+28
+00:01:29.963 --> 00:01:33.380
+So this means if should continue is true.
+
+29
+00:01:37.330 --> 00:01:41.497
+So we don't need to include
+the is true basically.
+
+30
+00:01:43.796 --> 00:01:47.963
+So let's create a list of
+known people known people.
+
+31
+00:01:49.768 --> 00:01:53.935
+And that's gonna be something
+like John, Anna, Mary
+
+32
+00:01:54.810 --> 00:01:55.810
+for example.
+
+33
+00:01:57.289 --> 00:02:01.456
+And then we're gonna say
+ask for user for a value.
+
+34
+00:02:02.580 --> 00:02:05.663
+So we're gonna say person equal input
+
+35
+00:02:07.438 --> 00:02:09.605
+enter the person you know.
+
+36
+00:02:11.881 --> 00:02:13.964
+So how would we now check
+
+37
+00:02:16.389 --> 00:02:19.068
+that the person the user knows,
+
+38
+00:02:19.068 --> 00:02:22.095
+the person they're gonna
+type the name of is
+
+39
+00:02:22.095 --> 00:02:23.906
+in our known people?
+
+40
+00:02:23.906 --> 00:02:25.099
+We've not covered this before
+
+41
+00:02:25.099 --> 00:02:26.663
+so I wouldn't expect you to necessarily
+
+42
+00:02:26.663 --> 00:02:30.299
+know it but some internet research
+
+43
+00:02:30.299 --> 00:02:32.632
+goes a long way for example.
+
+44
+00:02:35.358 --> 00:02:37.001
+But nevertheless, I
+also wouldn't expect you
+
+45
+00:02:37.001 --> 00:02:38.301
+to research everything
+or else this wouldn't
+
+46
+00:02:38.301 --> 00:02:39.758
+really be a course.
+
+47
+00:02:39.758 --> 00:02:43.925
+So what we can do is we say
+if person in known people
+
+48
+00:02:45.569 --> 00:02:47.819
+print you know this person.
+
+49
+00:02:52.700 --> 00:02:56.648
+Okay let's run that and see what happens.
+
+50
+00:02:56.648 --> 00:03:00.584
+Well as we would expect
+we get a prompt saying
+
+51
+00:03:00.584 --> 00:03:03.428
+enter the person you
+know because that's what
+
+52
+00:03:03.428 --> 00:03:05.178
+the input method has.
+
+53
+00:03:06.058 --> 00:03:10.162
+So I'm gonna enter John
+and then it tells me that
+
+54
+00:03:10.162 --> 00:03:11.657
+I know this person.
+
+55
+00:03:11.657 --> 00:03:13.099
+So let's run it again.
+
+56
+00:03:13.099 --> 00:03:16.826
+And now enter something
+else like Rolf and we don't
+
+57
+00:03:16.826 --> 00:03:17.909
+get anything.
+
+58
+00:03:18.890 --> 00:03:20.138
+Which is not ideal.
+
+59
+00:03:20.138 --> 00:03:22.413
+We should probably get
+something saying you don't
+
+60
+00:03:22.413 --> 00:03:23.830
+know this person.
+
+61
+00:03:24.731 --> 00:03:25.856
+So we can do that.
+
+62
+00:03:25.856 --> 00:03:30.520
+We can say if person not
+in known people print
+
+63
+00:03:30.520 --> 00:03:32.770
+you don't know this person.
+
+64
+00:03:35.048 --> 00:03:37.608
+Python is quite nice
+that you can use proper
+
+65
+00:03:37.608 --> 00:03:41.173
+English words such as in and not in.
+
+66
+00:03:41.173 --> 00:03:44.972
+So let's run this again and
+put in Rolf and now I'm gonna
+
+67
+00:03:44.972 --> 00:03:48.446
+press enter and you
+know what's gonna come.
+
+68
+00:03:48.446 --> 00:03:52.420
+And that is that you
+don't know this person.
+
+69
+00:03:52.420 --> 00:03:54.095
+This is nice.
+
+70
+00:03:54.095 --> 00:03:56.126
+We've got two if statements.
+
+71
+00:03:56.126 --> 00:03:59.348
+If the person is in the known
+people then we print out
+
+72
+00:03:59.348 --> 00:04:02.008
+that we know this person and
+if it's not then we print
+
+73
+00:04:02.008 --> 00:04:03.675
+that we do not know.
+
+74
+00:04:05.715 --> 00:04:09.882
+But there is a couple of
+problems really with this.
+
+75
+00:04:11.739 --> 00:04:15.954
+We've got some code that is
+duplicated such as person
+
+76
+00:04:15.954 --> 00:04:19.357
+and known people in known people really.
+
+77
+00:04:19.357 --> 00:04:23.210
+So if we wanted to change
+like the name of this variable
+
+78
+00:04:23.210 --> 00:04:24.710
+to people we know.
+
+79
+00:04:25.901 --> 00:04:29.009
+Not a very good change but
+we would have to change
+
+80
+00:04:29.009 --> 00:04:30.842
+it here and also here.
+
+81
+00:04:32.382 --> 00:04:35.049
+So it's not a 100% perfect.
+
+82
+00:04:36.140 --> 00:04:39.473
+And also our programme is going to come in
+
+83
+00:04:40.651 --> 00:04:42.622
+run this if statement.
+
+84
+00:04:42.622 --> 00:04:47.018
+Basically it's gonna check
+if person is in this list
+
+85
+00:04:47.018 --> 00:04:51.027
+and it's gonna say no
+it isn't or yes it is
+
+86
+00:04:51.027 --> 00:04:53.792
+depending on the person.
+
+87
+00:04:53.792 --> 00:04:55.531
+And then it's gonna come
+down here and it's gonna
+
+88
+00:04:55.531 --> 00:04:56.781
+check it again.
+
+89
+00:04:57.850 --> 00:05:02.017
+So if the person is in the
+known people it's gonna print
+
+90
+00:05:02.985 --> 00:05:05.504
+you know this person and
+then it's gonna check
+
+91
+00:05:05.504 --> 00:05:08.258
+if the person isn't in known people.
+
+92
+00:05:08.258 --> 00:05:10.607
+And that doesn't make sense
+because it already knows
+
+93
+00:05:10.607 --> 00:05:14.039
+that it is the known people
+so why would it check
+
+94
+00:05:14.039 --> 00:05:15.039
+if it isn't?
+
+95
+00:05:16.426 --> 00:05:19.639
+And you would be completely
+right it's not really necessary.
+
+96
+00:05:19.639 --> 00:05:24.077
+So instead we can have
+a compound if statement.
+
+97
+00:05:24.077 --> 00:05:27.612
+If the person is in the
+known people print this out
+
+98
+00:05:27.612 --> 00:05:31.214
+and if not print this other thing out.
+
+99
+00:05:31.214 --> 00:05:34.797
+So what happens now is
+that if this is true
+
+100
+00:05:37.333 --> 00:05:39.768
+then we run this thing here
+and if this is not true
+
+101
+00:05:39.768 --> 00:05:41.123
+then we run this other thing here.
+
+102
+00:05:41.123 --> 00:05:44.473
+We don't have to check two things.
+
+103
+00:05:44.473 --> 00:05:48.364
+Naturally if this is true
+then we will print out
+
+104
+00:05:48.364 --> 00:05:50.945
+that you know this person
+and then it will just kind of
+
+105
+00:05:50.945 --> 00:05:54.216
+go to the end and it will
+skip this bit entirely
+
+106
+00:05:54.216 --> 00:05:55.966
+which is a lot nicer.
+
+107
+00:05:59.554 --> 00:06:02.984
+Okay so just one more thing
+before the end of this video.
+
+108
+00:06:02.984 --> 00:06:06.806
+Printing out you know this
+person is good but we could
+
+109
+00:06:06.806 --> 00:06:09.818
+also print out the name of the person.
+
+110
+00:06:09.818 --> 00:06:11.235
+So let's do that.
+
+111
+00:06:12.412 --> 00:06:16.266
+And I'm gonna say you know
+open and closing bracket.
+
+112
+00:06:16.266 --> 00:06:20.724
+And you don't know open
+and closing bracket.
+
+113
+00:06:20.724 --> 00:06:24.508
+So we're gonna substitute
+open and closing bracket
+
+114
+00:06:24.508 --> 00:06:26.341
+for the person's name.
+
+115
+00:06:27.286 --> 00:06:30.822
+And the way we do that is we
+say after the quotation mark
+
+116
+00:06:30.822 --> 00:06:33.822
+we're gonna say don't format person.
+
+117
+00:06:38.278 --> 00:06:40.813
+And what this dot format method does
+
+118
+00:06:40.813 --> 00:06:42.691
+it is going to essentially format
+
+119
+00:06:42.691 --> 00:06:46.858
+this string by replacing
+this pair of colour braces
+
+120
+00:06:47.914 --> 00:06:52.221
+by the parameter or the
+argument to the format method.
+
+121
+00:06:52.221 --> 00:06:56.598
+So this person which is the
+user input is then gonna go
+
+122
+00:06:56.598 --> 00:06:57.836
+in here.
+
+123
+00:06:57.836 --> 00:07:00.023
+Let's run this and give it a go.
+
+124
+00:07:00.023 --> 00:07:03.303
+Enter the person you know,
+Rolf, and it says now
+
+125
+00:07:03.303 --> 00:07:06.303
+you don't know Rolf, which is great.
+
+126
+00:07:08.266 --> 00:07:12.202
+So what we've looked at
+here is if statements
+
+127
+00:07:12.202 --> 00:07:16.559
+and compound if statements
+and also at the format method.
+
+128
+00:07:16.559 --> 00:07:20.288
+The format method's really
+great because we can
+
+129
+00:07:20.288 --> 00:07:23.705
+substitute things in strings very easily.
+
+130
+00:07:24.819 --> 00:07:28.077
+We're gonna be exploring more
+use cases of the format method
+
+131
+00:07:28.077 --> 00:07:31.289
+in the next video and we're
+gonna have a wee programming
+
+132
+00:07:31.289 --> 00:07:34.734
+exercise for you to complete
+in the next video as well.
+
+133
+00:07:34.734 --> 00:07:36.988
+So I'll see you in the very next video.
+

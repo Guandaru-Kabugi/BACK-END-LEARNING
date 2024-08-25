@@ -1,0 +1,859 @@
+﻿WEBVTT
+
+1
+00:00:00.602 --> 00:00:02.025
+- [Instructor] Hi, and welcome back.
+
+2
+00:00:02.025 --> 00:00:05.925
+In this video, we've got
+a small exercise for you.
+
+3
+00:00:05.925 --> 00:00:07.487
+And also, we're going to introduce
+
+4
+00:00:07.487 --> 00:00:10.340
+a few new things, of course.
+
+5
+00:00:10.340 --> 00:00:12.030
+We're going to create two methods.
+
+6
+00:00:12.030 --> 00:00:15.613
+One of them is going
+to be who_do_you_know,
+
+7
+00:00:18.741 --> 00:00:21.991
+and the other one is gonna be ask_user.
+
+8
+00:00:26.088 --> 00:00:27.821
+So, the first thing we've introduced
+
+9
+00:00:27.821 --> 00:00:31.207
+in this video already is the pass keyword.
+
+10
+00:00:31.207 --> 00:00:34.490
+You remember me saying that after a colon,
+
+11
+00:00:34.490 --> 00:00:38.367
+the next line has to be
+indented, and I wasn't lying.
+
+12
+00:00:38.367 --> 00:00:41.052
+It has to be indented, but we don't
+
+13
+00:00:41.052 --> 00:00:43.226
+have anything to put inside this method.
+
+14
+00:00:43.226 --> 00:00:44.221
+We don't have anything for this method
+
+15
+00:00:44.221 --> 00:00:46.811
+to do, so we put "pass," and that
+
+16
+00:00:46.811 --> 00:00:48.846
+essentially means do nothing.
+
+17
+00:00:48.846 --> 00:00:51.596
+Or just pass, basically, give up.
+
+18
+00:00:52.836 --> 00:00:54.493
+So, the first line is indented,
+
+19
+00:00:54.493 --> 00:00:57.268
+but it doesn't do anything.
+
+20
+00:00:57.268 --> 00:00:58.861
+Now, this who_do_you_know method
+
+21
+00:00:58.861 --> 00:01:01.778
+is going to ask the user for a list
+
+22
+00:01:02.859 --> 00:01:05.760
+of people they know, and then it's
+
+23
+00:01:05.760 --> 00:01:09.927
+going to split the string
+that comes back into a list.
+
+24
+00:01:11.035 --> 00:01:12.717
+Remember, whenever we ask the user
+
+25
+00:01:12.717 --> 00:01:15.480
+for something using the input method,
+
+26
+00:01:15.480 --> 00:01:18.552
+that always comes back as a string.
+
+27
+00:01:18.552 --> 00:01:20.722
+So, we're gonna split
+that string into a list,
+
+28
+00:01:20.722 --> 00:01:23.889
+and it's going to return in that list.
+
+29
+00:01:24.875 --> 00:01:27.029
+Okay, and the ask_user method
+
+30
+00:01:27.029 --> 00:01:30.029
+is going to ask user for their name,
+
+31
+00:01:31.329 --> 00:01:35.496
+see if their name is in the
+list of people they know,
+
+32
+00:01:38.431 --> 00:01:40.517
+not their name, but our name, rather,
+
+33
+00:01:40.517 --> 00:01:44.267
+and then print out that
+they know the person.
+
+34
+00:01:46.395 --> 00:01:48.716
+So, essentially the same as here,
+
+35
+00:01:48.716 --> 00:01:50.887
+but instead of having a predefined list
+
+36
+00:01:50.887 --> 00:01:52.556
+of people the user knows, we're gonna
+
+37
+00:01:52.556 --> 00:01:56.223
+ask the user for a list
+of people they know.
+
+38
+00:01:58.380 --> 00:02:00.203
+I would now recommend pausing the video
+
+39
+00:02:00.203 --> 00:02:03.665
+and giving this a go as
+far as you can take it.
+
+40
+00:02:03.665 --> 00:02:04.941
+You may not be able to do things
+
+41
+00:02:04.941 --> 00:02:08.181
+like split this string into a list,
+
+42
+00:02:08.181 --> 00:02:10.598
+but you can do a lot of other things.
+
+43
+00:02:10.598 --> 00:02:12.223
+I would recommend just giving it a go,
+
+44
+00:02:12.223 --> 00:02:14.026
+generally, whenever I
+give you a programming
+
+45
+00:02:14.026 --> 00:02:16.105
+exercise, because by doing you're gonna
+
+46
+00:02:16.105 --> 00:02:19.152
+learn so much faster
+than just by watching.
+
+47
+00:02:19.152 --> 00:02:20.496
+So, even if it is a bit of effort,
+
+48
+00:02:20.496 --> 00:02:22.837
+I would recommend getting Atom installed
+
+49
+00:02:22.837 --> 00:02:27.149
+or any other text editor and
+giving the challenge a go.
+
+50
+00:02:27.149 --> 00:02:28.605
+And then pause the video and give it a go,
+
+51
+00:02:28.605 --> 00:02:32.772
+and then come back to it
+once you have given it a go.
+
+52
+00:02:34.743 --> 00:02:36.904
+Okay, I'll assume that
+you have given it a go.
+
+53
+00:02:36.904 --> 00:02:38.147
+So, the first thing we wanna do
+
+54
+00:02:38.147 --> 00:02:41.317
+is ask the user for a
+list of people they know.
+
+55
+00:02:41.317 --> 00:02:44.234
+So, people is gonna be input, enter
+
+56
+00:02:46.559 --> 00:02:48.989
+the people you know, rather the names
+
+57
+00:02:48.989 --> 00:02:52.322
+of people you know, separated by commas.
+
+58
+00:02:54.018 --> 00:02:55.093
+That's important.
+
+59
+00:02:55.093 --> 00:02:56.760
+Separated by commas.
+
+60
+00:02:58.532 --> 00:03:01.391
+So, I would expect something like
+
+61
+00:03:01.391 --> 00:03:05.558
+John comma Rolf comma Anna
+comma Drake, for example.
+
+62
+00:03:07.917 --> 00:03:10.978
+That's what the user will type.
+
+63
+00:03:10.978 --> 00:03:14.395
+Once we have that, we have a people list,
+
+64
+00:03:15.246 --> 00:03:16.993
+and that's gonna be something new.
+
+65
+00:03:16.993 --> 00:03:20.722
+People.split, and what that's gonna do,
+
+66
+00:03:20.722 --> 00:03:23.713
+it's gonna get the people string,
+
+67
+00:03:23.713 --> 00:03:27.251
+and it's gonna split it on the comma.
+
+68
+00:03:27.251 --> 00:03:31.418
+Then we're gonna create a
+list, essentially, where
+
+69
+00:03:32.799 --> 00:03:36.466
+we're gonna have John,
+Rolf, Anna, and Greg.
+
+70
+00:03:41.479 --> 00:03:42.812
+You see what's happening?
+
+71
+00:03:42.812 --> 00:03:45.643
+We're making each of the elements
+
+72
+00:03:45.643 --> 00:03:48.226
+into its own element in a list,
+
+73
+00:03:49.730 --> 00:03:52.542
+as opposed to in a string.
+
+74
+00:03:52.542 --> 00:03:54.426
+And then to return that list, you know,
+
+75
+00:03:54.426 --> 00:03:56.426
+just return people_list.
+
+76
+00:03:57.928 --> 00:03:59.304
+Then remove the pass, because it
+
+77
+00:03:59.304 --> 00:04:01.913
+doesn't make sense anymore.
+
+78
+00:04:01.913 --> 00:04:04.522
+So, this is the people we know.
+
+79
+00:04:04.522 --> 00:04:07.689
+Now let's ask the user for their name,
+
+80
+00:04:08.780 --> 00:04:10.113
+or for our name.
+
+81
+00:04:11.637 --> 00:04:14.387
+Enter a name of someone you know,
+
+82
+00:04:16.899 --> 00:04:18.175
+and then we're gonna see if their name
+
+83
+00:04:18.175 --> 00:04:20.317
+is in the list of people.
+
+84
+00:04:20.317 --> 00:04:22.734
+If person in, and here it is.
+
+85
+00:04:25.146 --> 00:04:28.268
+We could do one of two things.
+
+86
+00:04:28.268 --> 00:04:30.601
+People=who_do_you_know,
+
+87
+00:04:32.422 --> 00:04:35.502
+and what this'll do is it'll
+execute who_do_you_know,
+
+88
+00:04:35.502 --> 00:04:37.702
+and ask the user for the names of people,
+
+89
+00:04:37.702 --> 00:04:40.017
+split them, and then return them,
+
+90
+00:04:40.017 --> 00:04:43.600
+and then assign that
+return list to people.
+
+91
+00:04:44.620 --> 00:04:47.724
+Then we could do if person in people,
+
+92
+00:04:47.724 --> 00:04:51.641
+print("You know this person!")
+
+93
+00:04:53.874 --> 00:04:57.124
+However, we could also do without that,
+
+94
+00:04:58.330 --> 00:05:01.443
+and just put who_do_you_know here.
+
+95
+00:05:01.443 --> 00:05:02.987
+After all, what's gonna happen is we're
+
+96
+00:05:02.987 --> 00:05:06.661
+gonna run this method and calculate
+
+97
+00:05:06.661 --> 00:05:08.497
+the list of people, and then
+
+98
+00:05:08.497 --> 00:05:10.504
+we're just gonna iterate over that list.
+
+99
+00:05:10.504 --> 00:05:12.788
+It's only going to run the method once,
+
+100
+00:05:12.788 --> 00:05:14.666
+so this also makes sense, and it saves
+
+101
+00:05:14.666 --> 00:05:18.833
+some space, and it makes
+things a bit more concise.
+
+102
+00:05:19.777 --> 00:05:22.130
+Of course, instead of
+"You know this person!",
+
+103
+00:05:22.130 --> 00:05:26.297
+we can also do .format(person),
+as we know from above.
+
+104
+00:05:30.073 --> 00:05:33.906
+Let's comma this out,
+and then run this again.
+
+105
+00:05:35.958 --> 00:05:40.125
+And what do you think's gonna
+happen when we run this code?
+
+106
+00:05:41.371 --> 00:05:43.711
+It's a bit of a trick question,
+
+107
+00:05:43.711 --> 00:05:46.044
+so give it a bit of thought.
+
+108
+00:05:48.506 --> 00:05:50.611
+Okay, let's go for it.
+
+109
+00:05:50.611 --> 00:05:51.444
+Nothing.
+
+110
+00:05:51.444 --> 00:05:53.859
+Nothing happens, and of course,
+
+111
+00:05:53.859 --> 00:05:55.536
+we have looked at this before.
+
+112
+00:05:55.536 --> 00:05:58.584
+Nothing happens, 'cause we
+never actually ran the method.
+
+113
+00:05:58.584 --> 00:06:01.371
+We defined the method and we created it,
+
+114
+00:06:01.371 --> 00:06:03.815
+but we never actually ran it.
+
+115
+00:06:03.815 --> 00:06:05.865
+What we wanna do is ask_user, this
+
+116
+00:06:05.865 --> 00:06:08.506
+is the main sort of method because it
+
+117
+00:06:08.506 --> 00:06:12.317
+essentially runs the
+other method, as well,
+
+118
+00:06:12.317 --> 00:06:14.106
+and then we can run this again.
+
+119
+00:06:14.106 --> 00:06:16.974
+So, enter a name of someone you know.
+
+120
+00:06:16.974 --> 00:06:18.807
+This is line 21, here.
+
+121
+00:06:20.469 --> 00:06:23.052
+I'm gonna put in Rolf, and then
+
+122
+00:06:26.385 --> 00:06:27.706
+we're gonna put in the names of people
+
+123
+00:06:27.706 --> 00:06:30.543
+we know separated by commas, so just
+
+124
+00:06:30.543 --> 00:06:32.793
+John, Rolf, Anna, and Greg.
+
+125
+00:06:34.900 --> 00:06:37.192
+And then it says that I know Rolf.
+
+126
+00:06:37.192 --> 00:06:38.025
+Great.
+
+127
+00:06:39.410 --> 00:06:42.368
+What happens if we run it again,
+
+128
+00:06:42.368 --> 00:06:44.789
+but now we do something that a user
+
+129
+00:06:44.789 --> 00:06:46.871
+could absolutely do?
+
+130
+00:06:46.871 --> 00:06:50.288
+Do something like John, Rolf, Anna, Greg.
+
+131
+00:06:52.909 --> 00:06:56.011
+What do you think is gonna
+happen when I press end?
+
+132
+00:06:56.011 --> 00:06:58.928
+We've got some spaces in there now.
+
+133
+00:07:01.231 --> 00:07:02.373
+Nothing happens.
+
+134
+00:07:02.373 --> 00:07:05.398
+We do not know Rolf anymore, because Rolf
+
+135
+00:07:05.398 --> 00:07:08.398
+is no longer Rolf, it is space Rolf.
+
+136
+00:07:09.755 --> 00:07:12.552
+That came out more funny than
+I thought it was gonna be.
+
+137
+00:07:12.552 --> 00:07:16.469
+Yeah, this Rolf is now
+an astronaut, evidently.
+
+138
+00:07:17.380 --> 00:07:20.181
+So, we've gotta space
+first, we're dividing
+
+139
+00:07:20.181 --> 00:07:23.764
+on the comma, so John
+doesn't have a space.
+
+140
+00:07:29.984 --> 00:07:31.734
+Oh, I messed up this.
+
+141
+00:07:34.674 --> 00:07:37.091
+John, John, Rolf, Anna, Greg.
+
+142
+00:07:38.639 --> 00:07:40.452
+And it says that I know
+John, but remember,
+
+143
+00:07:40.452 --> 00:07:42.872
+when I used Rolf, I didn't know Rolf
+
+144
+00:07:42.872 --> 00:07:46.523
+because it had a space in front of it.
+
+145
+00:07:46.523 --> 00:07:49.690
+So, that's a bit of a problem, really,
+
+146
+00:07:51.171 --> 00:07:53.754
+because we don't have any logic
+
+147
+00:07:54.674 --> 00:07:57.341
+in our programme to remove spaces.
+
+148
+00:07:59.023 --> 00:08:03.240
+That's something that
+we probably should do,
+
+149
+00:08:03.240 --> 00:08:05.907
+remove the spaces so that we can
+
+150
+00:08:07.371 --> 00:08:09.749
+be, essentially, more accurate.
+
+151
+00:08:09.749 --> 00:08:11.249
+So, let's do that.
+
+152
+00:08:12.592 --> 00:08:15.842
+We're gonna say, people_without_spaces,
+
+153
+00:08:18.470 --> 00:08:20.835
+it's gonna be an empty list.
+
+154
+00:08:20.835 --> 00:08:24.335
+Then we're gonna say for person in people.
+
+155
+00:08:26.467 --> 00:08:28.050
+Sorry, people_list.
+
+156
+00:08:30.950 --> 00:08:34.822
+So, for each person in the people list,
+
+157
+00:08:34.822 --> 00:08:35.810
+we're gonna say
+
+158
+00:08:35.810 --> 00:08:39.977
+people_without_spaces.append(person.strip()).
+
+159
+00:08:44.298 --> 00:08:46.874
+This is essentially like stripping,
+
+160
+00:08:46.874 --> 00:08:49.383
+but it only strips the white space.
+
+161
+00:08:49.383 --> 00:08:51.994
+So, if the spaces, tabs, new lines,
+
+162
+00:08:51.994 --> 00:08:54.569
+things like that all get removed,
+
+163
+00:08:54.569 --> 00:08:58.119
+and then we are appending the stripped
+
+164
+00:08:58.119 --> 00:09:00.952
+string into people_without_spaces.
+
+165
+00:09:01.909 --> 00:09:03.069
+So, then we're gonna copy that,
+
+166
+00:09:03.069 --> 00:09:05.069
+and return that instead.
+
+167
+00:09:06.923 --> 00:09:09.173
+Okay, let's run that again.
+
+168
+00:09:11.759 --> 00:09:12.823
+Enter the name of someone you know,
+
+169
+00:09:12.823 --> 00:09:14.156
+Rolf, hmm, Ro.f,
+
+170
+00:09:15.903 --> 00:09:19.986
+John, Ro.l, Anna, and
+Greg, and then I know Ro.f.
+
+171
+00:09:23.185 --> 00:09:25.875
+So, this is how we remove white space
+
+172
+00:09:25.875 --> 00:09:29.066
+from the beginning and end of a string,
+
+173
+00:09:29.066 --> 00:09:31.294
+and then we calculated each of the people
+
+174
+00:09:31.294 --> 00:09:34.417
+and added them to people_without_spaces.
+
+175
+00:09:34.417 --> 00:09:37.196
+We used a four loop to do this.
+
+176
+00:09:37.196 --> 00:09:39.000
+Now, there are better ways of doing this,
+
+177
+00:09:39.000 --> 00:09:40.219
+and we're gonna look at those ways
+
+178
+00:09:40.219 --> 00:09:41.674
+later on in the course, as well.
+
+179
+00:09:41.674 --> 00:09:43.054
+There are more efficient ways,
+
+180
+00:09:43.054 --> 00:09:45.819
+there are nicer ways, there
+are more concise ways.
+
+181
+00:09:45.819 --> 00:09:46.929
+We're gonna look at those, as well,
+
+182
+00:09:46.929 --> 00:09:49.159
+as we move on, but for now this is
+
+183
+00:09:49.159 --> 00:09:50.354
+everything that we wanted to cover
+
+184
+00:09:50.354 --> 00:09:53.816
+in this video, and we've
+looked at a few things
+
+185
+00:09:53.816 --> 00:09:56.457
+like bringing things together, really.
+
+186
+00:09:56.457 --> 00:09:59.194
+The input method, the
+split method was new,
+
+187
+00:09:59.194 --> 00:10:00.984
+returning values, creating a few
+
+188
+00:10:00.984 --> 00:10:02.505
+different methods and interact in between
+
+189
+00:10:02.505 --> 00:10:05.039
+them, and things like that.
+
+190
+00:10:05.039 --> 00:10:07.030
+So, you can progress from here.
+
+191
+00:10:07.030 --> 00:10:09.777
+Now you're at the stage where
+you can start doing things.
+
+192
+00:10:09.777 --> 00:10:10.954
+If you didn't have more experience
+
+193
+00:10:10.954 --> 00:10:12.825
+with Python, you do now, and you can start
+
+194
+00:10:12.825 --> 00:10:15.244
+creating small programmes
+that print things out
+
+195
+00:10:15.244 --> 00:10:17.730
+and get user input and multiply things
+
+196
+00:10:17.730 --> 00:10:21.188
+and divide them and make
+calculations, things like that.
+
+197
+00:10:21.188 --> 00:10:23.609
+I would recommend that you play around
+
+198
+00:10:23.609 --> 00:10:26.442
+with things and code and practise.
+
+199
+00:10:27.528 --> 00:10:31.192
+All that is really gonna
+help your learning.
+
+200
+00:10:31.192 --> 00:10:33.810
+By doing, by programming,
+that's the best way
+
+201
+00:10:33.810 --> 00:10:37.977
+to learn, so I would definitely
+recommend that you do that.
+
+202
+00:10:39.075 --> 00:10:41.852
+Without further ado, I'll
+move on to the next video.
+
+203
+00:10:41.852 --> 00:10:43.769
+So, I'll see you there.
+

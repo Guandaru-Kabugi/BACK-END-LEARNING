@@ -1,0 +1,547 @@
+﻿WEBVTT
+
+1
+00:00:00.875 --> 00:00:02.278
+- [Instructor] Hi an welcome back.
+
+2
+00:00:02.278 --> 00:00:03.363
+In this video we're going to look
+
+3
+00:00:03.363 --> 00:00:05.696
+at static and class methods.
+
+4
+00:00:07.074 --> 00:00:11.060
+This is a reasonably advanced
+topic, so if you have
+
+5
+00:00:11.060 --> 00:00:15.101
+any questions at any
+point just let me know.
+
+6
+00:00:15.101 --> 00:00:17.168
+Let's say we wanted to extend our student
+
+7
+00:00:17.168 --> 00:00:20.251
+so we could go to school for example.
+
+8
+00:00:25.011 --> 00:00:27.032
+In here we would say something like print
+
+9
+00:00:27.032 --> 00:00:29.782
+I'm going to .format self.school.
+
+10
+00:00:35.623 --> 00:00:39.790
+I'm going to school and
+in this case it'll be MIT.
+
+11
+00:00:40.690 --> 00:00:43.055
+So we can do that, we can say something
+
+12
+00:00:43.055 --> 00:00:47.055
+like anna.go_to_school
+and when we run this code
+
+13
+00:00:48.237 --> 00:00:51.654
+we should get I'm going to MIT and we do.
+
+14
+00:00:57.904 --> 00:01:01.025
+If we wanted to make
+this a bit more generic,
+
+15
+00:01:01.025 --> 00:01:03.120
+we may say something
+like I'm going to school
+
+16
+00:01:03.120 --> 00:01:05.304
+if we for example, didn't really care,
+
+17
+00:01:05.304 --> 00:01:08.835
+about which school we were going to.
+
+18
+00:01:08.835 --> 00:01:11.156
+Just I'm going to school and I'm busy
+
+19
+00:01:11.156 --> 00:01:13.073
+or something like that.
+
+20
+00:01:14.549 --> 00:01:17.319
+If we do this, and this is just to explain
+
+21
+00:01:17.319 --> 00:01:20.463
+this concept of static
+and class methods really.
+
+22
+00:01:20.463 --> 00:01:22.463
+If we wanted to do this,
+
+23
+00:01:24.725 --> 00:01:26.392
+would you agree that
+
+24
+00:01:29.126 --> 00:01:32.459
+we are not using self inside the method.
+
+25
+00:01:33.896 --> 00:01:35.972
+Self is being passed as a parameter
+
+26
+00:01:35.972 --> 00:01:38.139
+but we are not using self.
+
+27
+00:01:40.106 --> 00:01:44.106
+And then, would you agree
+that it doesn't matter
+
+28
+00:01:45.515 --> 00:01:50.145
+which object if it's Anna or
+if it's another student object.
+
+29
+00:01:50.145 --> 00:01:52.745
+It doesn't matter which student object
+
+30
+00:01:52.745 --> 00:01:56.129
+is calling this method
+because in all cases,
+
+31
+00:01:56.129 --> 00:01:59.083
+no matter who is calling
+it, it is always going
+
+32
+00:01:59.083 --> 00:02:00.907
+to do the same thing
+because it doesn't use self
+
+33
+00:02:00.907 --> 00:02:04.276
+and therefore even if
+this school is different
+
+34
+00:02:04.276 --> 00:02:06.914
+for this particular object
+it's always gonna print,
+
+35
+00:02:06.914 --> 00:02:08.581
+I'm going to school.
+
+36
+00:02:11.070 --> 00:02:13.403
+I'll do something like this.
+
+37
+00:02:19.764 --> 00:02:21.547
+Just to make it a bit clearer.
+
+38
+00:02:21.547 --> 00:02:25.475
+If Anna calls go_to_school
+it'll print I'm going to school
+
+39
+00:02:25.475 --> 00:02:28.112
+and if Rolf calls go_to_school it'll print
+
+40
+00:02:28.112 --> 00:02:29.433
+I'm going to school.
+
+41
+00:02:29.433 --> 00:02:33.669
+It is independent of
+the objects properties.
+
+42
+00:02:33.669 --> 00:02:35.411
+We are not using self at all.
+
+43
+00:02:35.411 --> 00:02:37.552
+We're not saying I'm going to Oxford
+
+44
+00:02:37.552 --> 00:02:39.513
+or I'm going to MIT all we're saying
+
+45
+00:02:39.513 --> 00:02:41.906
+is I'm going to school,
+therefore it doesn't matter
+
+46
+00:02:41.906 --> 00:02:46.186
+who calls it, if Anna or
+Rolf, in both cases it's
+
+47
+00:02:46.186 --> 00:02:47.623
+going to print out the same,
+
+48
+00:02:47.623 --> 00:02:50.623
+it's going to execute the same code.
+
+49
+00:02:52.850 --> 00:02:56.850
+So if you agree with that
+then there is a change
+
+50
+00:02:57.813 --> 00:03:01.563
+that we can do, where
+we can remove the self.
+
+51
+00:03:03.381 --> 00:03:06.482
+We can't do that that
+lightly though sadly.
+
+52
+00:03:06.482 --> 00:03:09.732
+If we run this code now we get an error
+
+53
+00:03:10.958 --> 00:03:13.625
+because we say anna.go_to_school
+
+54
+00:03:14.512 --> 00:03:16.843
+and then it says type error.
+
+55
+00:03:16.843 --> 00:03:20.339
+go_to_school takes zero
+positional arguments
+
+56
+00:03:20.339 --> 00:03:24.516
+but one was given, we
+gave it one argument.
+
+57
+00:03:24.516 --> 00:03:28.489
+It's saying that we gave
+go_to_school an argument
+
+58
+00:03:28.489 --> 00:03:31.145
+but where is that argument?
+
+59
+00:03:31.145 --> 00:03:34.798
+We haven't really given it
+anything inside of the brackets.
+
+60
+00:03:34.798 --> 00:03:38.965
+And you'd be correct, however,
+whenever we say object.method
+
+61
+00:03:42.857 --> 00:03:47.024
+self always gets passed in
+as the object, so essentially
+
+62
+00:03:48.046 --> 00:03:51.946
+this is the same thing
+as doing go_to_school
+
+63
+00:03:51.946 --> 00:03:54.946
+with an object as a first parameter.
+
+64
+00:03:55.900 --> 00:04:00.067
+That's why we need the self
+and we cannot remove the self.
+
+65
+00:04:01.712 --> 00:04:05.528
+However, we can tell Python
+that we don't need the self,
+
+66
+00:04:05.528 --> 00:04:09.678
+and if we do that then we don't
+have to pass it in anymore.
+
+67
+00:04:09.678 --> 00:04:13.845
+The way we do that is by in
+front of the method doing this.
+
+68
+00:04:18.987 --> 00:04:22.018
+Now, instead of self we need cls.
+
+69
+00:04:22.018 --> 00:04:23.935
+So what is cls you say.
+
+70
+00:04:28.650 --> 00:04:32.928
+When we run this
+anna.go_to_school what we pass
+
+71
+00:04:32.928 --> 00:04:36.892
+in as the first parameter
+is Anna, the object.
+
+72
+00:04:36.892 --> 00:04:41.258
+Then we can do things like
+self.school for example.
+
+73
+00:04:41.258 --> 00:04:43.432
+When we call something a class method,
+
+74
+00:04:43.432 --> 00:04:47.384
+by putting ampersand
+sign class method front,
+
+75
+00:04:47.384 --> 00:04:51.551
+what we pass is not the
+object but the class student.
+
+76
+00:04:54.557 --> 00:04:58.724
+So, inside the body we can
+see that cls is student.
+
+77
+00:05:08.938 --> 00:05:10.188
+Let's run this.
+
+78
+00:05:13.206 --> 00:05:15.703
+What we get is I'm going to
+school, that's what we expect
+
+79
+00:05:15.703 --> 00:05:19.120
+and then I'm a <class '__main__.Student'>
+
+80
+00:05:20.915 --> 00:05:23.749
+the main is just because
+the file that we run
+
+81
+00:05:23.749 --> 00:05:26.888
+is always called main, so we're inside
+
+82
+00:05:26.888 --> 00:05:30.325
+the main file essentially
+and the class is student.
+
+83
+00:05:30.325 --> 00:05:33.575
+So this essentially says I'm a student.
+
+84
+00:05:34.469 --> 00:05:36.514
+So the class is what we've passed in.
+
+85
+00:05:36.514 --> 00:05:39.981
+We've passed in student, we've
+passed in this thing here.
+
+86
+00:05:39.981 --> 00:05:42.481
+In some cases, that is useful,
+
+87
+00:05:44.439 --> 00:05:47.163
+in other cases, it is not useful.
+
+88
+00:05:47.163 --> 00:05:50.538
+And if it isn't useful,
+instead of class method,
+
+89
+00:05:50.538 --> 00:05:53.401
+you can do static method and then
+
+90
+00:05:53.401 --> 00:05:55.651
+you don't pass anything in.
+
+91
+00:05:58.398 --> 00:06:02.565
+Then this is fine, I'm just
+going to school like that.
+
+92
+00:06:04.312 --> 00:06:08.141
+More than that you no longer
+have to do anna.go_to_school,
+
+93
+00:06:08.141 --> 00:06:12.308
+or rolf.go_to_school now you
+can do Student.go_to_school.
+
+94
+00:06:15.742 --> 00:06:18.119
+It no longer matters who is calling it
+
+95
+00:06:18.119 --> 00:06:21.088
+because we're running the
+same code if Anna calls it
+
+96
+00:06:21.088 --> 00:06:23.266
+or if Rolf Calls it, so we might as well
+
+97
+00:06:23.266 --> 00:06:25.766
+call it with the class itself.
+
+98
+00:06:27.379 --> 00:06:31.598
+Notice that if you make
+this a class method
+
+99
+00:06:31.598 --> 00:06:34.412
+and this at cls you can do the same thing.
+
+100
+00:06:34.412 --> 00:06:38.695
+You can still call that
+Student.go_to_school.
+
+101
+00:06:38.695 --> 00:06:40.490
+The only moment where you need to call it
+
+102
+00:06:40.490 --> 00:06:42.739
+as an object is if it doesn't have
+
+103
+00:06:42.739 --> 00:06:46.411
+a decorator and here you
+have self, then you need
+
+104
+00:06:46.411 --> 00:06:48.828
+to call it anna.go_to_school.
+
+105
+00:06:50.161 --> 00:06:53.470
+But if you make this a static method,
+
+106
+00:06:53.470 --> 00:06:56.220
+then you don't need anything here
+
+107
+00:06:57.226 --> 00:06:59.559
+and you can call it like so.
+
+108
+00:07:01.154 --> 00:07:03.720
+So this was a quick introduction
+to what class method
+
+109
+00:07:03.720 --> 00:07:06.788
+and static method are and they are
+
+110
+00:07:06.788 --> 00:07:11.226
+just differences in what
+we pass the methods.
+
+111
+00:07:11.226 --> 00:07:12.989
+So in this case the go_to_school method
+
+112
+00:07:12.989 --> 00:07:16.870
+we didn't need self so
+we can make it static
+
+113
+00:07:16.870 --> 00:07:20.287
+and that means all objects, Anna and Rolf
+
+114
+00:07:21.186 --> 00:07:24.472
+and any other object,
+all the objects share
+
+115
+00:07:24.472 --> 00:07:26.805
+the same method essentially.
+
+116
+00:07:27.670 --> 00:07:30.728
+So no matter who calls
+it, it always prints
+
+117
+00:07:30.728 --> 00:07:32.311
+the same thing out.
+
+118
+00:07:33.469 --> 00:07:34.588
+So that's it for this video.
+
+119
+00:07:34.588 --> 00:07:37.206
+In the next one, we're
+gonna look at inheritance
+
+120
+00:07:37.206 --> 00:07:38.826
+in object oriented programming which
+
+121
+00:07:38.826 --> 00:07:41.843
+is extremely important in
+large and complex systems.
+
+122
+00:07:41.843 --> 00:07:43.510
+I'll see you there.
+

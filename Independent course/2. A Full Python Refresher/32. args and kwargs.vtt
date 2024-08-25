@@ -1,0 +1,773 @@
+﻿WEBVTT
+
+1
+00:00:00.969 --> 00:00:03.041
+- [Instructor] Hi, and
+welcome back to the programme.
+
+2
+00:00:03.041 --> 00:00:04.395
+In this video, we're
+going to look at something
+
+3
+00:00:04.395 --> 00:00:08.014
+that is going to allow us
+to simplify greatly the code
+
+4
+00:00:08.014 --> 00:00:11.680
+that we saw in the last
+video about inheritance.
+
+5
+00:00:11.680 --> 00:00:14.832
+But in order to make
+digesting things a bit easier,
+
+6
+00:00:14.832 --> 00:00:18.999
+I'm going to first teach this
+in a simpler environment.
+
+7
+00:00:20.020 --> 00:00:24.187
+Let's imagine we've got a
+method which has arg1, arg2.
+
+8
+00:00:25.392 --> 00:00:28.892
+And then it just returns arg1 + arg2.
+
+9
+00:00:30.972 --> 00:00:33.938
+This is just a sum method essentially,
+
+10
+00:00:33.938 --> 00:00:37.188
+and we could do my method five and six.
+
+11
+00:00:41.182 --> 00:00:43.771
+If we wanted to add more things together,
+
+12
+00:00:43.771 --> 00:00:46.688
+just as an example, my long method.
+
+13
+00:00:47.568 --> 00:00:50.019
+We could do something
+like arg1, arg2, arg3,
+
+14
+00:00:50.019 --> 00:00:54.186
+arg4, arg5, arg6, and so
+on, and then return that.
+
+15
+00:00:57.313 --> 00:01:00.730
+Which doesn't really make a lot of sense.
+
+16
+00:01:02.137 --> 00:01:04.887
+An option would be to use a list.
+
+17
+00:01:08.283 --> 00:01:11.116
+For example, def my list addition.
+
+18
+00:01:14.862 --> 00:01:17.874
+And then we could return
+the sum of list arg,
+
+19
+00:01:17.874 --> 00:01:20.723
+and we already know this.
+
+20
+00:01:20.723 --> 00:01:24.003
+And we already know that we can do this
+
+21
+00:01:24.003 --> 00:01:25.533
+because we've looked at
+lists, we've looked at
+
+22
+00:01:25.533 --> 00:01:28.911
+the sum method, there's nothing new here.
+
+23
+00:01:28.911 --> 00:01:32.244
+However, there is something that differs
+
+24
+00:01:35.278 --> 00:01:39.402
+between my long method
+and my list addition,
+
+25
+00:01:39.402 --> 00:01:41.095
+and that is the following.
+
+26
+00:01:41.095 --> 00:01:45.262
+If we want to do my long
+method, we pass in numbers
+
+27
+00:01:47.510 --> 00:01:48.931
+like so, and if we want
+
+28
+00:01:48.931 --> 00:01:53.098
+to do my list addition,
+we have to pass in a list.
+
+29
+00:01:57.658 --> 00:02:00.575
+And that may not be a big deal, but
+
+30
+00:02:02.025 --> 00:02:06.192
+you have to pass in a list
+of what you want to add.
+
+31
+00:02:07.392 --> 00:02:10.526
+There is a way, however, of adding
+
+32
+00:02:10.526 --> 00:02:13.276
+an unlimited number of arguments.
+
+33
+00:02:20.064 --> 00:02:20.897
+Like so.
+
+34
+00:02:24.519 --> 00:02:27.411
+For example, this
+addition simplified method
+
+35
+00:02:27.411 --> 00:02:29.828
+has a parameter called *args.
+
+36
+00:02:32.623 --> 00:02:35.550
+This is a list of arguments that have been
+
+37
+00:02:35.550 --> 00:02:37.711
+passed to the method.
+
+38
+00:02:37.711 --> 00:02:40.961
+So then, we can do addition simplified,
+
+39
+00:02:42.364 --> 00:02:44.947
+three, five, seven, 12, 14, 55.
+
+40
+00:02:46.145 --> 00:02:49.562
+These parameters get converted to a list,
+
+41
+00:02:51.177 --> 00:02:54.677
+and then we can operate on them as a list.
+
+42
+00:02:55.826 --> 00:02:58.458
+But we don't have to pass in a list,
+
+43
+00:02:58.458 --> 00:02:59.861
+that makes things a bit more complicated,
+
+44
+00:02:59.861 --> 00:03:01.999
+because then when we call this method,
+
+45
+00:03:01.999 --> 00:03:04.786
+we have to remember that
+we have to pass in a list.
+
+46
+00:03:04.786 --> 00:03:07.002
+Whereas if we have something like this,
+
+47
+00:03:07.002 --> 00:03:09.845
+we can pass in an unlimited
+number of arguments,
+
+48
+00:03:09.845 --> 00:03:12.977
+and they will be a list,
+but we don't have to worry
+
+49
+00:03:12.977 --> 00:03:14.977
+about them being a list.
+
+50
+00:03:18.674 --> 00:03:22.841
+Just as we have args, we also
+have something called kwargs.
+
+51
+00:03:24.341 --> 00:03:25.924
+So what are kwargs?
+
+52
+00:03:27.099 --> 00:03:30.577
+Well, we have a parameter called *args,
+
+53
+00:03:30.577 --> 00:03:32.744
+and then we have **kwargs.
+
+54
+00:03:34.033 --> 00:03:38.948
+So let's bring those out,
+print args and print kwargs.
+
+55
+00:03:38.948 --> 00:03:43.468
+And let's call what are
+kwargs with some parameters,
+
+56
+00:03:43.468 --> 00:03:46.468
+like 12, 34, 56, and let's run that.
+
+57
+00:03:53.340 --> 00:03:55.573
+So what do you think is gonna
+happen when we run this?
+
+58
+00:03:55.573 --> 00:03:58.320
+Remember none of our other
+methods printed anything,
+
+59
+00:03:58.320 --> 00:03:59.971
+so the only thing we're gonna see
+
+60
+00:03:59.971 --> 00:04:02.971
+is this print args and print kwargs.
+
+61
+00:04:06.045 --> 00:04:10.542
+So I'll press play because I
+wouldn't expect you to guess,
+
+62
+00:04:10.542 --> 00:04:12.860
+but here's what we get.
+
+63
+00:04:12.860 --> 00:04:16.027
+A tuple of arguments and an empty set.
+
+64
+00:04:20.179 --> 00:04:23.608
+So evidently, kwargs is some sort of set,
+
+65
+00:04:23.608 --> 00:04:25.933
+because it's got the opening
+and closing curly brace
+
+66
+00:04:25.933 --> 00:04:27.766
+that we know is a set.
+
+67
+00:04:29.823 --> 00:04:33.066
+But here's the thing, not
+something we've seen before,
+
+68
+00:04:33.066 --> 00:04:36.899
+but in Python, we can
+give names to arguments.
+
+69
+00:04:44.412 --> 00:04:46.995
+We can give names to arguments.
+
+70
+00:04:48.152 --> 00:04:52.862
+So we can say 12, 34, 56,
+but then we can also say
+
+71
+00:04:52.862 --> 00:04:55.945
+name equals Jose, location equals UK.
+
+72
+00:05:02.112 --> 00:05:06.052
+When we run this again, we
+get a set of key value pairs,
+
+73
+00:05:06.052 --> 00:05:10.219
+which we know to be a
+dictionary, name and location.
+
+74
+00:05:12.836 --> 00:05:16.516
+If we knew we always
+want name and location,
+
+75
+00:05:16.516 --> 00:05:18.215
+then we don't need to use kwargs,
+
+76
+00:05:18.215 --> 00:05:21.382
+we can use name and location, like so.
+
+77
+00:05:26.037 --> 00:05:30.327
+And then, well args and
+kwargs are narrowly defined,
+
+78
+00:05:30.327 --> 00:05:34.494
+but you know, we can print
+name and print location.
+
+79
+00:05:35.547 --> 00:05:39.172
+This works just as well, because Python
+
+80
+00:05:39.172 --> 00:05:43.339
+knows to associate Jose with
+the parameter called name,
+
+81
+00:05:45.850 --> 00:05:48.671
+and location with the
+parameter called location.
+
+82
+00:05:48.671 --> 00:05:52.573
+So we can do this, and
+what's interesting about this
+
+83
+00:05:52.573 --> 00:05:57.481
+is that we can do it in
+the wrong order if we want.
+
+84
+00:05:57.481 --> 00:06:00.437
+And that works just as well.
+
+85
+00:06:00.437 --> 00:06:03.396
+So this simplifies
+things a bit because now
+
+86
+00:06:03.396 --> 00:06:07.383
+the order of the
+parameters stops mattering,
+
+87
+00:06:07.383 --> 00:06:08.937
+and what starts mattering is the name
+
+88
+00:06:08.937 --> 00:06:10.092
+that we give the parameters.
+
+89
+00:06:10.092 --> 00:06:12.769
+So we can do this if we
+want, or we can not do it
+
+90
+00:06:12.769 --> 00:06:14.121
+if we don't want.
+
+91
+00:06:14.121 --> 00:06:16.668
+Something to remember,
+however, is that we cannot have
+
+92
+00:06:16.668 --> 00:06:20.168
+something like arg1, like pass at the end.
+
+93
+00:06:21.292 --> 00:06:25.459
+This gives us an error, because
+the positional arguments
+
+94
+00:06:28.416 --> 00:06:31.844
+are following a keyword
+argument, and you cannot do that.
+
+95
+00:06:31.844 --> 00:06:35.885
+So the arguments that
+have a name always have
+
+96
+00:06:35.885 --> 00:06:37.199
+to come at the end.
+
+97
+00:06:37.199 --> 00:06:41.984
+So the 56 would always have
+to be at the beginning.
+
+98
+00:06:41.984 --> 00:06:45.234
+That's the only sort of caveat with it.
+
+99
+00:06:46.953 --> 00:06:49.118
+So now that we've looked
+at args and kwargs,
+
+100
+00:06:49.118 --> 00:06:51.931
+and we know what they are,
+
+101
+00:06:51.931 --> 00:06:55.348
+how would we simplify this friend method?
+
+102
+00:06:59.125 --> 00:07:03.292
+And what I would do is I would
+substitute salary for args.
+
+103
+00:07:07.760 --> 00:07:11.927
+And then I would substitute
+this salary for args again.
+
+104
+00:07:12.964 --> 00:07:16.631
+And then what happens
+is that we can pass in
+
+105
+00:07:18.036 --> 00:07:21.643
+any number of arguments,
+and then we're passing
+
+106
+00:07:21.643 --> 00:07:25.810
+sort of any number of arguments
+back to the init method.
+
+107
+00:07:27.510 --> 00:07:31.275
+And in here, when we pass
+17.5, that's the only argument
+
+108
+00:07:31.275 --> 00:07:34.126
+left other than origin and friend name.
+
+109
+00:07:34.126 --> 00:07:37.652
+So we've got origin,
+we've got friend name,
+
+110
+00:07:37.652 --> 00:07:41.024
+and then we've got one
+positional argument left,
+
+111
+00:07:41.024 --> 00:07:42.621
+and that's gonna be args.
+
+112
+00:07:42.621 --> 00:07:45.916
+We're gonna pass that
+on to the init method,
+
+113
+00:07:45.916 --> 00:07:47.883
+and that is then gonna be salary,
+
+114
+00:07:47.883 --> 00:07:52.139
+because friend name and
+the school are already set,
+
+115
+00:07:52.139 --> 00:07:56.306
+so the only arg left is salary,
+so that's gonna be that.
+
+116
+00:07:58.067 --> 00:07:59.484
+So let's run this
+
+117
+00:08:01.431 --> 00:08:04.514
+with the inheritance, and
+you can see that we still
+
+118
+00:08:04.514 --> 00:08:06.097
+get the 17.5 there.
+
+119
+00:08:07.933 --> 00:08:11.491
+The added benefit of
+this is that if we then
+
+120
+00:08:11.491 --> 00:08:15.241
+add something like job
+title then at the end,
+
+121
+00:08:19.879 --> 00:08:24.400
+we can just put it in at the
+end here, software developer,
+
+122
+00:08:24.400 --> 00:08:28.260
+and we do not have to change
+the friend implementation.
+
+123
+00:08:28.260 --> 00:08:31.010
+We are now passing two arguments,
+
+124
+00:08:32.033 --> 00:08:35.906
+two arguments, two
+arguments, two arguments,
+
+125
+00:08:35.906 --> 00:08:38.018
+and then they get used.
+
+126
+00:08:38.018 --> 00:08:41.587
+So this allows us to
+simplify things a lot more,
+
+127
+00:08:41.587 --> 00:08:44.420
+when we don't know what is coming.
+
+128
+00:08:45.706 --> 00:08:49.873
+And of course, if we wanted
+to make it keyword arguments,
+
+129
+00:08:51.022 --> 00:08:54.586
+then we can do that,
+but here we have to say
+
+130
+00:08:54.586 --> 00:08:57.503
+salary equals and job title equals.
+
+131
+00:09:00.536 --> 00:09:01.369
+And then,
+
+132
+00:09:05.556 --> 00:09:07.639
+made a mistake somewhere,
+
+133
+00:09:12.474 --> 00:09:13.307
+have I?
+
+134
+00:09:15.703 --> 00:09:17.885
+Oh yeah, yeah, of course,
+the job title's missing
+
+135
+00:09:17.885 --> 00:09:20.908
+from this one here,
+sorry, forgot about that,
+
+136
+00:09:20.908 --> 00:09:22.491
+software developer.
+
+137
+00:09:24.870 --> 00:09:26.889
+And then it still works.
+
+138
+00:09:26.889 --> 00:09:30.850
+So the named parameters will still work
+
+139
+00:09:30.850 --> 00:09:33.837
+as you would expect, because now salary as
+
+140
+00:09:33.837 --> 00:09:36.155
+17.50 and job title as software developer
+
+141
+00:09:36.155 --> 00:09:38.173
+are being passed in as keyword arguments,
+
+142
+00:09:38.173 --> 00:09:41.329
+and then they're being passed
+in again to the init method,
+
+143
+00:09:41.329 --> 00:09:43.074
+and then they get matched to salary
+
+144
+00:09:43.074 --> 00:09:45.407
+and job title, respectively.
+
+145
+00:09:48.489 --> 00:09:52.607
+It is not uncommon for when a
+method needs to be generalised
+
+146
+00:09:52.607 --> 00:09:54.357
+like this to do this.
+
+147
+00:09:57.410 --> 00:10:01.577
+It's very, very common to
+pass both args and kwargs
+
+148
+00:10:05.393 --> 00:10:06.642
+and then it can basically cope
+
+149
+00:10:06.642 --> 00:10:09.218
+with anything that you change
+
+150
+00:10:09.218 --> 00:10:13.075
+For example, we could
+pass in salary of 17.50,
+
+151
+00:10:13.075 --> 00:10:15.848
+and job title equals software developer,
+
+152
+00:10:15.848 --> 00:10:18.803
+so this one no longer has
+a name, we can now do this,
+
+153
+00:10:18.803 --> 00:10:22.970
+this is fine because the
+args get passed in first,
+
+154
+00:10:23.902 --> 00:10:26.298
+and the kwargs get passed in later.
+
+155
+00:10:26.298 --> 00:10:29.631
+So everything sort of matches up nicely.
+
+156
+00:10:30.593 --> 00:10:33.615
+So hopefully this all makes some sense
+
+157
+00:10:33.615 --> 00:10:37.735
+and remember this is a Python refresher,
+
+158
+00:10:37.735 --> 00:10:40.647
+and also the examples
+here are very limited.
+
+159
+00:10:40.647 --> 00:10:43.049
+We're going to be using this a lot more
+
+160
+00:10:43.049 --> 00:10:44.356
+throughout the course,
+and then everything's
+
+161
+00:10:44.356 --> 00:10:47.038
+gonna sort of jell together,
+make a lot more sense.
+
+162
+00:10:47.038 --> 00:10:50.955
+So I apologise if this
+all seems rather jarring
+
+163
+00:10:53.746 --> 00:10:57.008
+and useless, in this case it is useless,
+
+164
+00:10:57.008 --> 00:10:58.797
+but it will become useful as we move
+
+165
+00:10:58.797 --> 00:11:01.905
+along the course, I promise.
+
+166
+00:11:01.905 --> 00:11:03.318
+But that's everything for this video,
+
+167
+00:11:03.318 --> 00:11:06.460
+talking about args and kwargs,
+and how you can pass in
+
+168
+00:11:06.460 --> 00:11:09.640
+an unlimited number of
+positional arguments,
+
+169
+00:11:09.640 --> 00:11:12.226
+those defined by position,
+like these three,
+
+170
+00:11:12.226 --> 00:11:16.005
+and keyword arguments, those
+defined with a keyword.
+
+171
+00:11:16.005 --> 00:11:17.493
+And that's everything for this video,
+
+172
+00:11:17.493 --> 00:11:19.745
+so I'll see you in the next one.
+

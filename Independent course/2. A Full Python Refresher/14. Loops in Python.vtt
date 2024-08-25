@@ -1,0 +1,1166 @@
+﻿WEBVTT
+
+1
+00:00:00.357 --> 00:00:02.430
+- [Instructor] Hi, and
+welcome back to the programme.
+
+2
+00:00:02.430 --> 00:00:04.720
+In this video, we're
+going to look at loops.
+
+3
+00:00:04.720 --> 00:00:05.651
+So the first thing I'm going to do
+
+4
+00:00:05.651 --> 00:00:09.401
+is create a new file
+and save it as loops.py.
+
+5
+00:00:11.747 --> 00:00:13.680
+In the past, we've looked at variables,
+
+6
+00:00:13.680 --> 00:00:17.467
+such as my_variable, and
+that is the word hello,
+
+7
+00:00:17.467 --> 00:00:18.467
+for example.
+
+8
+00:00:19.914 --> 00:00:22.187
+And I've also spoken about how Python
+
+9
+00:00:22.187 --> 00:00:25.287
+doesn't know that this is a
+word, or a phrase, or anything.
+
+10
+00:00:25.287 --> 00:00:28.117
+All it knows is that there's the letter h,
+
+11
+00:00:28.117 --> 00:00:32.284
+followed by e, followed by l,
+followed by l, followed by o.
+
+12
+00:00:33.184 --> 00:00:35.344
+So surely if Python knows
+
+13
+00:00:35.344 --> 00:00:38.261
+that this is a sequence of letters,
+
+14
+00:00:39.532 --> 00:00:44.112
+we should be able to access
+that as a sequence too.
+
+15
+00:00:44.112 --> 00:00:47.918
+So we should be able to
+access each of the characters.
+
+16
+00:00:47.918 --> 00:00:51.157
+And indeed, just as we could with a list,
+
+17
+00:00:51.157 --> 00:00:55.324
+we can do things like
+print(my_variable[0]).
+
+18
+00:00:59.751 --> 00:01:02.755
+And what happens when we do this
+
+19
+00:01:02.755 --> 00:01:06.926
+is that the first element
+gets printed out, the h.
+
+20
+00:01:06.926 --> 00:01:10.759
+So let's go to the
+Terminal and run this file.
+
+21
+00:01:13.282 --> 00:01:17.053
+And as you can see,
+the h gets printed out.
+
+22
+00:01:17.053 --> 00:01:19.177
+This may remind you of this syntax we used
+
+23
+00:01:19.177 --> 00:01:22.068
+to access the first element of a list,
+
+24
+00:01:22.068 --> 00:01:25.595
+that we did in the last video,
+or the last couple of videos.
+
+25
+00:01:25.595 --> 00:01:29.966
+So what if we wanted to print
+out every letter of this word.
+
+26
+00:01:29.966 --> 00:01:32.169
+Well, easy enough.
+
+27
+00:01:32.169 --> 00:01:35.635
+We do this, and then
+one, two, three, four.
+
+28
+00:01:35.635 --> 00:01:37.071
+There are five letters here,
+
+29
+00:01:37.071 --> 00:01:39.501
+so we start at zero and end up in four,
+
+30
+00:01:39.501 --> 00:01:42.251
+and we print them all out, right?
+
+31
+00:01:44.751 --> 00:01:46.188
+Fair enough.
+
+32
+00:01:46.188 --> 00:01:48.739
+However, let me tell you that
+this is not very good code,
+
+33
+00:01:48.739 --> 00:01:52.327
+because there are many things
+repeated over and over,
+
+34
+00:01:52.327 --> 00:01:54.948
+and it just doesn't really,
+generally look very nice.
+
+35
+00:01:54.948 --> 00:01:58.948
+And also, if we increase
+the size of this string
+
+36
+00:02:01.219 --> 00:02:04.107
+well, we have to just add more lines,
+
+37
+00:02:04.107 --> 00:02:06.031
+really, to print everything out.
+
+38
+00:02:06.031 --> 00:02:07.128
+Not very good.
+
+39
+00:02:07.128 --> 00:02:10.542
+So instead, what we can
+do is we can iterate.
+
+40
+00:02:10.542 --> 00:02:14.709
+We can go over each of the
+characters in the string.
+
+41
+00:02:16.881 --> 00:02:19.719
+So what we'll do is we'll say
+
+42
+00:02:19.719 --> 00:02:21.969
+for character in my_string:
+
+43
+00:02:23.194 --> 00:02:26.006
+print(character)
+
+44
+00:02:26.006 --> 00:02:27.678
+So this is a very common construct.
+
+45
+00:02:27.678 --> 00:02:29.777
+It's called a for loop.
+
+46
+00:02:29.777 --> 00:02:31.866
+And basically what happens is
+
+47
+00:02:31.866 --> 00:02:34.783
+we say character is a new variable,
+
+48
+00:02:35.619 --> 00:02:39.128
+and the first time we
+run this line of code,
+
+49
+00:02:39.128 --> 00:02:43.395
+character is going to be
+equal to the first element
+
+50
+00:02:43.395 --> 00:02:46.228
+of this variable my_string, the h.
+
+51
+00:02:47.975 --> 00:02:51.998
+Then we're going to run the
+body of this loop which,
+
+52
+00:02:51.998 --> 00:02:56.012
+as you know, is indented
+because there's a colon there.
+
+53
+00:02:56.012 --> 00:02:59.069
+And then after we run the
+body, we're going to repeat.
+
+54
+00:02:59.069 --> 00:03:00.444
+But the character is now going to be
+
+55
+00:03:00.444 --> 00:03:02.665
+the second character, the e.
+
+56
+00:03:02.665 --> 00:03:03.675
+And then we're going to run the body,
+
+57
+00:03:03.675 --> 00:03:04.554
+and then we're going to repeat,
+
+58
+00:03:04.554 --> 00:03:05.869
+but then it's going to be the l.
+
+59
+00:03:05.869 --> 00:03:07.184
+And so on.
+
+60
+00:03:07.184 --> 00:03:09.648
+So character is just another variable
+
+61
+00:03:09.648 --> 00:03:13.815
+that gets assigned to each of
+the elements of this variable.
+
+62
+00:03:14.681 --> 00:03:17.348
+My_string is called an iterable,
+
+63
+00:03:18.817 --> 00:03:21.247
+and you can do this iteration,
+
+64
+00:03:21.247 --> 00:03:25.261
+you can go over each of the
+elements of any iterable.
+
+65
+00:03:25.261 --> 00:03:29.428
+And iterables are strings,
+lists, sets, tuples, and more.
+
+66
+00:03:32.157 --> 00:03:34.604
+So you can do this thing here
+
+67
+00:03:34.604 --> 00:03:38.771
+for string, lists, sets,
+tuples, and a few more things.
+
+68
+00:03:39.846 --> 00:03:42.513
+Okay, so let's run that, really.
+
+69
+00:03:45.436 --> 00:03:47.848
+And of course, we get an error because,
+
+70
+00:03:47.848 --> 00:03:49.598
+my bad, this is not called my_string,
+
+71
+00:03:49.598 --> 00:03:51.670
+it's called my_variable, of course.
+
+72
+00:03:51.670 --> 00:03:52.959
+So let's run that again,
+
+73
+00:03:52.959 --> 00:03:56.677
+and you can see we get h, e, l, l, o.
+
+74
+00:03:56.677 --> 00:03:58.471
+It's a very common mistake,
+
+75
+00:03:58.471 --> 00:04:02.638
+but you can see that we got
+a Traceback, just as usual.
+
+76
+00:04:03.678 --> 00:04:06.882
+And we got a NameError saying
+that the name my_string
+
+77
+00:04:06.882 --> 00:04:11.541
+was not defined, as it
+happens all the time, really.
+
+78
+00:04:11.541 --> 00:04:14.832
+So nothing to worry about there.
+
+79
+00:04:14.832 --> 00:04:17.009
+Do notice that this makes sense
+
+80
+00:04:17.009 --> 00:04:18.072
+it makes sense to say
+
+81
+00:04:18.072 --> 00:04:22.368
+for each of the characters
+in my_variable, do something.
+
+82
+00:04:22.368 --> 00:04:24.894
+But it doesn't have to
+be called character.
+
+83
+00:04:24.894 --> 00:04:27.061
+It can be called asdfasdf.
+
+84
+00:04:29.953 --> 00:04:31.572
+It can be called anything you want.
+
+85
+00:04:31.572 --> 00:04:33.087
+And this is the variable
+
+86
+00:04:33.087 --> 00:04:35.970
+that is going to keep track
+of each of the elements.
+
+87
+00:04:35.970 --> 00:04:37.441
+It doesn't have to have a sensible name,
+
+88
+00:04:37.441 --> 00:04:39.191
+it's just a variable.
+
+89
+00:04:41.551 --> 00:04:43.728
+Okay, so we've mentioned
+
+90
+00:04:43.728 --> 00:04:46.358
+that other things are also iterables,
+
+91
+00:04:46.358 --> 00:04:47.733
+so we can do something like
+
+92
+00:04:47.733 --> 00:04:50.983
+my_list is going to be [1, 3, 5, 7, 9],
+
+93
+00:04:52.000 --> 00:04:53.959
+and then we can iterate over this list
+
+94
+00:04:53.959 --> 00:04:55.792
+for number in my_list.
+
+95
+00:04:57.181 --> 00:05:01.348
+Notice how, after the
+colon, as always, we indent.
+
+96
+00:05:02.301 --> 00:05:06.468
+And we're going to print(number ** 2).
+
+97
+00:05:07.882 --> 00:05:12.454
+And I'll use this opportunity
+to let you know what ** is.
+
+98
+00:05:12.454 --> 00:05:14.370
+Maybe not something you'll use too often,
+
+99
+00:05:14.370 --> 00:05:16.834
+but nevertheless something
+specific to Python.
+
+100
+00:05:16.834 --> 00:05:20.526
+And what that means is
+multiply to the power of 2.
+
+101
+00:05:20.526 --> 00:05:23.774
+So what we're going to be
+printing is 1 to the power of 2,
+
+102
+00:05:23.774 --> 00:05:28.241
+3 to the power of 2, 5 to
+the power of 2, and so on.
+
+103
+00:05:28.241 --> 00:05:29.277
+So let's run this,
+
+104
+00:05:29.277 --> 00:05:33.448
+and what do you think
+is going to come out?
+
+105
+00:05:33.448 --> 00:05:35.450
+Testing your math here.
+
+106
+00:05:35.450 --> 00:05:38.450
+And you knew it, we get hello first,
+
+107
+00:05:39.364 --> 00:05:41.197
+then 1, 9, 25, 49, 81.
+
+108
+00:05:42.690 --> 00:05:44.190
+Nothing new there.
+
+109
+00:05:46.112 --> 00:05:47.924
+So we've looked at the for loop.
+
+110
+00:05:47.924 --> 00:05:50.753
+And the for loop is this construct
+
+111
+00:05:50.753 --> 00:05:53.920
+that lets us iterate over an iterable.
+
+112
+00:05:55.046 --> 00:05:56.875
+Let's us run something
+
+113
+00:05:56.875 --> 00:06:01.411
+a number of times equivalent
+to the length of the list,
+
+114
+00:06:01.411 --> 00:06:03.815
+or the length of the string.
+
+115
+00:06:03.815 --> 00:06:06.235
+And the variable, number,
+
+116
+00:06:06.235 --> 00:06:10.371
+is each of the elements of that iterable.
+
+117
+00:06:10.371 --> 00:06:13.158
+However, there's also
+another type of loop.
+
+118
+00:06:13.158 --> 00:06:17.075
+A loop that we can run
+while something is true.
+
+119
+00:06:18.243 --> 00:06:21.578
+So for example, say we ask the user,
+
+120
+00:06:21.578 --> 00:06:24.661
+"Do you want to print the number 10?"
+
+121
+00:06:25.949 --> 00:06:27.673
+And they'll say, "Yes,"
+
+122
+00:06:27.673 --> 00:06:29.319
+and then we can print the number 10 out.
+
+123
+00:06:29.319 --> 00:06:31.052
+And then we can ask them again
+if they want to print it,
+
+124
+00:06:31.052 --> 00:06:33.316
+and they'll say, "Yes," and
+then we can print it again.
+
+125
+00:06:33.316 --> 00:06:36.564
+And then we can ask them again, and so on.
+
+126
+00:06:36.564 --> 00:06:39.498
+The crux there is that
+we're printing the number 10
+
+127
+00:06:39.498 --> 00:06:42.563
+while the user wants us to print it,
+
+128
+00:06:42.563 --> 00:06:45.079
+and as soon as they want
+to stop, then we can stop.
+
+129
+00:06:45.079 --> 00:06:49.246
+So user_wants_number is
+going to be equal to True.
+
+130
+00:06:51.828 --> 00:06:52.661
+And then we're going to say
+
+131
+00:06:52.661 --> 00:06:56.835
+while user_wants_number is equal to True.
+
+132
+00:06:56.835 --> 00:06:59.549
+And notice that it is a double equal sign.
+
+133
+00:06:59.549 --> 00:07:01.470
+So what we're saying is,
+
+134
+00:07:01.470 --> 00:07:05.637
+while the user_wants_number
+is exactly equal to True,
+
+135
+00:07:06.991 --> 00:07:08.863
+and this is different
+from the single equal,
+
+136
+00:07:08.863 --> 00:07:11.876
+because here we're not
+changing the value of this,
+
+137
+00:07:11.876 --> 00:07:13.879
+we're just comparing it.
+
+138
+00:07:13.879 --> 00:07:17.553
+So we're going to compare
+user_wants_number to True,
+
+139
+00:07:17.553 --> 00:07:21.386
+we're going to say print(10).
+
+140
+00:07:22.456 --> 00:07:26.623
+So if we run this, what do you
+think is going to come out?
+
+141
+00:07:30.292 --> 00:07:32.931
+Maybe you should run this
+in your computers as well,
+
+142
+00:07:32.931 --> 00:07:35.681
+although that may be a bit risky.
+
+143
+00:07:37.389 --> 00:07:38.921
+It's still printing out.
+
+144
+00:07:38.921 --> 00:07:40.489
+And it will keep printing out,
+
+145
+00:07:40.489 --> 00:07:44.155
+essentially forever, the number 10.
+
+146
+00:07:44.155 --> 00:07:47.368
+Why? Why does it print it constantly?
+
+147
+00:07:47.368 --> 00:07:50.050
+Well, we've not told it otherwise, really.
+
+148
+00:07:50.050 --> 00:07:52.717
+We've set a variable to be True,
+
+149
+00:07:54.229 --> 00:07:57.312
+and then while that variable
+was True we're printing,
+
+150
+00:07:57.312 --> 00:07:59.610
+and really it's never stopping.
+
+151
+00:07:59.610 --> 00:08:04.286
+It's never not True, so
+it keeps printing it out.
+
+152
+00:08:04.286 --> 00:08:07.726
+Notice how True is orange,
+just like the numbers,
+
+153
+00:08:07.726 --> 00:08:11.601
+because it's a special Python keyword.
+
+154
+00:08:11.601 --> 00:08:15.179
+However, we can set
+user_wants_number to be False,
+
+155
+00:08:15.179 --> 00:08:17.278
+which is the opposite of True,
+
+156
+00:08:17.278 --> 00:08:22.154
+and then this will no
+longer be True essentially,
+
+157
+00:08:22.154 --> 00:08:23.739
+and then it will stop.
+
+158
+00:08:23.739 --> 00:08:27.091
+So what do you think is
+going to get printed out now?
+
+159
+00:08:27.091 --> 00:08:27.924
+Nothing?
+
+160
+00:08:32.220 --> 00:08:34.353
+Well, we get a bit of gibberish there:
+
+161
+00:08:34.353 --> 00:08:38.520
+hello, 1, 9, 25, 49, 81, which
+is this my_list printing,
+
+162
+00:08:40.353 --> 00:08:43.853
+and then we get 10, which is our 10 there.
+
+163
+00:08:44.741 --> 00:08:48.908
+I'm going to, for our benefit,
+comment those things out,
+
+164
+00:08:50.662 --> 00:08:51.835
+and then save it and run it again,
+
+165
+00:08:51.835 --> 00:08:54.002
+and we'll just get our 10.
+
+166
+00:08:56.021 --> 00:08:59.021
+Okay, so let's actually ask the user
+
+167
+00:09:00.088 --> 00:09:03.423
+if they want to stop or continue.
+
+168
+00:09:03.423 --> 00:09:05.289
+So what we're going to
+do is we're going to say
+
+169
+00:09:05.289 --> 00:09:09.456
+user_input = input("Should
+we print again? (y/n) ")
+
+170
+00:09:16.958 --> 00:09:18.847
+So what is this?
+
+171
+00:09:18.847 --> 00:09:19.901
+What's this input thing?
+
+172
+00:09:19.901 --> 00:09:21.085
+This is new.
+
+173
+00:09:21.085 --> 00:09:22.653
+It is new.
+
+174
+00:09:22.653 --> 00:09:23.889
+What we're going to do now is
+
+175
+00:09:23.889 --> 00:09:27.222
+we're going to print this to the screen.
+
+176
+00:09:28.278 --> 00:09:29.976
+This is a parameter.
+
+177
+00:09:29.976 --> 00:09:32.179
+Parameter to the input method.
+
+178
+00:09:32.179 --> 00:09:34.582
+And the input method is
+going to print this out,
+
+179
+00:09:34.582 --> 00:09:38.474
+and it's going to wait for
+us to write something back.
+
+180
+00:09:38.474 --> 00:09:40.007
+So after this gets printed out,
+
+181
+00:09:40.007 --> 00:09:42.471
+we're going to be able to write something,
+
+182
+00:09:42.471 --> 00:09:44.108
+and whatever we write
+
+183
+00:09:44.108 --> 00:09:47.858
+is going to go into this
+user_input variable.
+
+184
+00:09:50.299 --> 00:09:54.382
+And then we're going to
+say if user_input is 'n',
+
+185
+00:09:55.515 --> 00:09:58.182
+then user_wants_number is False.
+
+186
+00:10:00.234 --> 00:10:03.171
+So what happens here is
+we've got another thing,
+
+187
+00:10:03.171 --> 00:10:04.703
+which I'm going to look
+at in the next video,
+
+188
+00:10:04.703 --> 00:10:06.454
+which is an if statement,
+
+189
+00:10:06.454 --> 00:10:10.276
+and the if just allows us to do something
+
+190
+00:10:10.276 --> 00:10:12.943
+if this comparison here is True.
+
+191
+00:10:14.464 --> 00:10:17.214
+So if we write the character 'n',
+
+192
+00:10:18.065 --> 00:10:20.007
+then this will be 'n'.
+
+193
+00:10:20.007 --> 00:10:22.758
+'n' is exactly equal to 'n',
+
+194
+00:10:22.758 --> 00:10:25.719
+so we will set this to be False,
+
+195
+00:10:25.719 --> 00:10:27.599
+and then we won't run this any longer.
+
+196
+00:10:27.599 --> 00:10:30.760
+But if we enter anything
+else that is not 'n',
+
+197
+00:10:30.760 --> 00:10:33.904
+then this code here will not run,
+
+198
+00:10:33.904 --> 00:10:36.647
+so we will not set
+user_wants_number to False,
+
+199
+00:10:36.647 --> 00:10:38.588
+and therefore we will run the loop again,
+
+200
+00:10:38.588 --> 00:10:42.088
+and we will ask the user again, and so on.
+
+201
+00:10:42.942 --> 00:10:47.322
+Let's run this, just so we
+have a bit of an example.
+
+202
+00:10:47.322 --> 00:10:52.189
+But when we run it, we're
+actually going to get an error
+
+203
+00:10:52.189 --> 00:10:54.758
+that we have not created.
+
+204
+00:10:54.758 --> 00:10:59.094
+So let's run this first, and
+I'll explain what the error is.
+
+205
+00:10:59.094 --> 00:11:01.254
+So the first thing we get is 10,
+
+206
+00:11:01.254 --> 00:11:04.153
+because user_wants_number is True,
+
+207
+00:11:04.153 --> 00:11:06.487
+so the first thing we do is print 10.
+
+208
+00:11:06.487 --> 00:11:10.654
+And then, we get this
+Should we print again? (y/n)
+
+209
+00:11:12.251 --> 00:11:16.672
+If we put n, then this if
+statement should be True,
+
+210
+00:11:16.672 --> 00:11:19.522
+and we should change the
+value of user_wants_number.
+
+211
+00:11:19.522 --> 00:11:22.105
+So let's do that, let's type n.
+
+212
+00:11:23.371 --> 00:11:24.660
+And then we get an error.
+
+213
+00:11:24.660 --> 00:11:25.660
+What's this?
+
+214
+00:11:26.854 --> 00:11:30.589
+Well, I don't know if you
+guys remember from before,
+
+215
+00:11:30.589 --> 00:11:34.377
+but we encountered an error
+that said, essentially,
+
+216
+00:11:34.377 --> 00:11:37.616
+NameError: name 'n' is not defined
+
+217
+00:11:37.616 --> 00:11:38.879
+And that was at the beginning,
+
+218
+00:11:38.879 --> 00:11:41.543
+when we called a variable the wrong thing.
+
+219
+00:11:41.543 --> 00:11:44.121
+Basically the variable didn't exist.
+
+220
+00:11:44.121 --> 00:11:48.288
+So what this is saying is
+the variable n doesn't exist.
+
+221
+00:11:49.276 --> 00:11:50.251
+This doesn't make sense.
+
+222
+00:11:50.251 --> 00:11:53.668
+Surely we want 'n' to go into user_input.
+
+223
+00:11:54.814 --> 00:11:58.981
+And that's because input is
+not the right method to use.
+
+224
+00:12:00.121 --> 00:12:04.288
+And that is because if
+you type python --version
+
+225
+00:12:07.376 --> 00:12:11.295
+you can see that I am running Python 2.7
+
+226
+00:12:11.295 --> 00:12:14.691
+If you're running a Mac, you
+will have the same problem.
+
+227
+00:12:14.691 --> 00:12:18.274
+Python, as a command,
+is always Python 2.7,
+
+228
+00:12:19.369 --> 00:12:21.404
+so you have to run python3.5,
+
+229
+00:12:21.404 --> 00:12:25.566
+as I have mentioned
+earlier, and then loops.py
+
+230
+00:12:25.566 --> 00:12:27.233
+So now we will work.
+
+231
+00:12:28.709 --> 00:12:31.905
+And when we type n, we
+just stop the programme.
+
+232
+00:12:31.905 --> 00:12:35.449
+If we run that, but we type
+y, then we do it again,
+
+233
+00:12:35.449 --> 00:12:38.366
+and again, and again until we stop.
+
+234
+00:12:39.576 --> 00:12:41.587
+So just an important bit of information.
+
+235
+00:12:41.587 --> 00:12:43.599
+If things are going wrong
+
+236
+00:12:43.599 --> 00:12:45.088
+that you think should be going right,
+
+237
+00:12:45.088 --> 00:12:45.933
+maybe check the version.
+
+238
+00:12:45.933 --> 00:12:48.144
+Make sure you're running Python 3.5.
+
+239
+00:12:48.144 --> 00:12:49.894
+And you can run Python 3.5 like that,
+
+240
+00:12:49.894 --> 00:12:52.359
+as we have seen in the past.
+
+241
+00:12:52.359 --> 00:12:54.501
+And just make sure to do that,
+
+242
+00:12:54.501 --> 00:12:57.104
+because these two are some key differences
+
+243
+00:12:57.104 --> 00:12:59.937
+between Python 2.7 and Python 3.5.
+
+244
+00:13:01.310 --> 00:13:03.034
+In this video we've looked at iterables,
+
+245
+00:13:03.034 --> 00:13:06.709
+which are strings, lists,
+sets, tuples, and a few others.
+
+246
+00:13:06.709 --> 00:13:08.903
+And we'll get to those later on.
+
+247
+00:13:08.903 --> 00:13:10.862
+We've looked at the for loop,
+
+248
+00:13:10.862 --> 00:13:12.421
+which lets us iterate
+
+249
+00:13:12.421 --> 00:13:15.094
+over each of the elements of an iterable.
+
+250
+00:13:15.094 --> 00:13:17.671
+And we've also looked at the while loop.
+
+251
+00:13:17.671 --> 00:13:20.553
+We've also looked at
+what True and False are.
+
+252
+00:13:20.553 --> 00:13:22.844
+And we've looked that
+we can make comparisons
+
+253
+00:13:22.844 --> 00:13:26.527
+between values by using
+the double equals sign.
+
+254
+00:13:26.527 --> 00:13:28.425
+We've also looked at the input method,
+
+255
+00:13:28.425 --> 00:13:30.881
+which lets us retrieve
+some input from the user,
+
+256
+00:13:30.881 --> 00:13:33.467
+as long as they're running Python 3.5.
+
+257
+00:13:33.467 --> 00:13:35.626
+And we've also looked at the if statement,
+
+258
+00:13:35.626 --> 00:13:38.291
+which lets us execute something
+
+259
+00:13:38.291 --> 00:13:42.305
+if this thing here after
+the if evaluates to True.
+
+260
+00:13:42.305 --> 00:13:46.305
+So basically if this
+variable here contains 'n'.
+
+261
+00:13:47.512 --> 00:13:49.384
+A lot of things to be looking at.
+
+262
+00:13:49.384 --> 00:13:50.594
+Please do download this code
+
+263
+00:13:50.594 --> 00:13:53.877
+that is linked in the resources.
+
+264
+00:13:53.877 --> 00:13:55.706
+You can download this code
+and have a wee look again,
+
+265
+00:13:55.706 --> 00:13:59.267
+have a play with it, and then
+move on to the next video.
+
+266
+00:13:59.267 --> 00:14:01.537
+So I'm really excited to see you there.
+

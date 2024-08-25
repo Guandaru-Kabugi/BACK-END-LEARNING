@@ -1,0 +1,352 @@
+﻿WEBVTT
+
+1
+00:00:00.886 --> 00:00:02.542
+- [Instructor] Hi, and welcome back.
+
+2
+00:00:02.542 --> 00:00:03.621
+We're covering dictionaries,
+
+3
+00:00:03.621 --> 00:00:06.366
+but I wanted to show you something
+
+4
+00:00:06.366 --> 00:00:08.569
+that hopefully will make you think
+
+5
+00:00:08.569 --> 00:00:12.569
+and will introduce nicely
+the following concept.
+
+6
+00:00:13.699 --> 00:00:16.532
+We've got our lottery_player here.
+
+7
+00:00:18.831 --> 00:00:20.831
+But this lottery_player,
+
+8
+00:00:22.385 --> 00:00:23.549
+and this is gonna sound a bit weird,
+
+9
+00:00:23.549 --> 00:00:26.704
+but this lottery_player variable
+
+10
+00:00:26.704 --> 00:00:28.621
+isn't a lottery player.
+
+11
+00:00:29.576 --> 00:00:34.498
+It's a bunch of data that
+represents a lottery player.
+
+12
+00:00:34.498 --> 00:00:37.304
+So this lottery_player can't do things.
+
+13
+00:00:37.304 --> 00:00:39.221
+It can only store data.
+
+14
+00:00:40.952 --> 00:00:44.901
+And what I mean with
+that is, if we wanted to,
+
+15
+00:00:44.901 --> 00:00:48.627
+for example, take the
+total of these numbers,
+
+16
+00:00:48.627 --> 00:00:51.893
+we'd know how to do that
+using the sum method.
+
+17
+00:00:51.893 --> 00:00:52.935
+So we would do something like
+
+18
+00:00:52.935 --> 00:00:57.018
+sum(lottery_player)['numbers']).
+
+19
+00:00:59.594 --> 00:01:03.038
+But this is more of a
+conceptual thing here.
+
+20
+00:01:03.038 --> 00:01:06.621
+The lottery_player
+isn't giving us the sum.
+
+21
+00:01:08.143 --> 00:01:11.834
+We are getting some data
+that's stored in the player.
+
+22
+00:01:11.834 --> 00:01:15.922
+And then we're summing it
+using an external method.
+
+23
+00:01:15.922 --> 00:01:19.675
+And that may not make sense
+at all for you just yet.
+
+24
+00:01:19.675 --> 00:01:20.675
+That's fine.
+
+25
+00:01:22.229 --> 00:01:25.372
+What I would like is to be
+able to simply find out,
+
+26
+00:01:25.372 --> 00:01:28.510
+simply find this passing of
+data from one place to another,
+
+27
+00:01:28.510 --> 00:01:32.964
+and be able to do something
+like lottery_player.total,
+
+28
+00:01:32.964 --> 00:01:34.208
+for example.
+
+29
+00:01:34.208 --> 00:01:37.239
+And that should give us the total
+
+30
+00:01:37.239 --> 00:01:40.072
+for this lottery_player's numbers.
+
+31
+00:01:43.070 --> 00:01:46.523
+It makes sense because this
+way, the player tells us
+
+32
+00:01:46.523 --> 00:01:50.449
+their total, and we don't
+have to be concerned
+
+33
+00:01:50.449 --> 00:01:53.199
+with the data that's stored here.
+
+34
+00:01:55.417 --> 00:01:58.167
+Also, if we had multiple players,
+
+35
+00:02:02.856 --> 00:02:03.689
+like so,
+
+36
+00:02:15.206 --> 00:02:17.008
+this would turn into something like
+
+37
+00:02:17.008 --> 00:02:19.673
+lottery_player[0]['numbers'].
+
+38
+00:02:19.673 --> 00:02:23.008
+It would start getting more complicated.
+
+39
+00:02:23.008 --> 00:02:26.062
+It would be nice to be able to say,
+
+40
+00:02:26.062 --> 00:02:28.062
+lottery_players[0].total
+
+41
+00:02:30.632 --> 00:02:32.635
+for the first player
+
+42
+00:02:32.635 --> 00:02:34.426
+to tell us its total
+
+43
+00:02:34.426 --> 00:02:36.509
+and not for us to have to
+
+44
+00:02:37.482 --> 00:02:39.545
+retrieve the numbers,
+
+45
+00:02:39.545 --> 00:02:41.824
+retrieve the data that's stored in it
+
+46
+00:02:41.824 --> 00:02:44.924
+and then sum it using an external method.
+
+47
+00:02:44.924 --> 00:02:48.092
+If each of the people or the elements
+
+48
+00:02:48.092 --> 00:02:51.763
+can tell us things that
+are associated to it,
+
+49
+00:02:51.763 --> 00:02:53.464
+that simplifies things a lot more,
+
+50
+00:02:53.464 --> 00:02:55.398
+especially in our heads.
+
+51
+00:02:55.398 --> 00:02:58.854
+Because then, the player can do things
+
+52
+00:02:58.854 --> 00:03:00.379
+if we allow it to.
+
+53
+00:03:00.379 --> 00:03:04.668
+The player could do things
+like tell us its total.
+
+54
+00:03:04.668 --> 00:03:08.273
+Or, for example, it could do things like
+
+55
+00:03:08.273 --> 00:03:12.440
+tell us how many numbers
+matched the lottery numbers,
+
+56
+00:03:13.970 --> 00:03:15.790
+and things like that.
+
+57
+00:03:15.790 --> 00:03:19.080
+And the cognitive jump here is quite high,
+
+58
+00:03:19.080 --> 00:03:21.584
+and it normally is with
+object-oriented programming,
+
+59
+00:03:21.584 --> 00:03:25.255
+but what I would like you
+to take from this video
+
+60
+00:03:25.255 --> 00:03:29.422
+is that a dictionary stores
+data related to a thing,
+
+61
+00:03:31.338 --> 00:03:32.336
+or can do.
+
+62
+00:03:32.336 --> 00:03:35.695
+A dictionary can store
+data related to a thing,
+
+63
+00:03:35.695 --> 00:03:38.725
+but a dictionary does
+not represent a thing,
+
+64
+00:03:38.725 --> 00:03:41.244
+because once data's
+stored in a dictionary,
+
+65
+00:03:41.244 --> 00:03:43.577
+that data can't do anything.
+
+66
+00:03:44.760 --> 00:03:47.264
+And if we want to take it a step further,
+
+67
+00:03:47.264 --> 00:03:51.431
+and let the thing do stuff,
+then we need an object.
+
+68
+00:03:53.178 --> 00:03:56.237
+And that's taking it a step further,
+
+69
+00:03:56.237 --> 00:04:00.681
+past the dictionary and
+into being an object.
+
+70
+00:04:00.681 --> 00:04:02.788
+So in the next video, we're gonna move
+
+71
+00:04:02.788 --> 00:04:06.288
+this lottery_player entity into an object,
+
+72
+00:04:07.483 --> 00:04:11.037
+so that you can understand
+what the difference is.
+
+73
+00:04:11.037 --> 00:04:12.990
+So hopefully this is not
+going to be too confusing.
+
+74
+00:04:12.990 --> 00:04:15.798
+And always let me know if
+there's absolutely anything
+
+75
+00:04:15.798 --> 00:04:17.877
+I can do to explain things better,
+
+76
+00:04:17.877 --> 00:04:20.163
+'cause I am always ready to help.
+
+77
+00:04:20.163 --> 00:04:22.429
+So wait a minute until the next video,
+
+78
+00:04:22.429 --> 00:04:25.066
+and then catch up with me there,
+
+79
+00:04:25.066 --> 00:04:28.072
+and we're gonna convert
+this into an object.
+
+80
+00:04:28.072 --> 00:04:29.412
+I'll see you in the next video.
+

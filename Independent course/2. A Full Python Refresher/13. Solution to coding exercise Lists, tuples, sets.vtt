@@ -1,0 +1,412 @@
+﻿WEBVTT
+
+1
+00:00:00.125 --> 00:00:00.958
+- [Narrator] Hi, and welcome back
+
+2
+00:00:00.958 --> 00:00:02.795
+to your third programming exercise,
+
+3
+00:00:02.795 --> 00:00:04.795
+lists, tuples, and sets.
+
+4
+00:00:05.918 --> 00:00:08.052
+This exercise has three
+steps, as we've seen.
+
+5
+00:00:08.052 --> 00:00:10.270
+Create a list, which must be called
+
+6
+00:00:10.270 --> 00:00:13.215
+my_list with three numbers, and the total
+
+7
+00:00:13.215 --> 00:00:15.914
+of the numbers added
+together should be 100.
+
+8
+00:00:15.914 --> 00:00:19.119
+To create a tuple, called my_tuple,
+
+9
+00:00:19.119 --> 00:00:23.676
+with a single value in it, so
+only one value in the tuple.
+
+10
+00:00:23.676 --> 00:00:26.724
+And finally, modify the variable set2,
+
+11
+00:00:26.724 --> 00:00:31.089
+which is down here, so
+that set1.intersection
+
+12
+00:00:31.089 --> 00:00:34.506
+with set2 returns five, 77, nine, and 12.
+
+13
+00:00:36.360 --> 00:00:39.672
+Let's start with the
+first instruction here.
+
+14
+00:00:39.672 --> 00:00:42.882
+Create a list called
+my_list with three numbers.
+
+15
+00:00:42.882 --> 00:00:45.542
+We know how to create a list.
+
+16
+00:00:45.542 --> 00:00:49.409
+It's just a variable, so
+we type the variable name,
+
+17
+00:00:49.409 --> 00:00:52.570
+equals, and then whatever
+it is that's in the list,
+
+18
+00:00:52.570 --> 00:00:56.416
+so my_list equals, and
+then we know that a list
+
+19
+00:00:56.416 --> 00:01:00.286
+uses square brackets, so
+we're gonna have an opening
+
+20
+00:01:00.286 --> 00:01:02.233
+and closing set of square brackets,
+
+21
+00:01:02.233 --> 00:01:03.904
+and inside the square brackets,
+
+22
+00:01:03.904 --> 00:01:05.890
+we're gonna have the three numbers.
+
+23
+00:01:05.890 --> 00:01:08.356
+And the total of the
+numbers added together
+
+24
+00:01:08.356 --> 00:01:10.661
+should be the value 100.
+
+25
+00:01:10.661 --> 00:01:12.606
+So, if we were to add the
+three numbers we're gonna put
+
+26
+00:01:12.606 --> 00:01:16.396
+in here, we should get the
+value 100, so what do we do?
+
+27
+00:01:16.396 --> 00:01:18.829
+Well, there's many things we can do.
+
+28
+00:01:18.829 --> 00:01:22.597
+We can do one comma two
+comma 97, my apologies,
+
+29
+00:01:22.597 --> 00:01:24.905
+and that would give you 100.
+
+30
+00:01:24.905 --> 00:01:29.072
+We can do 100, zero, zero, and
+that would also give you 100.
+
+31
+00:01:31.548 --> 00:01:32.899
+So, it doesn't matter what three values
+
+32
+00:01:32.899 --> 00:01:35.089
+as long as there are
+three numbers in there
+
+33
+00:01:35.089 --> 00:01:36.839
+and the total is 100.
+
+34
+00:01:38.235 --> 00:01:41.311
+The next is to create
+tuple called my_tuble,
+
+35
+00:01:41.311 --> 00:01:43.615
+with one single value in it.
+
+36
+00:01:43.615 --> 00:01:46.532
+Now, this trips up a lot of people,
+
+37
+00:01:47.611 --> 00:01:50.545
+because we can create
+the my_tuple variable
+
+38
+00:01:50.545 --> 00:01:52.678
+and then we know that tuples use
+
+39
+00:01:52.678 --> 00:01:55.714
+normal brackets instead
+of square brackets,
+
+40
+00:01:55.714 --> 00:01:59.638
+so we put in our opening
+and closing set of brackets,
+
+41
+00:01:59.638 --> 00:02:04.535
+and then we put a value in
+it, like 15, for example.
+
+42
+00:02:04.535 --> 00:02:08.043
+And now, a lot of other
+students fall for this.
+
+43
+00:02:08.043 --> 00:02:10.399
+This is not a tupble.
+
+44
+00:02:10.399 --> 00:02:14.411
+Sadly, brackets around
+the 15 is not a tuple.
+
+45
+00:02:14.411 --> 00:02:16.925
+This is the brackets that would be
+
+46
+00:02:16.925 --> 00:02:19.079
+in a mathematical equation.
+
+47
+00:02:19.079 --> 00:02:23.246
+For example, you might have
+15 times two minus 10, say.
+
+48
+00:02:25.813 --> 00:02:28.992
+And what the brackets mean
+here is that the 15 by two
+
+49
+00:02:28.992 --> 00:02:32.929
+happens before minus 10,
+which it would anyway,
+
+50
+00:02:32.929 --> 00:02:36.284
+but nevertheless, these brackets here are
+
+51
+00:02:36.284 --> 00:02:39.803
+for mathematical preference only.
+
+52
+00:02:39.803 --> 00:02:42.502
+They do not signify a tuple.
+
+53
+00:02:42.502 --> 00:02:44.255
+So, this is slightly confusing.
+
+54
+00:02:44.255 --> 00:02:46.993
+Now you may wonder, well, how
+do we define a tuple then,
+
+55
+00:02:46.993 --> 00:02:50.426
+and the way you define a
+tuple is by making sure Python
+
+56
+00:02:50.426 --> 00:02:54.048
+understands that this is
+not a maths equation here,
+
+57
+00:02:54.048 --> 00:02:56.301
+no mathematics is happening in this tuple,
+
+58
+00:02:56.301 --> 00:03:00.468
+so we put a comma, which is
+not a mathematical symbol,
+
+59
+00:03:01.388 --> 00:03:04.137
+and now this tells Python,
+okay, this is a tuple,
+
+60
+00:03:04.137 --> 00:03:06.126
+it has the brackets and
+it has a value in it,
+
+61
+00:03:06.126 --> 00:03:07.876
+and then it has a comma,
+which tells us that there
+
+62
+00:03:07.876 --> 00:03:11.440
+may be other values behind
+it, even though there are not.
+
+63
+00:03:11.440 --> 00:03:14.836
+And this tells Python
+that this is now a tuple.
+
+64
+00:03:14.836 --> 00:03:16.786
+Optionally, because this feels a bit weird
+
+65
+00:03:16.786 --> 00:03:18.557
+and a bit redundant, we can also
+
+66
+00:03:18.557 --> 00:03:21.860
+just remove the brackets
+and just have 15 comma,
+
+67
+00:03:21.860 --> 00:03:25.953
+and now Python realises that
+this is a single-value tuple.
+
+68
+00:03:25.953 --> 00:03:27.786
+So we can do that too.
+
+69
+00:03:30.022 --> 00:03:32.564
+Finally, we're gonna modify
+set2, this variable here,
+
+70
+00:03:32.564 --> 00:03:36.731
+so that set1.intersection set2
+is five, 77, nine, and 12.
+
+71
+00:03:38.288 --> 00:03:41.541
+The intersection between two sets
+
+72
+00:03:41.541 --> 00:03:45.132
+are the values that are in both sets.
+
+73
+00:03:45.132 --> 00:03:49.588
+So, in order to make set1
+intersection set2 equal
+
+74
+00:03:49.588 --> 00:03:51.934
+five, 77, nine, and 12, all we have to do
+
+75
+00:03:51.934 --> 00:03:56.101
+is make sure that set1 and
+set2 have these values in them.
+
+76
+00:03:57.717 --> 00:03:59.039
+And as you can see, set1 has the values
+
+77
+00:03:59.039 --> 00:04:02.706
+five, 77, nine, and 12,
+so all we have to do
+
+78
+00:04:04.254 --> 00:04:07.058
+is make set2 have those values too.
+
+79
+00:04:07.058 --> 00:04:09.308
+So, five, 77, nine, and 12.
+
+80
+00:04:11.677 --> 00:04:13.774
+And then we can check the solution,
+
+81
+00:04:13.774 --> 00:04:16.321
+and they should tell us
+that it is all correct.
+
+82
+00:04:16.321 --> 00:04:17.750
+Now, there we are.
+
+83
+00:04:17.750 --> 00:04:19.713
+So now we have created a
+list with three values,
+
+84
+00:04:19.713 --> 00:04:21.899
+the total of which equals 100,
+
+85
+00:04:21.899 --> 00:04:24.192
+a single-value tuple, and we've looked
+
+86
+00:04:24.192 --> 00:04:28.002
+at a couple of potential
+problems we can encounter
+
+87
+00:04:28.002 --> 00:04:30.637
+with that tuple, and finally
+we've looked at modifying
+
+88
+00:04:30.637 --> 00:04:33.058
+the set variable, so that the intersection
+
+89
+00:04:33.058 --> 00:04:36.134
+of the two sets returns a specific set.
+
+90
+00:04:36.134 --> 00:04:38.003
+That's everything for this video.
+
+91
+00:04:38.003 --> 00:04:40.190
+I'll see you on the next one.
+

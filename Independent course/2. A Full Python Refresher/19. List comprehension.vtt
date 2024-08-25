@@ -1,0 +1,992 @@
+﻿WEBVTT
+
+1
+00:00:00.625 --> 00:00:02.757
+- [Instructor] Hi and welcome
+back to the programme.
+
+2
+00:00:02.757 --> 00:00:06.318
+I've created a new file
+called list_comprehension.py
+
+3
+00:00:06.318 --> 00:00:09.562
+and that's what we're gonna be
+talking about in this video.
+
+4
+00:00:09.562 --> 00:00:12.396
+Let's create a list, which
+I'm gonna pull my list
+
+5
+00:00:12.396 --> 00:00:13.835
+and I'm just gonna have the values
+
+6
+00:00:13.835 --> 00:00:16.418
+from zero to four, five values.
+
+7
+00:00:17.323 --> 00:00:21.129
+List comprehension is
+a way to build lists.
+
+8
+00:00:21.129 --> 00:00:23.879
+So create lists programmatically.
+
+9
+00:00:25.580 --> 00:00:29.291
+For example, an equal list to my list
+
+10
+00:00:29.291 --> 00:00:31.874
+would be X for X in range five.
+
+11
+00:00:34.699 --> 00:00:38.223
+So this is a bit of a
+weird piece of syntax.
+
+12
+00:00:38.223 --> 00:00:42.365
+For non-Python programmers,
+this is really completely new.
+
+13
+00:00:42.365 --> 00:00:44.514
+This is nowhere else other than Python
+
+14
+00:00:44.514 --> 00:00:47.621
+and maybe a couple of
+other languages as well.
+
+15
+00:00:47.621 --> 00:00:51.598
+What this does, it does a for loop really.
+
+16
+00:00:51.598 --> 00:00:53.848
+It does for X in range five
+
+17
+00:00:56.323 --> 00:00:58.112
+and then what it's gonna do
+
+18
+00:00:58.112 --> 00:01:01.529
+is that's gonna iterate over range five.
+
+19
+00:01:03.264 --> 00:01:07.431
+Range five is a list that says
+zero, one, two, three, four.
+
+20
+00:01:10.889 --> 00:01:11.722
+Like that.
+
+21
+00:01:13.637 --> 00:01:16.054
+So that's what range five is.
+
+22
+00:01:17.539 --> 00:01:20.743
+So we're gonna iterate
+over it X is gonna become
+
+23
+00:01:20.743 --> 00:01:24.604
+the first element, and
+then what we're gonna do
+
+24
+00:01:24.604 --> 00:01:27.437
+is were gonna put X inside a list.
+
+25
+00:01:29.369 --> 00:01:31.277
+Then we're gonna move
+over to the next element
+
+26
+00:01:31.277 --> 00:01:33.862
+which is one and we're gonna
+put one inside the list
+
+27
+00:01:33.862 --> 00:01:35.214
+then we're gonna put two in the list,
+
+28
+00:01:35.214 --> 00:01:36.898
+three in the list, four in the list.
+
+29
+00:01:36.898 --> 00:01:39.816
+So we're putting X into the list
+
+30
+00:01:39.816 --> 00:01:43.066
+for each of the elements in range five.
+
+31
+00:01:45.893 --> 00:01:48.757
+We enclose everything
+with a square bracket
+
+32
+00:01:48.757 --> 00:01:52.670
+to tell Python that we're
+putting this in a list.
+
+33
+00:01:52.670 --> 00:01:56.537
+Now you'll say instead of
+doing X for X in range five,
+
+34
+00:01:56.537 --> 00:01:59.033
+why don't you just do range
+five and that's gonna be
+
+35
+00:01:59.033 --> 00:02:03.016
+the same thing and yes it is,
+it's gonna be the same thing.
+
+36
+00:02:03.016 --> 00:02:06.615
+But this is a way of building a list.
+
+37
+00:02:06.615 --> 00:02:09.282
+If we do range five then that's
+
+38
+00:02:10.485 --> 00:02:13.592
+gonna give us essentially a list.
+
+39
+00:02:13.592 --> 00:02:14.972
+It's not really gonna give us a list,
+
+40
+00:02:14.972 --> 00:02:18.846
+but it's essentially gonna give us a list.
+
+41
+00:02:18.846 --> 00:02:20.808
+But what we can do with list comprehension
+
+42
+00:02:20.808 --> 00:02:25.711
+is we can build a list that
+is slightly more complicated.
+
+43
+00:02:25.711 --> 00:02:29.009
+So, for example, multiply list can
+
+44
+00:02:29.009 --> 00:02:32.092
+be X times three for X in range five.
+
+45
+00:02:33.963 --> 00:02:37.880
+Now this allows us to
+put X multiplied by three
+
+46
+00:02:38.936 --> 00:02:42.553
+where X is at first
+zero and then it is one,
+
+47
+00:02:42.553 --> 00:02:44.970
+and then it is two and so on.
+
+48
+00:02:46.413 --> 00:02:47.958
+So what do you think would happen
+
+49
+00:02:47.958 --> 00:02:50.562
+when we run this programme here,
+
+50
+00:02:50.562 --> 00:02:53.229
+python3.5 list_comprehension.py?
+
+51
+00:02:55.374 --> 00:02:56.791
+What do you think is
+gonna get printed out,
+
+52
+00:02:56.791 --> 00:02:58.519
+some sort of error?
+
+53
+00:02:58.519 --> 00:03:01.411
+Or, do you think a list is
+going to get printed out
+
+54
+00:03:01.411 --> 00:03:05.078
+and if so, what is going
+to be in that list?
+
+55
+00:03:07.499 --> 00:03:09.249
+Well, let's find out.
+
+56
+00:03:11.126 --> 00:03:14.079
+What is in that list
+is each of the elements
+
+57
+00:03:14.079 --> 00:03:17.246
+of range five but multiplied by three.
+
+58
+00:03:18.838 --> 00:03:21.412
+So we get zero, three, six, nine, and 12
+
+59
+00:03:21.412 --> 00:03:24.912
+instead of zero, one, two, three and four.
+
+60
+00:03:26.129 --> 00:03:29.305
+OK, something else that
+I also wanted to show you
+
+61
+00:03:29.305 --> 00:03:32.305
+in this video is the percent symbol.
+
+62
+00:03:35.668 --> 00:03:37.835
+So for example, 8 % 3
+
+63
+00:03:40.198 --> 00:03:42.072
+do you know what percent is?
+
+64
+00:03:42.072 --> 00:03:44.153
+It's present in many
+programming languages and if you
+
+65
+00:03:44.153 --> 00:03:45.220
+have any experience programming with
+
+66
+00:03:45.220 --> 00:03:48.947
+any other language then
+you may know what % is.
+
+67
+00:03:48.947 --> 00:03:53.114
+But if you don't then that's
+fine, and we get two back.
+
+68
+00:03:54.664 --> 00:03:57.414
+So where does this two come from?
+
+69
+00:04:00.078 --> 00:04:03.661
+It is the result of
+eight divided by three.
+
+70
+00:04:04.572 --> 00:04:06.989
+Eight divided by three is two
+
+71
+00:04:12.935 --> 00:04:16.185
+but the two multiplied by three is six.
+
+72
+00:04:18.345 --> 00:04:21.917
+So where's the other two, the remainder?
+
+73
+00:04:21.917 --> 00:04:25.448
+And there you have your
+answer, that's the two.
+
+74
+00:04:25.448 --> 00:04:28.198
+So when you divide eight by three
+
+75
+00:04:29.221 --> 00:04:32.721
+eight by three gives you six remainder two
+
+76
+00:04:34.822 --> 00:04:38.437
+and it is that two that is the modulus.
+
+77
+00:04:38.437 --> 00:04:41.104
+So eight modulus three equal two
+
+78
+00:04:42.940 --> 00:04:45.044
+which is the remainder.
+
+79
+00:04:45.044 --> 00:04:47.437
+This percent symbol is called the modulus
+
+80
+00:04:47.437 --> 00:04:51.227
+and it calculates the
+remainder of a division.
+
+81
+00:04:51.227 --> 00:04:52.954
+You're probably wondering why the hell
+
+82
+00:04:52.954 --> 00:04:55.004
+do I care about that?
+
+83
+00:04:55.004 --> 00:04:58.314
+Well, you may care, for example,
+
+84
+00:04:58.314 --> 00:05:02.609
+if you wanted to see if
+a number was odd or even.
+
+85
+00:05:02.609 --> 00:05:06.692
+You can print nine modulus
+two and that will tell
+
+86
+00:05:09.002 --> 00:05:12.044
+you if nine is odd or even.
+
+87
+00:05:12.044 --> 00:05:14.961
+Any number modulus two will be even
+
+88
+00:05:17.411 --> 00:05:20.578
+if the result is zero, so for example,
+
+89
+00:05:21.926 --> 00:05:26.180
+four modulus two is zero
+because four is even.
+
+90
+00:05:26.180 --> 00:05:29.847
+Five modulus two is one
+because five is odd.
+
+91
+00:05:34.682 --> 00:05:37.752
+So as you can see nine
+modulus two gives you one
+
+92
+00:05:37.752 --> 00:05:39.419
+because nine is odd.
+
+93
+00:05:43.323 --> 00:05:46.906
+So how could we get a
+list of even numbers?
+
+94
+00:05:50.011 --> 00:05:52.456
+This is even more complicated,
+
+95
+00:05:52.456 --> 00:05:54.400
+not something that we've looked at before,
+
+96
+00:05:54.400 --> 00:05:57.251
+but nevertheless we're gonna introduce it
+
+97
+00:05:57.251 --> 00:06:00.584
+and we're gonna say n for n in range 10.
+
+98
+00:06:02.851 --> 00:06:06.207
+And as you know this
+is gonna give us a list
+
+99
+00:06:06.207 --> 00:06:09.207
+of numbers ranging from zero to nine
+
+100
+00:06:10.595 --> 00:06:13.080
+in the same way that X for X in range five
+
+101
+00:06:13.080 --> 00:06:16.743
+gave us the numbers from zero to four.
+
+102
+00:06:16.743 --> 00:06:19.126
+But with list_comprehension.py
+we can include
+
+103
+00:06:19.126 --> 00:06:20.967
+something else at the end which is
+
+104
+00:06:20.967 --> 00:06:22.967
+if n modulus to is zero,
+
+105
+00:06:25.814 --> 00:06:28.481
+and then we're gonna print that.
+
+106
+00:06:30.176 --> 00:06:35.138
+Now we're gonna comment this
+out, and we can print this out.
+
+107
+00:06:35.138 --> 00:06:39.055
+So what do you think is
+gonna come out of this?
+
+108
+00:06:41.942 --> 00:06:44.731
+Do you think it is going to be a list
+
+109
+00:06:44.731 --> 00:06:47.314
+of zero, two, four, six, eight?
+
+110
+00:06:49.698 --> 00:06:51.501
+Is it gonna be zero, one, two, three,
+
+111
+00:06:51.501 --> 00:06:52.930
+four, five, six, seven, eight, nine?
+
+112
+00:06:52.930 --> 00:06:56.347
+Is it gonna be something like zero false,
+
+113
+00:06:57.209 --> 00:06:59.042
+two false, four false?
+
+114
+00:07:03.512 --> 00:07:05.369
+The first guess was correct, you get zero
+
+115
+00:07:05.369 --> 00:07:09.369
+two, four, six, eight
+because only those numbers
+
+116
+00:07:10.293 --> 00:07:12.793
+match this if statement there.
+
+117
+00:07:14.275 --> 00:07:16.942
+So if n modulus two is zero then
+
+118
+00:07:18.005 --> 00:07:21.265
+we put the n in the list, and if not,
+
+119
+00:07:21.265 --> 00:07:23.265
+then we don't put it in.
+
+120
+00:07:25.600 --> 00:07:27.771
+Another couple of things that we may wanna
+
+121
+00:07:27.771 --> 00:07:30.536
+do with a list_comprehension.py
+for example,
+
+122
+00:07:30.536 --> 00:07:34.203
+people_you_know maybe
+Rolf, maybe space John
+
+123
+00:07:37.265 --> 00:07:40.515
+maybe Anna, maybe Greg all in capitals.
+
+124
+00:07:45.376 --> 00:07:48.610
+And if we ask the user if they know them
+
+125
+00:07:48.610 --> 00:07:51.196
+they're gonna eed to
+put Rolf in a capital R,
+
+126
+00:07:51.196 --> 00:07:54.229
+a space in front of John,
+Anna all in lower case,
+
+127
+00:07:54.229 --> 00:07:56.230
+Greg all in uppercase.
+
+128
+00:07:56.230 --> 00:07:59.394
+Unless we do normalized_people.
+
+129
+00:07:59.394 --> 00:08:01.702
+We can create a variable
+called normalized_people
+
+130
+00:08:01.702 --> 00:08:02.535
+and say person.strip().lower()
+
+131
+00:08:02.535 --> 00:08:05.035
+for person in people_you_know.
+
+132
+00:08:12.203 --> 00:08:13.741
+So what this is going to do is going
+
+133
+00:08:13.741 --> 00:08:17.285
+to strip the white
+space, such as from John
+
+134
+00:08:17.285 --> 00:08:21.452
+and it's gonna turn them all
+to lowercase, such as Anna.
+
+135
+00:08:23.648 --> 00:08:25.798
+It's gonna make them all lowercase,
+
+136
+00:08:25.798 --> 00:08:29.843
+and then we're gonna
+print normalized_people.
+
+137
+00:08:29.843 --> 00:08:33.230
+We're gonna comment this line out,
+
+138
+00:08:33.230 --> 00:08:36.813
+just so we don't get
+that line out as well.
+
+139
+00:08:37.841 --> 00:08:39.518
+As you can see, we now get a list
+
+140
+00:08:39.518 --> 00:08:42.522
+of normalised
+representations where they're
+
+141
+00:08:42.522 --> 00:08:46.564
+all lowercase and they all
+don't have white space.
+
+142
+00:08:46.564 --> 00:08:48.750
+So there's maybe one of the reasons
+
+143
+00:08:48.750 --> 00:08:52.389
+you might want to use
+a list_comprehension.py
+
+144
+00:08:52.389 --> 00:08:54.037
+if we go back to our exercise before
+
+145
+00:08:54.037 --> 00:08:56.498
+the if statement exercise.
+
+146
+00:08:56.498 --> 00:09:00.089
+Now we can change this to
+user list_comprehension
+
+147
+00:09:00.089 --> 00:09:03.589
+instead of this for which is a bit longer.
+
+148
+00:09:06.932 --> 00:09:08.975
+You want to pause the
+video and give that a go?
+
+149
+00:09:08.975 --> 00:09:11.823
+Use a list_comprehension
+to simplify this code.
+
+150
+00:09:11.823 --> 00:09:14.096
+And you can simplify
+it quite substantially
+
+151
+00:09:14.096 --> 00:09:15.612
+if you do it smartly.
+
+152
+00:09:15.612 --> 00:09:17.036
+Pause the video and give that a go,
+
+153
+00:09:17.036 --> 00:09:19.953
+and then I will do it here for you.
+
+154
+00:09:23.580 --> 00:09:26.457
+Okay, hopefully you managed that.
+
+155
+00:09:26.457 --> 00:09:28.297
+And the first thing that we can do
+
+156
+00:09:28.297 --> 00:09:31.107
+is we can see people without spaces
+
+157
+00:09:31.107 --> 00:09:35.274
+is person.strip() for
+person in people_list.
+
+158
+00:09:38.783 --> 00:09:42.467
+What that's gonna do is
+it's gonna create a new list
+
+159
+00:09:42.467 --> 00:09:46.422
+where the element is gonna be the person
+
+160
+00:09:46.422 --> 00:09:50.589
+without white space for
+each of the people in there.
+
+161
+00:09:52.295 --> 00:09:55.178
+However, we can also
+take it a step further
+
+162
+00:09:55.178 --> 00:09:58.345
+and copy people.split and put it there
+
+163
+00:09:59.882 --> 00:10:02.549
+and then we can remove that too.
+
+164
+00:10:04.556 --> 00:10:06.638
+So we can now say people_without_spaces
+
+165
+00:10:06.638 --> 00:10:10.036
+is person without white space for each
+
+166
+00:10:10.036 --> 00:10:12.619
+of the persons in people.split.
+
+167
+00:10:14.234 --> 00:10:16.839
+So this, remember, gets evaluated first
+
+168
+00:10:16.839 --> 00:10:20.489
+and we get a list of people and then
+
+169
+00:10:20.489 --> 00:10:24.007
+we iterate over that
+list getting the person
+
+170
+00:10:24.007 --> 00:10:26.424
+without white space for each.
+
+171
+00:10:27.343 --> 00:10:30.715
+We could go even further if we wanted,
+
+172
+00:10:30.715 --> 00:10:33.363
+although I would not recommend doing this.
+
+173
+00:10:33.363 --> 00:10:35.084
+And then we could do this.
+
+174
+00:10:35.084 --> 00:10:36.940
+This is really bad by
+the way, don't do this.
+
+175
+00:10:36.940 --> 00:10:38.584
+But this is some sort of anti-pattern
+
+176
+00:10:38.584 --> 00:10:41.752
+that I have to show you anyway.
+
+177
+00:10:41.752 --> 00:10:44.878
+And then we can delete that.
+
+178
+00:10:44.878 --> 00:10:47.693
+As you can see this is looking uglier
+
+179
+00:10:47.693 --> 00:10:50.827
+and uglier as time passes
+and there is always
+
+180
+00:10:50.827 --> 00:10:53.660
+a trade-off between lines of code,
+
+181
+00:10:55.641 --> 00:10:58.940
+the fewer lines the better really,
+
+182
+00:10:58.940 --> 00:11:02.940
+but as long as they are
+as readable as possible.
+
+183
+00:11:04.623 --> 00:11:06.735
+Here we've lost readability because we've
+
+184
+00:11:06.735 --> 00:11:10.198
+got really just a lot of code in one line.
+
+185
+00:11:10.198 --> 00:11:12.921
+ATOM tells you that at 80 characters
+
+186
+00:11:12.921 --> 00:11:15.772
+that's wat this line
+means, 80 characters long
+
+187
+00:11:15.772 --> 00:11:18.300
+you should really stop and here
+
+188
+00:11:18.300 --> 00:11:20.800
+we've probably got around 110.
+
+189
+00:11:22.671 --> 00:11:25.419
+Maybe we don't want all
+this code to be in one line
+
+190
+00:11:25.419 --> 00:11:29.196
+because it's not so readable anymore.
+
+191
+00:11:29.196 --> 00:11:32.167
+But just to take it full circle
+
+192
+00:11:32.167 --> 00:11:36.311
+we could also do this,
+and have the entire method
+
+193
+00:11:36.311 --> 00:11:38.394
+in one line if we wanted.
+
+194
+00:11:41.339 --> 00:11:44.675
+Then of course we could cut that
+
+195
+00:11:44.675 --> 00:11:48.044
+and put it in here, if we wanted,
+
+196
+00:11:48.044 --> 00:11:52.486
+we could get rid of that
+method entirely and so on.
+
+197
+00:11:52.486 --> 00:11:56.025
+But as you can see, it just
+doesn't really look as good.
+
+198
+00:11:56.025 --> 00:12:00.154
+It gets a lot more confusing very quickly.
+
+199
+00:12:00.154 --> 00:12:02.904
+Always split things into methods,
+
+200
+00:12:03.888 --> 00:12:06.388
+and make them readable so that
+
+201
+00:12:11.614 --> 00:12:13.923
+so that you can then
+come back, a few weeks
+
+202
+00:12:13.923 --> 00:12:15.842
+or a few months later down the line
+
+203
+00:12:15.842 --> 00:12:18.491
+and really easily
+understand what's going on.
+
+204
+00:12:18.491 --> 00:12:20.466
+We've guarantee a variable
+people which probably
+
+205
+00:12:20.466 --> 00:12:23.918
+is gonna hold people and then
+you've got a list of people
+
+206
+00:12:23.918 --> 00:12:26.220
+which are probably gonna
+hold the list of people.
+
+207
+00:12:26.220 --> 00:12:27.863
+And you know that a list
+is just a collection
+
+208
+00:12:27.863 --> 00:12:32.648
+of elements and then
+you're removing the spaces.
+
+209
+00:12:32.648 --> 00:12:36.567
+You don't even need to look
+at this bit of code here,
+
+210
+00:12:36.567 --> 00:12:39.253
+because people_without_spaces
+already tells you
+
+211
+00:12:39.253 --> 00:12:41.670
+what values are in that list.
+
+212
+00:12:43.115 --> 00:12:47.175
+This should be your aim with
+code and certainly is our aim
+
+213
+00:12:47.175 --> 00:12:50.288
+when we work professionally
+as software developers
+
+214
+00:12:50.288 --> 00:12:54.429
+to make code readable
+and easy to work with.
+
+215
+00:12:54.429 --> 00:12:57.156
+Because if you don't, it just takes
+
+216
+00:12:57.156 --> 00:13:00.108
+a really really long time to do anything
+
+217
+00:13:00.108 --> 00:13:02.647
+when you come back a few
+weeks or a few months later
+
+218
+00:13:02.647 --> 00:13:05.244
+and you wanna improve things.
+
+219
+00:13:05.244 --> 00:13:08.556
+So that was just a bit
+of a example showing
+
+220
+00:13:08.556 --> 00:13:12.615
+what you can do but not
+really what you should do.
+
+221
+00:13:12.615 --> 00:13:14.607
+So keep that in mind moving forward,
+
+222
+00:13:14.607 --> 00:13:17.726
+make your code readable, make
+your code easy to look at
+
+223
+00:13:17.726 --> 00:13:22.484
+and you will feel that it is
+a lot easier to do everything.
+
+224
+00:13:22.484 --> 00:13:24.236
+So without further ado,
+thanks for listening there
+
+225
+00:13:24.236 --> 00:13:27.190
+and I'll see you in the very next video.
+

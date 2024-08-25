@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Library {% endblock  %}
+
+{% block content %}
+{% comment %} {% if user.is_authenticated %} You are logged in as {{ user }} {% endcomment %}
+<h1>Welcome to Our Library</h1>
+<form action="{% url 'users:lib' %}" method="post">
+    {% csrf_token %}
+   {{form.as_p}}
+   <button type="submit">Create Library</button>
+</form>
+<a href="{% url 'users:logout' %}">Logout</a>
+{% comment %} {% else %}
+<p>You need to be logged in to see the Library. Please <a href="{% url 'users:login' %}">login</a>.</p> {% endcomment %}
+{% comment %} {% endif %} {% endcomment %}
+{% endblock  %}

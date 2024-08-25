@@ -1,0 +1,88 @@
+{% comment %} {% extends "base.html" %} {% endcomment %}
+
+{% comment %} {% block title %} Display Books {% endblock  %} {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - Kabugi</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'library_styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Kabugi Library</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'users:home' %}">Home</a></li>
+                    {% comment %} <li><a href="{% url 'about' %}">About Us</a></li> {% endcomment %}
+                    {% comment %} <li><a href="{% url 'library' %}" class="active">Library</a></li> {% endcomment %}
+                    <li><a href="{% url 'users:login' %}">Login</a></li>
+                    <li><a href="{% url 'users:user_creation' %}">Sign Up</a></li>
+                    {% comment %} <li><a href="{% url 'contact' %}">Contact Us</a></li> {% endcomment %}
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#"><img src="{% static 'search_icon.png' %}" alt="Search"></a>
+                <a href="{% url 'users:login' %}"><img src="{% static 'account_icon.png' %}" alt="My Account"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="library-intro">
+            <h2>Welcome to the Library</h2>
+            <p>Explore our collection of books and more.</p>
+        </section>
+
+        <section class="actions">
+            <button onclick= "window.location.href='{% url 'users:add_book' %}';">Add Book</button>
+            <button onclick= "window.location.href='{% url 'users:author_add' %}';">Add Author</button>
+            {% comment %} <button onclick="window.location.href='{% url 'users:login' %}';">My Account</button> {% endcomment %}
+            {% comment %} <button onclick="window.location.href='{% url 'users:request_book' %}';">Borrow Book</button> {% endcomment %}
+        </section>
+
+        <section class="book-list">
+            <h3>Available Books</h3>
+{% for book in library.books.all %}
+{% comment %} <img src="{{ book.cover_image.url }}" alt="{{ book.title }}" style="width:100px;height:150px;"> {% endcomment %}
+<li>{{book.title}} by 
+    {% for author in book.author.all %}
+    {{author.first_name}} {{author.surname}}  {% if not forloop.last %},{% endif %}
+    {% endfor %}
+    Published {{book.publication_year}}
+{% endfor %}
+<form action="{% url 'users:logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Log Out</button>
+</form>
+        </section>
+    </main>
+
+    
+</body>
+</html>
+
+{% comment %} {% block content %}
+<h1>Display Books</h1>
+{% for book in library.books.all %}
+{% comment %} <img src="{{ book.cover_image.url }}" alt="{{ book.title }}" style="width:100px;height:150px;"> {% endcomment %}
+{% comment %} <li>{{book.title}} by 
+    {% for author in book.author.all %}
+    {{author.first_name}} {{author.surname}}  {% if not forloop.last %},{% endif %}
+    {% endfor %}
+    Published {{book.publication_year}}
+</li>
+{% empty %}
+<li>No Books are available at the moment</li>
+{% endfor %}
+<form action="{% url 'users:logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Log Out</button>
+</form>
+{% comment %} <a href="{% url 'users:logout' %}">Logout</a> {% endcomment %}
+{% comment %} {% endblock  %} {% endcomment %}

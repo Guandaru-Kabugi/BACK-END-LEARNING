@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} Add Author {% endblock  %}
+
+{% block content %}
+{% if user.is_authenticated %} You are logged in as {{ user }}
+<form action="{% url 'users:author_add' %}" method="post">
+    {% csrf_token %}
+   {{form.as_p}}
+   <button type="submit">Add Author</button>
+</form>
+<a href="{% url 'users:books' pk=1 %}">View Books</a>
+<a href="{% url 'users:add_book' %}">Add Books</a>
+{% else %}
+<p>You need to be logged in to add an author. Please <a href="{% url 'users:login' %}">login</a>.</p>
+{% endif %}
+{% endblock  %}
